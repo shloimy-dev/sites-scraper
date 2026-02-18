@@ -1,129 +1,102 @@
 # Per-site config for fetching product page HTML.
 #
-# Flow: fetch every product page HTML -> save under data/html/<site_id>/
-#       -> later run site-specific extractors (description, dimensions) per website.
-#
-# Each site uses either:
-#   - product_url_column: CSV column with full product page URL, or
-#   - url_pattern: build from row ({base_url}, {upc}, {number}, {name_slug}).
-#
-# Run:  python scripts/discover_urls.py --site SITE [--limit N]   # get real URLs via site search
-#       python scripts/merge_discovered_urls.py [--site SITE]     # add Product URL column to sheets
-#       python scripts/fetch_pages.py [--site SITE]                # fetch HTML (uses Product URL when set)
-#
-# Right URLs come from discovery (site search), not from url_pattern (which often 404s).
+# URL = url_pattern with {base_url}, {upc}, {number} from the sheet.
+# One reference number per site was probed; the working pattern is set below.
+# Run:  python3 scripts/probe_url_pattern.py   # re-probe if sites change
+#       python3 scripts/fetch_pages.py [--site SITE]
 
 sites:
   playkidiz:
     sheet: playkidiz
-    product_url_column: Product URL
     base_url: https://playkidiz.com
     url_pattern: "{base_url}/product/{name_slug}/"
 
   chazak:
     sheet: chazak
-    product_url_column: Product URL
     base_url: https://www.chazakkinder.com
-    url_pattern: "{base_url}/products/{name_slug}"
+    url_pattern: "{base_url}/?p={upc}"
 
   bazic:
     sheet: bazic
-    product_url_column: Product URL
     base_url: https://www.bazicproducts.com
-    url_pattern: "{base_url}/products/{name_slug}"
+    url_pattern: "{base_url}/?p={upc}"
 
   enday:
     sheet: enday
-    product_url_column: Product URL
     base_url: https://enday.com
-    url_pattern: "{base_url}/products/{name_slug}"
+    url_pattern: "{base_url}/?p={upc}"
 
   bruder:
     sheet: bruder
-    product_url_column: Product URL
     base_url: https://brudertoyshop.com
-    url_pattern: "{base_url}/products/{number}-{name_slug}-bruder"
+    url_pattern: "{base_url}/?p={upc}"
 
   metal_earth:
     sheet: metal_earth
-    product_url_column: Product URL
     base_url: https://www.metalearth.com
-    url_pattern: "{base_url}/{name_slug}"
+    url_pattern: "{base_url}/?p={upc}"
 
   aurora:
     sheet: aurora
-    product_url_column: Product URL
     base_url: https://auroragift.com
-    url_pattern: "{base_url}/products/{name_slug}"
+    url_pattern: "{base_url}/?p={upc}"
 
   samvix:
     sheet: samvix
-    product_url_column: Product URL
     base_url: https://www.samvix.com
-    url_pattern: "{base_url}/products/{name_slug}"
+    url_pattern: "{base_url}/product/{upc}"
 
   lchaim:
     sheet: lchaim
-    product_url_column: Product URL
     base_url: https://lchaimstore.com
-    url_pattern: "{base_url}/products/{name_slug}"
+    url_pattern: "{base_url}/?p={upc}"
 
   microkick:
     sheet: microkick
-    product_url_column: Product URL
     base_url: https://microkickboard.com
-    url_pattern: "{base_url}/products/{name_slug}"
+    url_pattern: "{base_url}/?p={upc}"
 
   atiko:
     sheet: atiko
-    product_url_column: Product URL
     base_url: https://mostlymusic.com
-    url_pattern: "{base_url}/products/{name_slug}"
+    url_pattern: "{base_url}/?p={upc}"
 
   colours_craft:
     sheet: colours_craft
-    product_url_column: Product URL
     base_url: https://colourscrafts.com
-    url_pattern: "{base_url}/products/{name_slug}"
+    url_pattern: "{base_url}/?p={upc}"
 
   goplay:
     sheet: goplay
-    product_url_column: Product URL
     base_url: https://www.goplay.shopping
-    url_pattern: "{base_url}/products/{name_slug}"
+    url_pattern: "{base_url}/products/{upc}"
 
   gi_go:
     sheet: gi_go
-    product_url_column: Product URL
     base_url: https://www.gigotoys.com.hk
     url_pattern: "{base_url}/products/{name_slug}"
 
   sands:
     sheet: sands
-    product_url_column: Product URL
     base_url: https://www.sands.com
     url_pattern: "{base_url}/products/{name_slug}"
 
   rhode_island:
     sheet: rhode_island
-    product_url_column: Product URL
     base_url: https://www.rinovelty.com
-    url_pattern: "{base_url}/{name_slug}"
+    url_pattern: "{base_url}/products/{upc}"
 
   razor:
     sheet: razor
-    product_url_column: Product URL
     base_url: https://razor.com
-    url_pattern: "{base_url}/products/{name_slug}"
+    url_pattern: "{base_url}/p/{upc}"
 
   winning_moves:
     sheet: winning_moves
-    product_url_column: Product URL
     base_url: https://www.winning-moves.com
-    url_pattern: "{base_url}/product/{name_slug}.asp"
+    url_pattern: "{base_url}/?p={upc}"
 
   moore:
     sheet: moore
-    product_url_column: Product URL
     base_url: https://www.mooreoffice.com
     url_pattern: "{base_url}/products/{name_slug}"
