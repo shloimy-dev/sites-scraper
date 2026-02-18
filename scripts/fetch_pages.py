@@ -53,6 +53,18 @@ def load_config():
     return (data or {}).get("sites") or {}
 
 
+def _row_val(row: dict, site_config: dict, key: str, defaults: list[str]) -> str:
+    """Get value from row using site column override or default column names."""
+    col = site_config.get(f"{key}_column")
+    if col:
+        return (row.get(col) or "").strip()
+    for c in defaults:
+        v = (row.get(c) or "").strip()
+        if v:
+            return v
+    return ""
+
+
 def get_row_url(row: dict, site_id: str, site_config: dict) -> str | None:
     """Get product page URL for this row: from column or from url_pattern."""
     # Optional column with full URL
@@ -66,9 +78,9 @@ def get_row_url(row: dict, site_id: str, site_config: dict) -> str | None:
     if not pattern or not base:
         return None
 
-    upc = (row.get("UPC Code") or row.get("Origin(UPC)") or "").strip()
-    number = (row.get("Number") or "").strip()
-    name = (row.get("Name(En)") or "").strip()
+    upc = _row_val(row, site_config, "upc", ["UPC Code", "Origin(UPC)", "Lookup Code"])
+    number = _row_val(row, site_config, "number", ["Number"])
+    name = _row_val(row, site_config, "name", ["Name(En)", "Item Name"])
     name_slug = slug(name) if name else ""
 
     # Require placeholders to be non-empty when used
@@ -149,8 +161,8 @@ def main():
                 continue
 
             # Stable filename: prefer UPC, else Number, else row index
-            upc = (row.get("UPC Code") or row.get("Origin(UPC)") or "").strip()
-            number = (row.get("Number") or "").strip()
+            upc = _row_val(row, site_config, "upc", ["UPC Code", "Origin(UPC)", "Lookup Code"])
+            number = _row_val(row, site_config, "number", ["Number"])
             if upc:
                 safe_id = re.sub(r"[^\w.-]", "_", upc)
             elif number:

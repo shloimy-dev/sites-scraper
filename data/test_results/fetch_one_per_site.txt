@@ -1,0 +1,4 @@
+Test: one fetch per site
+Summary: 1 OK, 0 FAIL, 0 SKIP (total 1 sites)
+
+chazak	ok	162415	200	https://www.chazakkinder.com/products/crystal-crafts-deer

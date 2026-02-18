@@ -49,6 +49,17 @@ def load_config():
     return (data or {}).get("sites") or {}
 
 
+def _row_val(row: dict, site_config: dict, key: str, defaults: list[str]) -> str:
+    col = site_config.get(f"{key}_column")
+    if col:
+        return (row.get(col) or "").strip()
+    for c in defaults:
+        v = (row.get(c) or "").strip()
+        if v:
+            return v
+    return ""
+
+
 def get_row_url(row: dict, site_config: dict) -> str | None:
     col = site_config.get("product_url_column")
     if col and row.get(col):
@@ -57,9 +68,9 @@ def get_row_url(row: dict, site_config: dict) -> str | None:
     pattern = site_config.get("url_pattern") or ""
     if not pattern or not base:
         return None
-    upc = (row.get("UPC Code") or row.get("Origin(UPC)") or "").strip()
-    number = (row.get("Number") or "").strip()
-    name = (row.get("Name(En)") or "").strip()
+    upc = _row_val(row, site_config, "upc", ["UPC Code", "Origin(UPC)", "Lookup Code"])
+    number = _row_val(row, site_config, "number", ["Number"])
+    name = _row_val(row, site_config, "name", ["Name(En)", "Item Name"])
     name_slug = slug(name) if name else ""
     if "{name_slug}" in pattern and not name_slug:
         return None
@@ -89,16 +100,17 @@ def fetch(url: str) -> tuple[int, str | None]:
 
 
 def first_product_link_from_html(html: str, base_url: str) -> str | None:
-    """Find first href that looks like a product page (/product/ or /products/)."""
+    """Find first href that looks like a product page (/product/, /products/, or ~p for rinovelty)."""
     soup = BeautifulSoup(html, "html.parser")
     for a in soup.find_all("a", href=True):
         href = a["href"].strip()
         if not href or href.startswith("#"):
             continue
         full = urljoin(base_url, href)
-        # Strip query/fragment for check
         path = full.split("?")[0].split("#")[0]
         if "/product/" in path or "/products/" in path:
+            return full
+        if "~p" in path:  # Rhode Island Novelty style
             return full
     return None
 
@@ -106,11 +118,13 @@ def first_product_link_from_html(html: str, base_url: str) -> str | None:
 def search_site_for_product(base_url: str, query: str) -> str | None:
     """Try common search URL patterns; return first product link if any."""
     base = base_url.rstrip("/")
-    # Common patterns
+    q = quote_plus(query)
     tries = [
-        f"{base}/search?q={quote_plus(query)}",
-        f"{base}/search?q={quote_plus(query)}&type=product",
-        f"{base}/products?q={quote_plus(query)}",
+        f"{base}/search?q={q}",
+        f"{base}/search?q={q}&type=product",
+        f"{base}/products?q={q}",
+        f"{base}/?s={q}",  # WordPress / WooCommerce
+        f"{base}/shop/?s={q}",
     ]
     for search_url in tries:
         code, text = fetch(search_url)
@@ -152,8 +166,8 @@ def main():
     for i, row in iter_sheet_rows(sheet_path):
         if args.limit and rows_done >= args.limit:
             break
-        upc = (row.get("UPC Code") or row.get("Origin(UPC)") or "").strip()
-        name = (row.get("Name(En)") or "").strip()
+        upc = _row_val(row, site_config, "upc", ["UPC Code", "Origin(UPC)", "Lookup Code"])
+        name = _row_val(row, site_config, "name", ["Name(En)", "Item Name"])
         built = get_row_url(row, site_config)
         if not built:
             results.append((upc, name, "", "", "no_url"))
@@ -161,16 +175,21 @@ def main():
             continue
 
         code, _ = fetch(built)
+        resolved = ""
+        status = "ok"
         if code == 200:
-            results.append((upc, name, built, built, "ok"))
-        elif code == 404 and not args.no_search and (upc or name):
+            resolved = built
+            status = "ok"
+        elif not args.no_search and (upc or name):
             found = search_site_for_product(base_url, upc or name)
             if found:
-                results.append((upc, name, built, found, "search"))
+                resolved = found
+                status = "search"
             else:
-                results.append((upc, name, built, "", "404"))
+                status = "404" if code == 404 else "error"
         else:
-            results.append((upc, name, built, "", "error" if code != 404 else "404"))
+            status = "404" if code == 404 else "error"
+        results.append((upc, name, built or "", resolved, status))
         rows_done += 1
         print(f"  {rows_done} {name[:40]}... -> {results[-1][4]}")
         time.sleep(DELAY)
