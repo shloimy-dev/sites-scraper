@@ -1,24 +1,26 @@
 # Data status
 
-**Current state:** No product HTML or extracted data. Pipeline outputs have been removed.
+**Goal: the RIGHT data for EACH product.**  
+Description, dimensions, and images — **per product**, not the same for everyone. Garbage (same-for-all or empty) is deleted and not saved.
 
-- **Sheets (input):** `data/sheets/` — source CSVs from vendor/sheets, kept.
-- **HTML:** none (was `data/html/<site_id>/`).
-- **Extracted:** none (was `data/extracted/<site_id>.csv`).
-- **Discovery:** none (was `data/discovered_urls/`).
-- **Images:** none (will be `data/images/<site_id>/<product_id>.<ext>`).
+## Current state
 
-## Pipeline run order (real product data + images)
+- **Right data (kept):** aurora, bazic, atiko only. See `python3 scripts/validate_extracted.py`.
+- **Garbage removed:** Extracted CSVs and images for bruder, chazak, colours_craft, enday, goplay, microkick, playkidiz, razor, samvix, winning_moves were deleted.
+- **Scraper:** `get_all_product_data.py` now **rejects generic/store pages** — if the page has the same title for every product or looks like a site name, we do not save it (empty row + "generic page (not saved)").
 
-1. **Get product URLs** — Either add a "Product URL" column from the vendor, or run discovery:
-   - For JS-rendered sites (e.g. Shopify):  
-     `python3 scripts/discover_urls_playwright.py --site SITE [--limit N]`  
-     Then: `python3 scripts/merge_discovered_urls.py --site SITE`
-   - For static sites: `python3 scripts/discover_urls.py --site SITE` then merge as above.
-2. **Fetch HTML:** `python3 scripts/fetch_pages.py [--site SITE]`
-3. **Extract data:** `python3 scripts/extract_product_data.py [--site SITE]`  
-   → CSV in `data/extracted/<site>.csv` (title, description, image_url, dimensions). Share with client here if needed.
-4. **Download images:** `python3 scripts/download_images.py [--site SITE]`  
-   → Main image per product in `data/images/<site_id>/<product_id>.<ext>` (filename = product number).
+## How to get right data for other sites
 
-Config: `config/sites.yaml` (optional `search_url` for Playwright discovery). Fetch and extract are unchanged.
+**You must have real product page URLs** so we hit product pages, not a generic page.
+
+1. **Discover URLs:** `python3 scripts/discover_urls_playwright.py --site SITE`
+2. **Merge into sheet:** `python3 scripts/merge_discovered_urls.py --site SITE`
+3. **Scrape:** `python3 scripts/get_all_product_data.py --site SITE`
+
+See **config/GET_RIGHT_DATA.md** for full steps and options (vendor Product URL column, etc.).
+
+## Scripts
+
+- **Scraper:** `python3 scripts/get_all_product_data.py --site SITE` — writes `data/extracted/<site>.csv` and `data/images/<site>/`. Does not save generic pages.
+- **Validation:** `python3 scripts/validate_extracted.py` — reports unique titles and "Good" counts; use to confirm right data.
+- **Sheets (input):** `data/sheets/`. **Config:** `config/sites.yaml`.

@@ -25,8 +25,9 @@ sites:
 
   bazic:
     sheet: bazic
-    base_url: https://www.bazicproducts.com
+    base_url: https://www.bazic.com
     url_pattern: "{base_url}/?p={upc}"
+    search_url: "{base_url}/search?q={query}"
 
   enday:
     sheet: enday
@@ -39,6 +40,7 @@ sites:
     sheet: bruder
     base_url: https://brudertoyshop.com
     url_pattern: "{base_url}/?p={upc}"
+    search_url: "{base_url}/search?q={query}"
 
   metal_earth:
     sheet: metal_earth
@@ -59,6 +61,7 @@ sites:
     base_url: https://www.samvix.com
     url_pattern: "{base_url}/product/{upc}"
     product_url_column: Product URL
+    search_url: "{base_url}/search?q={query}"
 
   lchaim:
     sheet: lchaim
@@ -71,11 +74,13 @@ sites:
     sheet: microkick
     base_url: https://microkickboard.com
     url_pattern: "{base_url}/?p={upc}"
+    search_url: "{base_url}/search?q={query}"
 
   atiko:
     sheet: atiko
     base_url: https://mostlymusic.com
     url_pattern: "{base_url}/?p={upc}"
+    search_url: "{base_url}/search?q={query}"
 
   colours_craft:
     sheet: colours_craft
@@ -88,6 +93,7 @@ sites:
     sheet: goplay
     base_url: https://www.goplay.shopping
     url_pattern: "{base_url}/products/{upc}"
+    search_url: "{base_url}/search?q={query}"
 
   gi_go:
     sheet: gi_go
@@ -104,16 +110,19 @@ sites:
     base_url: https://www.rinovelty.com
     url_pattern: "{base_url}/products/{upc}"
     product_url_column: Product URL
+    search_url: "{base_url}/search?q={query}"
 
   razor:
     sheet: razor
     base_url: https://razor.com
     url_pattern: "{base_url}/p/{upc}"
+    search_url: "{base_url}/search?q={query}"
 
   winning_moves:
     sheet: winning_moves
     base_url: https://www.winning-moves.com
     url_pattern: "{base_url}/?p={upc}"
+    search_url: "{base_url}/search?q={query}"
 
   moore:
     sheet: moore

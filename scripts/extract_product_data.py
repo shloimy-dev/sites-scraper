@@ -218,7 +218,7 @@ def main():
         site_list = [d.name for d in HTML_DIR.iterdir() if d.is_dir()]
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    fieldnames = ["product_id", "title", "description", "image_url", "image_urls", "dimensions", "page_type"]
+    fieldnames = ["product_id", "title", "description", "image_url", "image_urls", "dimensions", "page_type", "is_product_specific"]
 
     for site_id in sorted(site_list):
         dir_path = HTML_DIR / site_id
@@ -252,10 +252,14 @@ def main():
                         "image_urls": "",
                         "dimensions": "",
                         "page_type": "error",
+                        "is_product_specific": "N",
                     }
                 )
                 continue
             data = extract_for_site(site_id, html, base_url)
+            pt = data.get("page_type", "unknown")
+            # Y only when we're on a real product page (JSON-LD or product page_type)
+            is_specific = "Y" if pt == "product" and (data.get("title") or data.get("description") or data.get("image_url")) else "N"
             rows.append({
                 "product_id": product_id,
                 "title": data.get("title", ""),
@@ -263,7 +267,8 @@ def main():
                 "image_url": data.get("image_url", ""),
                 "image_urls": "|".join((data.get("image_urls") or [])[:20]),
                 "dimensions": data.get("dimensions", ""),
-                "page_type": data.get("page_type", "unknown"),
+                "page_type": pt,
+                "is_product_specific": is_specific,
             })
 
         if args.dry_run:
