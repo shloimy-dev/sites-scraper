@@ -4,6 +4,10 @@
 # One reference number per site was probed; the working pattern is set below.
 # Run:  python3 scripts/probe_url_pattern.py   # re-probe if sites change
 #       python3 scripts/fetch_pages.py [--site SITE]
+#
+# For JS-rendered search (Shopify etc.): use discover_urls_playwright.py.
+# Optional search_url template: {base_url}, {query} or {q}. Example:
+#   search_url: "{base_url}/search?q={query}"
 
 sites:
   playkidiz:
@@ -17,6 +21,7 @@ sites:
     base_url: https://www.chazakkinder.com
     url_pattern: "{base_url}/?p={upc}"
     product_url_column: Product URL
+    search_url: "{base_url}/search?q={query}"
 
   bazic:
     sheet: bazic
@@ -28,6 +33,7 @@ sites:
     base_url: https://enday.com
     url_pattern: "{base_url}/?p={upc}"
     product_url_column: Product URL
+    search_url: "{base_url}/search?q={query}"
 
   bruder:
     sheet: bruder
@@ -39,12 +45,14 @@ sites:
     base_url: https://www.metalearth.com
     url_pattern: "{base_url}/?p={upc}"
     product_url_column: Product URL
+    search_url: "{base_url}/search?q={query}"
 
   aurora:
     sheet: aurora
     base_url: https://auroragift.com
     url_pattern: "{base_url}/?p={upc}"
     product_url_column: Product URL
+    search_url: "{base_url}/search?q={query}"
 
   samvix:
     sheet: samvix
@@ -57,6 +65,7 @@ sites:
     base_url: https://lchaimstore.com
     url_pattern: "{base_url}/?p={upc}"
     product_url_column: Product URL
+    search_url: "{base_url}/search?q={query}"
 
   microkick:
     sheet: microkick
@@ -73,6 +82,7 @@ sites:
     base_url: https://colourscrafts.com
     url_pattern: "{base_url}/?p={upc}"
     product_url_column: Product URL
+    search_url: "{base_url}/search?q={query}"
 
   goplay:
     sheet: goplay
