@@ -10,11 +10,13 @@ sites:
     sheet: playkidiz
     base_url: https://playkidiz.com
     url_pattern: "{base_url}/product/{name_slug}/"
+    product_url_column: Product URL
 
   chazak:
     sheet: chazak
     base_url: https://www.chazakkinder.com
     url_pattern: "{base_url}/?p={upc}"
+    product_url_column: Product URL
 
   bazic:
     sheet: bazic
@@ -25,6 +27,7 @@ sites:
     sheet: enday
     base_url: https://enday.com
     url_pattern: "{base_url}/?p={upc}"
+    product_url_column: Product URL
 
   bruder:
     sheet: bruder
@@ -35,21 +38,25 @@ sites:
     sheet: metal_earth
     base_url: https://www.metalearth.com
     url_pattern: "{base_url}/?p={upc}"
+    product_url_column: Product URL
 
   aurora:
     sheet: aurora
     base_url: https://auroragift.com
     url_pattern: "{base_url}/?p={upc}"
+    product_url_column: Product URL
 
   samvix:
     sheet: samvix
     base_url: https://www.samvix.com
     url_pattern: "{base_url}/product/{upc}"
+    product_url_column: Product URL
 
   lchaim:
     sheet: lchaim
     base_url: https://lchaimstore.com
     url_pattern: "{base_url}/?p={upc}"
+    product_url_column: Product URL
 
   microkick:
     sheet: microkick
@@ -65,6 +72,7 @@ sites:
     sheet: colours_craft
     base_url: https://colourscrafts.com
     url_pattern: "{base_url}/?p={upc}"
+    product_url_column: Product URL
 
   goplay:
     sheet: goplay
@@ -85,6 +93,7 @@ sites:
     sheet: rhode_island
     base_url: https://www.rinovelty.com
     url_pattern: "{base_url}/products/{upc}"
+    product_url_column: Product URL
 
   razor:
     sheet: razor
@@ -100,3 +109,4 @@ sites:
     sheet: moore
     base_url: https://www.mooreoffice.com
     url_pattern: "{base_url}/products/{name_slug}"
+    verify_ssl: false
