@@ -1,7 +1,6 @@
-# Data (cold base)
+# Data
 
 - **sheets/** — Input CSVs: one per site (product list with UPC, name, etc.).
-- **extracted/** — Output: per-product title, description, image_url, dimensions. Only **aurora**, **bazic**, **atiko** have good data so far.
-- **images/** — Downloaded product images: **aurora**, **bazic** (one image per product_id).
-
-After running the site analyzer and per-site scrapers, new extracted CSVs and images will go here.
+- **extracted/** — Output from scrapers (per-product CSV). New runs write here.
+- **images/** — Downloaded product images. New runs write here.
+- **ready/** — **Finished sites (do not rerun).** aurora, bazic, atiko extracted CSVs and aurora/bazic images are here. Use this data for downstream; scrapers should skip these sites.
