@@ -1,131 +1,23 @@
-# Per-site config for fetching product page HTML.
-#
-# URL = url_pattern with {base_url}, {upc}, {number} from the sheet.
-# One reference number per site was probed; the working pattern is set below.
-# Run:  python3 scripts/probe_url_pattern.py   # re-probe if sites change
-#       python3 scripts/fetch_pages.py [--site SITE]
-#
-# For JS-rendered search (Shopify etc.): use discover_urls_playwright.py.
-# Optional search_url template: {base_url}, {query} or {q}. Example:
-#   search_url: "{base_url}/search?q={query}"
+# Site list: base_url and sheet name. Used by analyze_site.py and per-site scrapers.
+# After analysis, each site gets a spec in docs/sites/<site_id>.md and a scraper in scripts/sites/.
 
 sites:
-  playkidiz:
-    sheet: playkidiz
-    base_url: https://playkidiz.com
-    url_pattern: "{base_url}/product/{name_slug}/"
-    product_url_column: Product URL
-
-  chazak:
-    sheet: chazak
-    base_url: https://www.chazakkinder.com
-    url_pattern: "{base_url}/?p={upc}"
-    product_url_column: Product URL
-    search_url: "{base_url}/search?q={query}"
-
-  bazic:
-    sheet: bazic
-    base_url: https://www.bazic.com
-    url_pattern: "{base_url}/?p={upc}"
-    search_url: "{base_url}/search?q={query}"
-
-  enday:
-    sheet: enday
-    base_url: https://enday.com
-    url_pattern: "{base_url}/?p={upc}"
-    product_url_column: Product URL
-    search_url: "{base_url}/search?q={query}"
-
-  bruder:
-    sheet: bruder
-    base_url: https://brudertoyshop.com
-    url_pattern: "{base_url}/?p={upc}"
-    search_url: "{base_url}/search?q={query}"
-
-  metal_earth:
-    sheet: metal_earth
-    base_url: https://www.metalearth.com
-    url_pattern: "{base_url}/?p={upc}"
-    product_url_column: Product URL
-    search_url: "{base_url}/search?q={query}"
-
-  aurora:
-    sheet: aurora
-    base_url: https://auroragift.com
-    url_pattern: "{base_url}/?p={upc}"
-    product_url_column: Product URL
-    search_url: "{base_url}/search?q={query}"
-
-  samvix:
-    sheet: samvix
-    base_url: https://www.samvix.com
-    url_pattern: "{base_url}/product/{upc}"
-    product_url_column: Product URL
-    search_url: "{base_url}/search?q={query}"
-
-  lchaim:
-    sheet: lchaim
-    base_url: https://lchaimstore.com
-    url_pattern: "{base_url}/?p={upc}"
-    product_url_column: Product URL
-    search_url: "{base_url}/search?q={query}"
-
-  microkick:
-    sheet: microkick
-    base_url: https://microkickboard.com
-    url_pattern: "{base_url}/?p={upc}"
-    search_url: "{base_url}/search?q={query}"
-
-  atiko:
-    sheet: atiko
-    base_url: https://mostlymusic.com
-    url_pattern: "{base_url}/?p={upc}"
-    search_url: "{base_url}/search?q={query}"
-
-  colours_craft:
-    sheet: colours_craft
-    base_url: https://colourscrafts.com
-    url_pattern: "{base_url}/?p={upc}"
-    product_url_column: Product URL
-    search_url: "{base_url}/search?q={query}"
-
-  goplay:
-    sheet: goplay
-    base_url: https://www.goplay.shopping
-    url_pattern: "{base_url}/products/{upc}"
-    search_url: "{base_url}/search?q={query}"
-
-  gi_go:
-    sheet: gi_go
-    base_url: https://www.gigotoys.com.hk
-    url_pattern: "{base_url}/products/{name_slug}"
-
-  sands:
-    sheet: sands
-    base_url: https://www.sands.com
-    url_pattern: "{base_url}/products/{name_slug}"
-
-  rhode_island:
-    sheet: rhode_island
-    base_url: https://www.rinovelty.com
-    url_pattern: "{base_url}/products/{upc}"
-    product_url_column: Product URL
-    search_url: "{base_url}/search?q={query}"
-
-  razor:
-    sheet: razor
-    base_url: https://razor.com
-    url_pattern: "{base_url}/p/{upc}"
-    search_url: "{base_url}/search?q={query}"
-
-  winning_moves:
-    sheet: winning_moves
-    base_url: https://www.winning-moves.com
-    url_pattern: "{base_url}/?p={upc}"
-    search_url: "{base_url}/search?q={query}"
-
-  moore:
-    sheet: moore
-    base_url: https://www.mooreoffice.com
-    url_pattern: "{base_url}/products/{name_slug}"
-    verify_ssl: false
+  atiko:          { sheet: atiko,          base_url: https://mostlymusic.com }
+  aurora:         { sheet: aurora,         base_url: https://auroragift.com }
+  bazic:          { sheet: bazic,          base_url: https://www.bazic.com }
+  bruder:         { sheet: bruder,         base_url: https://brudertoyshop.com }
+  chazak:         { sheet: chazak,         base_url: https://www.chazakkinder.com }
+  colours_craft:  { sheet: colours_craft,  base_url: https://colourscrafts.com }
+  enday:          { sheet: enday,          base_url: https://enday.com }
+  gi_go:          { sheet: gi_go,          base_url: https://www.gigotoys.com.hk }
+  goplay:         { sheet: goplay,         base_url: https://www.goplay.shopping }
+  lchaim:         { sheet: lchaim,         base_url: https://lchaimstore.com }
+  metal_earth:    { sheet: metal_earth,    base_url: https://www.metalearth.com }
+  microkick:      { sheet: microkick,      base_url: https://microkickboard.com }
+  moore:          { sheet: moore,         base_url: https://www.mooreoffice.com }
+  playkidiz:      { sheet: playkidiz,     base_url: https://playkidiz.com }
+  razor:          { sheet: razor,          base_url: https://razor.com }
+  rhode_island:   { sheet: rhode_island,   base_url: https://www.rinovelty.com }
+  samvix:         { sheet: samvix,         base_url: https://www.samvix.com }
+  sands:          { sheet: sands,          base_url: https://www.sands.com }
+  winning_moves:  { sheet: winning_moves,  base_url: https://www.winning-moves.com }
