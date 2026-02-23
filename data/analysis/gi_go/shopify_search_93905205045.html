@@ -1,0 +1,347 @@
+<!DOCTYPE html><html lang="en-US" style="font-size: 66.6667px;"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <title>GiGO</title>
+    <meta name="keywords" content="93905205045">
+    <meta name="description" content="GiGO">
+
+    <link rel="stylesheet" href="/themes/bingo/static/animate/animate.min.css">
+    <link rel="stylesheet" href="/themes/bingo/static/css/swiper.min.css">
+    <link rel="stylesheet" href="/themes/bingo/static/iconfont/iconfont.css">
+
+    <link rel="stylesheet" href="/themes/bingo/static/css/global.css">
+    <link rel="stylesheet" href="/themes/bingo/static/css/header.css">
+    <link rel="stylesheet" href="/themes/bingo/static/css/footer.css">
+
+    <link rel="stylesheet" href="/themes/bingo/static/utils/swiper/swiper.min.css">
+
+
+    <script type="text/javascript" src="/themes/bingo/static/js/jquery.js"></script>
+    <script type="text/javascript" src="/themes/bingo/static/utils/countFont.js"></script>
+    <script type="text/javascript" src="/themes/bingo/static/utils/wow.min.js"></script>
+    <!--    <script type="text/javascript" async src="/static/js/swiper.jquery.min.js"></script>-->
+    <script type="text/javascript" src="/themes/bingo/static/utils/swiper/swiper.min.js"></script>
+</head>
+<body class="pages" style="opacity: 1; margin-top: 138.109px;">
+
+
+<!-- S 头部 -->
+<header>
+    <div class="logo-search-box">
+        <a href="/" class="logo">
+            <img src="/uploads/image/202402/3bcd9004288158f6e8357fee72bdcf83.png" alt="GIGO">
+        </a>
+        <form action="/search" class="search-box">
+            <input id="search-q" name="q" type="text" placeholder="Search in 3 brands &amp; 1,400 items">
+            <input type="hidden" name="type" value="product">
+            <button id="search-btn" type="button" class="iconfont icon-sousuo icon"></button>
+        </form>
+        <div class="menu-btn">
+            <div class="center-line"></div>
+        </div>
+    </div>
+    <nav>
+        <ul class="nav-list">
+
+                                                <li class="nav-item">
+                        <div class="item-box">
+                            <a href="/brands">Brands</a>
+                            <div class="icon iconfont icon-xiangxiajiantou"></div>
+                        </div>
+
+                        <div class="sub-menu">
+                            <ul class="menu-list">
+                                                                    <li class="menu-item">
+                                        <a href="/articles/2">
+                                            Dream Collection                                        </a>
+                                    </li>
+                                                                    <li class="menu-item">
+                                        <a href="/articles/3">
+                                            Wonder Ponyland                                        </a>
+                                    </li>
+                                                                    <li class="menu-item">
+                                        <a href="javascript:void(0)">
+                                            Stay Tuned                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    </li>
+                                                                <li class="nav-item">
+                        <div class="item-box">
+                            <a href="/articles/1">Products</a>
+                        </div>
+                    </li>
+                                                                <li class="nav-item">
+                        <div class="item-box">
+                            <a href="/where-to-buy">Where to Buy</a>
+                        </div>
+                    </li>
+                                                                <li class="nav-item">
+                        <div class="item-box">
+                            <a href="/about-us">About Us</a>
+                        </div>
+                    </li>
+                                                                <li class="nav-item">
+                        <div class="item-box">
+                            <a href="javascript:void(0)">Customer Service</a>
+                            <div class="icon iconfont icon-xiangxiajiantou"></div>
+                        </div>
+
+                        <div class="sub-menu">
+                            <ul class="menu-list">
+                                                                    <li class="menu-item">
+                                        <a href="/faq">
+                                            FAQ                                        </a>
+                                    </li>
+                                                                    <li class="menu-item">
+                                        <a href="/contact-us">
+                                            Contact Us                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    </li>
+                            
+
+        </ul>
+        <div class="filter-box"></div>
+    </nav>
+</header>
+<!-- E 头部 -->
+<script>
+
+    $("#search-btn").click(function () {
+        if ($("#search-q").val() == "") {
+            console.log("false");
+            return false;
+        } else {
+            window.location.href = "/search?q=" + $("#search-q").val() + "&type=product"
+        }
+    });
+    $("#search-q").keydown(function (event) {
+        if(event.keyCode==13){
+            if ($(this).val() == "") {
+                console.log("false");
+                return false;
+            } else {
+                window.location.href = "/search?q=" + $("#search-q").val() + "&type=product"
+            }
+        }
+
+    });
+</script><link rel="stylesheet" href="/themes/bingo/static/css/products.css">
+
+<div class="search-sort">
+    <div class="container">
+        <div class="form-box animate__animated animate__fadeIn" data-wow-delay="0.5s">
+            <form action="/search" class="search-box">
+                <div class="search-inp">
+                    <input name="q" value="93905205045" type="text" placeholder="Search...">
+                </div>
+                <input type="hidden" name="type" value="product">
+                <button type="submit" class="search-icon">
+                    <i class="icon iconfont icon-sousuo"></i>
+                </button>
+
+            </form>
+
+            <div class="select-box">
+                <select id="brand-select" name="brand">
+                    <option value="space" disabled=""></option>
+                    <option value="">By Brand</option>
+                                                                <option value="space" disabled=""></option>
+                        <option value="2">Dream Collection</option>
+                                            <option value="space" disabled=""></option>
+                        <option value="3">Wonder Ponyland</option>
+                                            <option value="space" disabled=""></option>
+                        <option value="4" disabled="">Stay Tuned</option>
+                                        <option value="space" disabled=""></option>
+                </select>
+                <i class="icon iconfont icon-xiangxiajiantou"></i>
+            </div>
+            <input type="hidden" name="type" value="product">
+            <button class="btn" id="brand-search">Search</button>
+        </div>
+                                    <div class="types-list">
+
+                                    <a href="/search?type=product&amp;theme=1" class="type animate__animated animate__fadeInLeft" data-wow-delay="0.5s">
+                        <div class="icon-img">
+                            <img src="/uploads/image/202402/9830bf4230a69fa20dcdfb5dfa297ae4.png" alt="Dolls" class="img">
+                        </div>
+                        <div class="text">Dolls</div>
+                    </a>
+                                    <a href="/search?type=product&amp;theme=2" class="type animate__animated animate__fadeInLeft" data-wow-delay="0.5s">
+                        <div class="icon-img">
+                            <img src="/uploads/image/202402/f083786b6dd858dcaa619e36e05f51bc.png" alt="Dolls" class="img">
+                        </div>
+                        <div class="text">Doll Accessories</div>
+                    </a>
+                                    <a href="/search?type=product&amp;theme=3" class="type animate__animated animate__fadeInLeft" data-wow-delay="0.5s">
+                        <div class="icon-img">
+                            <img src="/uploads/image/202402/55dd4d968d04d2a635154f42019f8b35.png" alt="Dolls" class="img">
+                        </div>
+                        <div class="text">Styling Heads</div>
+                    </a>
+                                    <a href="/search?type=product&amp;theme=4" class="type animate__animated animate__fadeInLeft" data-wow-delay="0.5s">
+                        <div class="icon-img">
+                            <img src="/uploads/image/202402/30b05580a1be2a7a5743d67a3f0b78c9.png" alt="Dolls" class="img">
+                        </div>
+                        <div class="text">Role Play</div>
+                    </a>
+                
+            </div>
+                    <div class="types-list">
+
+                                    <a href="/search?type=product&amp;theme=5" class="type animate__animated animate__fadeInLeft" data-wow-delay="0.5s">
+                        <div class="icon-img">
+                            <img src="/uploads/image/202402/6a02dc0bf29df36552f8f0579a94aae5.png" alt="Dolls" class="img">
+                        </div>
+                        <div class="text">Unicorns &amp; Ponies</div>
+                    </a>
+                                    <a href="/search?type=product&amp;theme=6" class="type animate__animated animate__fadeInLeft" data-wow-delay="0.5s">
+                        <div class="icon-img">
+                            <img src="/uploads/image/202402/cc8362eeb0756c22c3729265491969e4.png" alt="Dolls" class="img">
+                        </div>
+                        <div class="text">Pet Toys</div>
+                    </a>
+                                    <a href="/search?type=product&amp;theme=7" class="type animate__animated animate__fadeInLeft" data-wow-delay="0.5s">
+                        <div class="icon-img">
+                            <img src="/uploads/image/202402/9a8b08ddc6df59d67041b309808fb292.png" alt="Dolls" class="img">
+                        </div>
+                        <div class="text">What’s Trending</div>
+                    </a>
+                
+            </div>
+        
+    </div>
+</div>
+
+<div class="container">
+    <div class="right-list">
+        
+                    <div style="width: 100%;display: flex;align-items: center;justify-content: center;margin-bottom:44px;">
+                <h3>No Data</h3>
+            </div>
+        
+
+    </div>
+    </div>
+
+
+<script>
+    $("#brand-search").click(function () {
+        var brandid = $("#brand-select").val();
+        if (brandid) {
+            window.location.href = "/search?brand=" + brandid + "&type=product";
+        }
+    });
+</script>
+
+<style>
+    footer .container .quick-link0 {
+        margin-left: 112px;
+    }
+
+    @media screen and (max-width: 992px) {
+        footer .container .quick-link0 {
+            margin-left: 0;
+        }
+    }
+</style>
+<!-- S 底部 -->
+<footer>
+    <div class="container">
+        <a href="/" class="logo">
+            <img src="/uploads/image/202402/a3e6a89ec9dcfb215d5c10316ceb102e.png" alt="GIGO">
+        </a>
+
+
+                    <div class="quick-link quick-link0">
+                <div class="link-tit">Our Brands</div>
+                                    <div class="links-list">
+                        <ul>
+                                                            <li>
+                                    <a href="/articles/2">Dream Collection</a>
+                                </li>
+                                                            <li>
+                                    <a href="/articles/3">Wonder Ponyland</a>
+                                </li>
+                                                            <li>
+                                    <a href="javascript:void(0)">Stay Tuned</a>
+                                </li>
+                                                    </ul>
+                    </div>
+                            </div>
+                    <div class="quick-link quick-link1">
+                <div class="link-tit">Customer Services</div>
+                                    <div class="links-list">
+                        <ul>
+                                                            <li>
+                                    <a href="/faq">FAQ</a>
+                                </li>
+                                                            <li>
+                                    <a href="/contact-us">Contact Us</a>
+                                </li>
+                                                    </ul>
+                    </div>
+                            </div>
+                    <div class="quick-link quick-link2">
+                <div class="link-tit">Company Info</div>
+                                    <div class="links-list">
+                        <ul>
+                                                            <li>
+                                    <a href="/about-us">About GIGO</a>
+                                </li>
+                                                            <li>
+                                    <a href="/articles/privacy-policy">Privacy Policy</a>
+                                </li>
+                                                            <li>
+                                    <a href="/articles/terms-conditions">Terms &amp; Conditions</a>
+                                </li>
+                                                    </ul>
+                    </div>
+                            </div>
+        
+
+        <div class="quick-link follow-us">
+            <div class="link-tit">Follow Us</div>
+            <div class="links-list">
+                <ul class="icon-list">
+                                            <li>
+                            <a href="https://www.instagram.com/gigotoys.hk" target="_blank" class="icon iconfont icon-instagram"></a>
+                        </li>
+                                                                <li>
+                            <a href="https://www.facebook.com/profile.php?id=61556700136270" target="_blank" class="icon iconfont icon-facebook"></a>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="copyright">
+        <i class="icon iconfont icon-copyright"></i>
+         Copyright GIGO Toy.     </div>
+
+    <div class="navigate-icon">
+        <i class="icon iconfont icon-daohang1"></i>
+    </div>
+</footer>
+<!-- E 底部 --><script type="text/javascript" async="" src="/themes/bingo/static/utils/lazyLoad.js"></script>
+<script type="text/javascript" async="" src="/themes/bingo/static/js/header.js"></script>
+<script>
+    $(window).ready(function() {
+        const myWOW = new WOW({
+            offset: 10
+        }).init();
+    })
+</script>
+
+
+<script src="/themes/bingo/dist/jquery.validate.min.js"></script>
+<script src="/themes/bingo/dist/form.js"></script>
+
+
+</body></html>

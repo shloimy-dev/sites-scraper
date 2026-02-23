@@ -1,0 +1,67 @@
+/Users/shloimy/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[1/30] UPC=4542300264 RAZOR A SCOOTER CLEAR
+  SKIP: no product found
+[2/30] UPC=845423002664 RAZOR SCOOTER (RED)
+  SKIP: no product found
+[3/30] UPC=845423022631 Razor Jetts Heel Wheels DLX Blue
+  SKIP: no product found
+[4/30] UPC=845423002770 RAZOR A2 KICK SCOOTER - BLUE
+  SKIP: no product found
+[5/30] UPC=845423023270 Hovertrax - Black
+  OK: Hovertrax Black Label
+[6/30] UPC=845423002633 RAZOR A SCOOTER (BLUE)
+  SKIP: no product found
+[7/30] UPC=845423008987 A SCOOTER PINK (RAZOR)
+  SKIP: no product found
+[8/30] UPC=845423020439 POWER A2 ELECTRIC SCOOTER
+  SKIP: no product found
+[9/30] UPC=845423001025 Ripstick Ripster Blue
+  SKIP: no product found
+[10/30] UPC=845423016036 RAZOR JETTS HEEL WHEELS - PURPLE
+  SKIP: no product found
+[11/30] UPC=845423002640 Razor A Scooter Clear Wheels
+  SKIP: no product found
+[12/30] UPC=845423009960 KIXI RAZOR PINK/PURPLE
+  SKIP: no product found
+[13/30] UPC=845423002824 RAZOR A2 SCOOTER RED KICK
+  SKIP: no product found
+[14/30] UPC=845423010645 A5 LUX RAZOR
+  OK: Razor A5 Lux
+[15/30] UPC=845423001018 RIPSTIK RED
+  SKIP: no product found
+[16/30] UPC=845423010898 RAZOR FLASH RIDER 360
+  SKIP: no product found
+[17/30] UPC=845423016043 RAZOR JETTS HEEL WHEELS - GREEN
+  SKIP: no product found
+[18/30] UPC=845423005009 A5 Lux Scooter Black Label
+  SKIP: no product found
+[19/30] UPC=845423018108 A5 LUX RAZOR SCOOTER blue
+  SKIP: no product found
+[20/30] UPC=845423018115 A5 Lux Red ISTA
+  SKIP: no product found
+[21/30] UPC=845423018207 RipRider
+  OK: RipRider 360 Mini
+[22/30] UPC=845423019761 ripstick
+  SKIP: no product found
+[23/30] UPC=845423021917 RAZOR POWER A5
+  SKIP: no product found
+[24/30] UPC=845423024321 Flashback Blue
+  SKIP: no product found
+[25/30] UPC=845423024680 RAZOR RIPSTER.
+  SKIP: no product found
+[26/30] UPC=845423003838 RAZOR
+  OK: Razor S Spark Sport
+[27/30] UPC=845423014063 Berry Lux Scooter
+  SKIP: no product found
+[28/30] UPC=845423019242 Jetts DLX Blue SMU
+  SKIP: no product found
+[29/30] UPC=845423018030 A SCOOTER - RED
+  SKIP: no product found
+[30/30] UPC=845423022396 razor scooter clear
+  ERROR: Page.goto: net::ERR_NETWORK_IO_SUSPENDED at https://razor.com/?s=razor+scooter+clear
+Call log:
+  - navigating to "https://razor.com/?s=razor+scooter+clear", waiting until "domcontentloaded"
+
+
+Done: 4/30 products saved

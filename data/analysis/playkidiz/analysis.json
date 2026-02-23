@@ -1,0 +1,388 @@
+{
+  "site_id": "playkidiz",
+  "base_url": "https://playkidiz.com",
+  "samples": [
+    {
+      "upc": "786138700264",
+      "name": "CLEANING PLAY SET",
+      "product_url": ""
+    },
+    {
+      "upc": "786138705696",
+      "name": "DELUXE SHOPPING CART W REGISTER",
+      "product_url": ""
+    },
+    {
+      "upc": "786138803149",
+      "name": "PUDDLE JUMPER PINK",
+      "product_url": ""
+    }
+  ],
+  "baseline": {
+    "title": "Playkidiz",
+    "og_title": "",
+    "og_description": "",
+    "og_image": "",
+    "meta_description": "",
+    "json_ld_product": null,
+    "h1": "Popular Products"
+  },
+  "strategies": {
+    "direct_p": {
+      "results": [
+        {
+          "upc": "786138700264",
+          "url_tried": "https://playkidiz.com/?p=786138700264",
+          "title": "Page not found \u2013 Playkidiz",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "404",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://playkidiz.com/?p=786138700264",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138705696",
+          "url_tried": "https://playkidiz.com/?p=786138705696",
+          "title": "Search Results for \u201c786138705696\u201d \u2013 Playkidiz",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://playkidiz.com/?p=786138705696",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138803149",
+          "url_tried": "https://playkidiz.com/?p=786138803149",
+          "title": "Search Results for \u201c786138803149\u201d \u2013 Playkidiz",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://playkidiz.com/?p=786138803149",
+          "not_found": false,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 3,
+        "unique_images": 0
+      },
+      "score": 45
+    },
+    "search_q_upc": {
+      "results": [
+        {
+          "upc": "786138700264",
+          "url_tried": "https://playkidiz.com/search?q=786138700264",
+          "title": "Page not found \u2013 Playkidiz",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "404",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://playkidiz.com/search?q=786138700264",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138705696",
+          "url_tried": "https://playkidiz.com/search?q=786138705696",
+          "title": "Page not found \u2013 Playkidiz",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "404",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://playkidiz.com/search?q=786138705696",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138803149",
+          "url_tried": "https://playkidiz.com/search?q=786138803149",
+          "title": "Page not found \u2013 Playkidiz",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "404",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://playkidiz.com/search?q=786138803149",
+          "not_found": true,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 35
+    },
+    "search_s_upc": {
+      "results": [
+        {
+          "upc": "786138700264",
+          "url_tried": "https://playkidiz.com/?s=786138700264",
+          "title": "26pc Stamp Set \u2013 Emoji \u2013 Playkidiz",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://playkidiz.com/product/26pc-stamp-set-emoji/",
+          "final_url": "https://playkidiz.com/product/26pc-stamp-set-emoji/",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138705696",
+          "url_tried": "https://playkidiz.com/?s=786138705696",
+          "title": "Search Results for \u201c786138705696\u201d \u2013 Playkidiz",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://playkidiz.com/?s=786138705696",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138803149",
+          "url_tried": "https://playkidiz.com/?s=786138803149",
+          "title": "Search Results for \u201c786138803149\u201d \u2013 Playkidiz",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://playkidiz.com/?s=786138803149",
+          "not_found": false,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 3,
+        "unique_images": 0
+      },
+      "score": 45
+    },
+    "shopify_search": {
+      "results": [
+        {
+          "upc": "786138700264",
+          "url_tried": "https://playkidiz.com/search?type=product&q=786138700264",
+          "title": "Page not found \u2013 Playkidiz",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "404",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://playkidiz.com/search?type=product&q=786138700264",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138705696",
+          "url_tried": "https://playkidiz.com/search?type=product&q=786138705696",
+          "title": "Page not found \u2013 Playkidiz",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "404",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://playkidiz.com/search?type=product&q=786138705696",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138803149",
+          "url_tried": "https://playkidiz.com/search?type=product&q=786138803149",
+          "title": "Page not found \u2013 Playkidiz",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "404",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://playkidiz.com/search?type=product&q=786138803149",
+          "not_found": true,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 35
+    },
+    "search_q_name": {
+      "results": [
+        {
+          "upc": "786138700264",
+          "url_tried": "https://playkidiz.com/search?q=CLEANING+PLAY+SET",
+          "title": "Page not found \u2013 Playkidiz",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "404",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://playkidiz.com/search?q=CLEANING+PLAY+SET",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138705696",
+          "url_tried": "https://playkidiz.com/search?q=DELUXE+SHOPPING+CART+W+REGISTER",
+          "title": "Page not found \u2013 Playkidiz",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "404",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://playkidiz.com/search?q=DELUXE+SHOPPING+CART+W+REGISTER",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138803149",
+          "url_tried": "https://playkidiz.com/search?q=PUDDLE+JUMPER+PINK",
+          "title": "Page not found \u2013 Playkidiz",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "404",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://playkidiz.com/search?q=PUDDLE+JUMPER+PINK",
+          "not_found": true,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 35
+    },
+    "search_s_name": {
+      "results": [
+        {
+          "upc": "786138700264",
+          "url_tried": "https://playkidiz.com/?s=CLEANING+PLAY+SET",
+          "title": "PlayKidiz Cleaning Pail set, 6Pcs \u2013 Stand \u2013 Playkidiz",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://playkidiz.com/product/playkidiz-cleaning-pail-set-6pcs-stand/",
+          "final_url": "https://playkidiz.com/product/playkidiz-cleaning-pail-set-6pcs-stand/",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138705696",
+          "url_tried": "https://playkidiz.com/?s=DELUXE+SHOPPING+CART+W+REGISTER",
+          "title": "Search Results for \u201cDELUXE SHOPPING CART W REGISTER\u201d \u2013 Playkidiz",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://playkidiz.com/?s=DELUXE+SHOPPING+CART+W+REGISTER",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138803149",
+          "url_tried": "https://playkidiz.com/?s=PUDDLE+JUMPER+PINK",
+          "title": "Search Results for \u201cPUDDLE JUMPER PINK\u201d \u2013 Playkidiz",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://playkidiz.com/?s=PUDDLE+JUMPER+PINK",
+          "not_found": false,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 3,
+        "unique_images": 0
+      },
+      "score": 45
+    }
+  },
+  "best": "direct_p",
+  "best_score": 45
+}

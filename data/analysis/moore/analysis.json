@@ -1,0 +1,388 @@
+{
+  "site_id": "moore",
+  "base_url": "https://www.mooreoffice.com",
+  "samples": [
+    {
+      "upc": "786138700080",
+      "name": "SEQUIN BACJPACK",
+      "product_url": ""
+    },
+    {
+      "upc": "786138701667",
+      "name": "200 SHEET PROTECTORS (MOORE)",
+      "product_url": ""
+    },
+    {
+      "upc": "86138103219",
+      "name": "MOORE 3 ZIPPER PENCIL CASE",
+      "product_url": ""
+    }
+  ],
+  "baseline": {
+    "title": "Maintenance is in progress!",
+    "og_title": "",
+    "og_description": "",
+    "og_image": "",
+    "meta_description": "",
+    "json_ld_product": null,
+    "h1": "Une maintenance est en cours!"
+  },
+  "strategies": {
+    "direct_p": {
+      "results": [
+        {
+          "upc": "786138700080",
+          "url_tried": "https://www.mooreoffice.com/?p=786138700080",
+          "title": "Maintenance is in progress!",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Une maintenance est en cours!",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.mooreoffice.com/?p=786138700080",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138701667",
+          "url_tried": "https://www.mooreoffice.com/?p=786138701667",
+          "title": "Maintenance is in progress!",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Une maintenance est en cours!",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.mooreoffice.com/?p=786138701667",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "86138103219",
+          "url_tried": "https://www.mooreoffice.com/?p=86138103219",
+          "title": "Maintenance is in progress!",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Une maintenance est en cours!",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.mooreoffice.com/?p=86138103219",
+          "not_found": false,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 5
+    },
+    "search_q_upc": {
+      "results": [
+        {
+          "upc": "786138700080",
+          "url_tried": "https://www.mooreoffice.com/search?q=786138700080",
+          "title": "404 Not Found",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Not Found",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.mooreoffice.com/search?q=786138700080",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138701667",
+          "url_tried": "https://www.mooreoffice.com/search?q=786138701667",
+          "title": "404 Not Found",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Not Found",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.mooreoffice.com/search?q=786138701667",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "86138103219",
+          "url_tried": "https://www.mooreoffice.com/search?q=86138103219",
+          "title": "404 Not Found",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Not Found",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.mooreoffice.com/search?q=86138103219",
+          "not_found": true,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 35
+    },
+    "search_s_upc": {
+      "results": [
+        {
+          "upc": "786138700080",
+          "url_tried": "https://www.mooreoffice.com/?s=786138700080",
+          "title": "Maintenance is in progress!",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Une maintenance est en cours!",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.mooreoffice.com/?s=786138700080",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138701667",
+          "url_tried": "https://www.mooreoffice.com/?s=786138701667",
+          "title": "Maintenance is in progress!",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Une maintenance est en cours!",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.mooreoffice.com/?s=786138701667",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "86138103219",
+          "url_tried": "https://www.mooreoffice.com/?s=86138103219",
+          "title": "Maintenance is in progress!",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Une maintenance est en cours!",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.mooreoffice.com/?s=86138103219",
+          "not_found": false,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 5
+    },
+    "shopify_search": {
+      "results": [
+        {
+          "upc": "786138700080",
+          "url_tried": "https://www.mooreoffice.com/search?type=product&q=786138700080",
+          "title": "404 Not Found",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Not Found",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.mooreoffice.com/search?type=product&q=786138700080",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138701667",
+          "url_tried": "https://www.mooreoffice.com/search?type=product&q=786138701667",
+          "title": "404 Not Found",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Not Found",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.mooreoffice.com/search?type=product&q=786138701667",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "86138103219",
+          "url_tried": "https://www.mooreoffice.com/search?type=product&q=86138103219",
+          "title": "404 Not Found",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Not Found",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.mooreoffice.com/search?type=product&q=86138103219",
+          "not_found": true,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 35
+    },
+    "search_q_name": {
+      "results": [
+        {
+          "upc": "786138700080",
+          "url_tried": "https://www.mooreoffice.com/search?q=SEQUIN+BACJPACK",
+          "title": "404 Not Found",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Not Found",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.mooreoffice.com/search?q=SEQUIN+BACJPACK",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138701667",
+          "url_tried": "https://www.mooreoffice.com/search?q=200+SHEET+PROTECTORS+%28MOORE%29",
+          "title": "404 Not Found",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Not Found",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.mooreoffice.com/search?q=200+SHEET+PROTECTORS+%28MOORE%29",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "86138103219",
+          "url_tried": "https://www.mooreoffice.com/search?q=MOORE+3+ZIPPER+PENCIL+CASE",
+          "title": "404 Not Found",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Not Found",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.mooreoffice.com/search?q=MOORE+3+ZIPPER+PENCIL+CASE",
+          "not_found": true,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 35
+    },
+    "search_s_name": {
+      "results": [
+        {
+          "upc": "786138700080",
+          "url_tried": "https://www.mooreoffice.com/?s=SEQUIN+BACJPACK",
+          "title": "Maintenance is in progress!",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Une maintenance est en cours!",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.mooreoffice.com/?s=SEQUIN+BACJPACK",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138701667",
+          "url_tried": "https://www.mooreoffice.com/?s=200+SHEET+PROTECTORS+%28MOORE%29",
+          "title": "Maintenance is in progress!",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Une maintenance est en cours!",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.mooreoffice.com/?s=200+SHEET+PROTECTORS+%28MOORE%29",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "86138103219",
+          "url_tried": "https://www.mooreoffice.com/?s=MOORE+3+ZIPPER+PENCIL+CASE",
+          "title": "Maintenance is in progress!",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Une maintenance est en cours!",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.mooreoffice.com/?s=MOORE+3+ZIPPER+PENCIL+CASE",
+          "not_found": false,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 5
+    }
+  },
+  "best": "search_q_upc",
+  "best_score": 35
+}

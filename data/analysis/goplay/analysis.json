@@ -1,0 +1,388 @@
+{
+  "site_id": "goplay",
+  "base_url": "https://www.goplay.shopping",
+  "samples": [
+    {
+      "upc": "786138702633",
+      "name": "SHOOTER PLAYSET",
+      "product_url": ""
+    },
+    {
+      "upc": "786138709267",
+      "name": "Car Launcher",
+      "product_url": ""
+    },
+    {
+      "upc": "786138709410",
+      "name": "Planes Launcher",
+      "product_url": ""
+    }
+  ],
+  "baseline": {
+    "title": "GoPlay",
+    "og_title": "GoPlay",
+    "og_description": "GoPlay offers high-quality toys, gifts, plushies, and learning products for kids. Fast shipping, premium experience, and curated collections parents trust.",
+    "og_image": "http://www.goplay.shopping/cdn/shop/files/D44D237D-4B96-4771-ACBB-5CE54EA3E818.png?v=1764919370",
+    "meta_description": "",
+    "json_ld_product": null,
+    "h1": ""
+  },
+  "strategies": {
+    "direct_p": {
+      "results": [
+        {
+          "upc": "786138702633",
+          "url_tried": "https://www.goplay.shopping/?p=786138702633",
+          "title": "GoPlay",
+          "og_title": "GoPlay",
+          "og_description": "GoPlay offers high-quality toys, gifts, plushies, and learning products for kids. Fast shipping, premium experience, and curated collections parents trust.",
+          "og_image": "http://www.goplay.shopping/cdn/shop/files/D44D237D-4B96-4771-ACBB-5CE54EA3E818.png?v=1764919370",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.goplay.shopping/password",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138709267",
+          "url_tried": "https://www.goplay.shopping/?p=786138709267",
+          "title": "GoPlay",
+          "og_title": "GoPlay",
+          "og_description": "GoPlay offers high-quality toys, gifts, plushies, and learning products for kids. Fast shipping, premium experience, and curated collections parents trust.",
+          "og_image": "http://www.goplay.shopping/cdn/shop/files/D44D237D-4B96-4771-ACBB-5CE54EA3E818.png?v=1764919370",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.goplay.shopping/password",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138709410",
+          "url_tried": "https://www.goplay.shopping/?p=786138709410",
+          "title": "GoPlay",
+          "og_title": "GoPlay",
+          "og_description": "GoPlay offers high-quality toys, gifts, plushies, and learning products for kids. Fast shipping, premium experience, and curated collections parents trust.",
+          "og_image": "http://www.goplay.shopping/cdn/shop/files/D44D237D-4B96-4771-ACBB-5CE54EA3E818.png?v=1764919370",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.goplay.shopping/password",
+          "not_found": false,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 1
+      },
+      "score": 14
+    },
+    "search_q_upc": {
+      "results": [
+        {
+          "upc": "786138702633",
+          "url_tried": "https://www.goplay.shopping/search?q=786138702633",
+          "title": "GoPlay",
+          "og_title": "GoPlay",
+          "og_description": "GoPlay offers high-quality toys, gifts, plushies, and learning products for kids. Fast shipping, premium experience, and curated collections parents trust.",
+          "og_image": "http://www.goplay.shopping/cdn/shop/files/D44D237D-4B96-4771-ACBB-5CE54EA3E818.png?v=1764919370",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.goplay.shopping/password",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138709267",
+          "url_tried": "https://www.goplay.shopping/search?q=786138709267",
+          "title": "GoPlay",
+          "og_title": "GoPlay",
+          "og_description": "GoPlay offers high-quality toys, gifts, plushies, and learning products for kids. Fast shipping, premium experience, and curated collections parents trust.",
+          "og_image": "http://www.goplay.shopping/cdn/shop/files/D44D237D-4B96-4771-ACBB-5CE54EA3E818.png?v=1764919370",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.goplay.shopping/password",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138709410",
+          "url_tried": "https://www.goplay.shopping/search?q=786138709410",
+          "title": "GoPlay",
+          "og_title": "GoPlay",
+          "og_description": "GoPlay offers high-quality toys, gifts, plushies, and learning products for kids. Fast shipping, premium experience, and curated collections parents trust.",
+          "og_image": "http://www.goplay.shopping/cdn/shop/files/D44D237D-4B96-4771-ACBB-5CE54EA3E818.png?v=1764919370",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.goplay.shopping/password",
+          "not_found": false,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 1
+      },
+      "score": 14
+    },
+    "search_s_upc": {
+      "results": [
+        {
+          "upc": "786138702633",
+          "url_tried": "https://www.goplay.shopping/?s=786138702633",
+          "title": "GoPlay",
+          "og_title": "GoPlay",
+          "og_description": "GoPlay offers high-quality toys, gifts, plushies, and learning products for kids. Fast shipping, premium experience, and curated collections parents trust.",
+          "og_image": "http://www.goplay.shopping/cdn/shop/files/D44D237D-4B96-4771-ACBB-5CE54EA3E818.png?v=1764919370",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.goplay.shopping/password",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138709267",
+          "url_tried": "https://www.goplay.shopping/?s=786138709267",
+          "title": "GoPlay",
+          "og_title": "GoPlay",
+          "og_description": "GoPlay offers high-quality toys, gifts, plushies, and learning products for kids. Fast shipping, premium experience, and curated collections parents trust.",
+          "og_image": "http://www.goplay.shopping/cdn/shop/files/D44D237D-4B96-4771-ACBB-5CE54EA3E818.png?v=1764919370",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.goplay.shopping/password",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138709410",
+          "url_tried": "https://www.goplay.shopping/?s=786138709410",
+          "title": "GoPlay",
+          "og_title": "GoPlay",
+          "og_description": "GoPlay offers high-quality toys, gifts, plushies, and learning products for kids. Fast shipping, premium experience, and curated collections parents trust.",
+          "og_image": "http://www.goplay.shopping/cdn/shop/files/D44D237D-4B96-4771-ACBB-5CE54EA3E818.png?v=1764919370",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.goplay.shopping/password",
+          "not_found": false,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 1
+      },
+      "score": 14
+    },
+    "shopify_search": {
+      "results": [
+        {
+          "upc": "786138702633",
+          "url_tried": "https://www.goplay.shopping/search?type=product&q=786138702633",
+          "title": "GoPlay",
+          "og_title": "GoPlay",
+          "og_description": "GoPlay offers high-quality toys, gifts, plushies, and learning products for kids. Fast shipping, premium experience, and curated collections parents trust.",
+          "og_image": "http://www.goplay.shopping/cdn/shop/files/D44D237D-4B96-4771-ACBB-5CE54EA3E818.png?v=1764919370",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.goplay.shopping/password",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138709267",
+          "url_tried": "https://www.goplay.shopping/search?type=product&q=786138709267",
+          "title": "GoPlay",
+          "og_title": "GoPlay",
+          "og_description": "GoPlay offers high-quality toys, gifts, plushies, and learning products for kids. Fast shipping, premium experience, and curated collections parents trust.",
+          "og_image": "http://www.goplay.shopping/cdn/shop/files/D44D237D-4B96-4771-ACBB-5CE54EA3E818.png?v=1764919370",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.goplay.shopping/password",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138709410",
+          "url_tried": "https://www.goplay.shopping/search?type=product&q=786138709410",
+          "title": "GoPlay",
+          "og_title": "GoPlay",
+          "og_description": "GoPlay offers high-quality toys, gifts, plushies, and learning products for kids. Fast shipping, premium experience, and curated collections parents trust.",
+          "og_image": "http://www.goplay.shopping/cdn/shop/files/D44D237D-4B96-4771-ACBB-5CE54EA3E818.png?v=1764919370",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.goplay.shopping/password",
+          "not_found": false,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 1
+      },
+      "score": 14
+    },
+    "search_q_name": {
+      "results": [
+        {
+          "upc": "786138702633",
+          "url_tried": "https://www.goplay.shopping/search?q=SHOOTER+PLAYSET",
+          "title": "GoPlay",
+          "og_title": "GoPlay",
+          "og_description": "GoPlay offers high-quality toys, gifts, plushies, and learning products for kids. Fast shipping, premium experience, and curated collections parents trust.",
+          "og_image": "http://www.goplay.shopping/cdn/shop/files/D44D237D-4B96-4771-ACBB-5CE54EA3E818.png?v=1764919370",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.goplay.shopping/password",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138709267",
+          "url_tried": "https://www.goplay.shopping/search?q=Car+Launcher",
+          "title": "GoPlay",
+          "og_title": "GoPlay",
+          "og_description": "GoPlay offers high-quality toys, gifts, plushies, and learning products for kids. Fast shipping, premium experience, and curated collections parents trust.",
+          "og_image": "http://www.goplay.shopping/cdn/shop/files/D44D237D-4B96-4771-ACBB-5CE54EA3E818.png?v=1764919370",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.goplay.shopping/password",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138709410",
+          "url_tried": "https://www.goplay.shopping/search?q=Planes+Launcher",
+          "title": "GoPlay",
+          "og_title": "GoPlay",
+          "og_description": "GoPlay offers high-quality toys, gifts, plushies, and learning products for kids. Fast shipping, premium experience, and curated collections parents trust.",
+          "og_image": "http://www.goplay.shopping/cdn/shop/files/D44D237D-4B96-4771-ACBB-5CE54EA3E818.png?v=1764919370",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.goplay.shopping/password",
+          "not_found": false,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 1
+      },
+      "score": 14
+    },
+    "search_s_name": {
+      "results": [
+        {
+          "upc": "786138702633",
+          "url_tried": "https://www.goplay.shopping/?s=SHOOTER+PLAYSET",
+          "title": "GoPlay",
+          "og_title": "GoPlay",
+          "og_description": "GoPlay offers high-quality toys, gifts, plushies, and learning products for kids. Fast shipping, premium experience, and curated collections parents trust.",
+          "og_image": "http://www.goplay.shopping/cdn/shop/files/D44D237D-4B96-4771-ACBB-5CE54EA3E818.png?v=1764919370",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.goplay.shopping/password",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138709267",
+          "url_tried": "https://www.goplay.shopping/?s=Car+Launcher",
+          "title": "GoPlay",
+          "og_title": "GoPlay",
+          "og_description": "GoPlay offers high-quality toys, gifts, plushies, and learning products for kids. Fast shipping, premium experience, and curated collections parents trust.",
+          "og_image": "http://www.goplay.shopping/cdn/shop/files/D44D237D-4B96-4771-ACBB-5CE54EA3E818.png?v=1764919370",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.goplay.shopping/password",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "786138709410",
+          "url_tried": "https://www.goplay.shopping/?s=Planes+Launcher",
+          "title": "GoPlay",
+          "og_title": "GoPlay",
+          "og_description": "GoPlay offers high-quality toys, gifts, plushies, and learning products for kids. Fast shipping, premium experience, and curated collections parents trust.",
+          "og_image": "http://www.goplay.shopping/cdn/shop/files/D44D237D-4B96-4771-ACBB-5CE54EA3E818.png?v=1764919370",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.goplay.shopping/password",
+          "not_found": false,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 1
+      },
+      "score": 14
+    }
+  },
+  "best": "direct_p",
+  "best_score": 14
+}

@@ -1,0 +1,388 @@
+{
+  "site_id": "microkick",
+  "base_url": "https://microkickboard.com",
+  "samples": [
+    {
+      "upc": "7640108560735",
+      "name": "Micro Maxi Deluxe Scooter- Pink",
+      "product_url": ""
+    },
+    {
+      "upc": "7630053532475",
+      "name": "Micro Scooters Maxi Deluxe Eco Scooter - Green",
+      "product_url": ""
+    },
+    {
+      "upc": "7640108560339",
+      "name": "Micro Mini Deluxe Scooter - Blue",
+      "product_url": ""
+    }
+  ],
+  "baseline": {
+    "title": "Micro Kickboard",
+    "og_title": "Micro Kickboard",
+    "og_description": "Shop top-rated Micro Kickboard scooters with Swiss-designed quality. 2-wheeled and 3-wheeled kick scooters for kids, teenagers, and adults. High-quality, long-lasting scooters that will grow with your kids and provide miles of smiles.",
+    "og_image": "https://microkickboard.com/cdn/shop/files/Branded_Micro_Social_Share_Image_Draft_A.png?v=1761832156&amp;width=1200&amp;cb=1",
+    "meta_description": "Shop top-rated Micro Kickboard scooters with Swiss-designed quality. 2-wheeled and 3-wheeled kick scooters for kids, teenagers, and adults. High-quality, long-lasting scooters that will grow with your kids and provide miles of smiles.",
+    "json_ld_product": null,
+    "h1": "Cart0 items"
+  },
+  "strategies": {
+    "direct_p": {
+      "results": [
+        {
+          "upc": "7640108560735",
+          "url_tried": "https://microkickboard.com/?p=7640108560735",
+          "title": "Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard",
+          "og_title": "Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard",
+          "og_description": "The Micro Mini Rock &amp; Go LED is our newest Mini scooter for young children, featuring 6 configurations and our iconic light-up wheels!",
+          "og_image": "https://microkickboard.com/cdn/shop/files/PDP-Rock-and-Go-Dusty-Rose-1_63792390-7103-46c6-aa12-6fd80acc4697.png?v=1768499906&amp;width=1200&amp;cb=1",
+          "json_ld_product": true,
+          "h1": "Cart0 items",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://microkickboard.com/products/mini-rock-and-go-led-scooter",
+          "final_url": "https://microkickboard.com/products/mini-rock-and-go-led-scooter",
+          "not_found": false,
+          "meta_description": "The Micro Mini Rock &amp; Go LED is our newest Mini scooter for young children, featuring 6 configurations and our iconic light-up wheels!"
+        },
+        {
+          "upc": "7630053532475",
+          "url_tried": "https://microkickboard.com/?p=7630053532475",
+          "title": "Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard",
+          "og_title": "Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard",
+          "og_description": "The Micro Mini Rock &amp; Go LED is our newest Mini scooter for young children, featuring 6 configurations and our iconic light-up wheels!",
+          "og_image": "https://microkickboard.com/cdn/shop/files/PDP-Rock-and-Go-Dusty-Rose-1_63792390-7103-46c6-aa12-6fd80acc4697.png?v=1768499906&amp;width=1200&amp;cb=1",
+          "json_ld_product": true,
+          "h1": "Cart0 items",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://microkickboard.com/products/mini-rock-and-go-led-scooter",
+          "final_url": "https://microkickboard.com/products/mini-rock-and-go-led-scooter",
+          "not_found": false,
+          "meta_description": "The Micro Mini Rock &amp; Go LED is our newest Mini scooter for young children, featuring 6 configurations and our iconic light-up wheels!"
+        },
+        {
+          "upc": "7640108560339",
+          "url_tried": "https://microkickboard.com/?p=7640108560339",
+          "title": "Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard",
+          "og_title": "Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard",
+          "og_description": "The Micro Mini Rock &amp; Go LED is our newest Mini scooter for young children, featuring 6 configurations and our iconic light-up wheels!",
+          "og_image": "https://microkickboard.com/cdn/shop/files/PDP-Rock-and-Go-Dusty-Rose-1_63792390-7103-46c6-aa12-6fd80acc4697.png?v=1768499906&amp;width=1200&amp;cb=1",
+          "json_ld_product": true,
+          "h1": "Cart0 items",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://microkickboard.com/products/mini-rock-and-go-led-scooter",
+          "final_url": "https://microkickboard.com/products/mini-rock-and-go-led-scooter",
+          "not_found": false,
+          "meta_description": "The Micro Mini Rock &amp; Go LED is our newest Mini scooter for young children, featuring 6 configurations and our iconic light-up wheels!"
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 1
+      },
+      "score": 68
+    },
+    "search_q_upc": {
+      "results": [
+        {
+          "upc": "7640108560735",
+          "url_tried": "https://microkickboard.com/search?q=7640108560735",
+          "title": "Micro Maxi Scooter | Child Scooter | Micro Kickboard",
+          "og_title": "Micro Maxi Scooter | Child Scooter | Micro Kickboard",
+          "og_description": "The Micro Maxi Scooter scooter is a top selling scooter for children. Learn more, view pricing and check out available colors here.",
+          "og_image": "https://microkickboard.com/cdn/shop/files/Final-PDP-Maxi-Lavender-1.png?v=1742577907&amp;width=1200&amp;cb=1",
+          "json_ld_product": true,
+          "h1": "Cart0 items",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://microkickboard.com/products/maxi-scooter?_pos=1&_sid=e1bc6de0d&_ss=r&variant=37130483761304",
+          "final_url": "https://microkickboard.com/products/maxi-scooter?_pos=1&_sid=e1bc6de0d&_ss=r&variant=37130483761304",
+          "not_found": false,
+          "meta_description": "The Micro Maxi Scooter scooter is a top selling scooter for children. Learn more, view pricing and check out available colors here."
+        },
+        {
+          "upc": "7630053532475",
+          "url_tried": "https://microkickboard.com/search?q=7630053532475",
+          "title": "Micro Maxi ECO Scooter | Child Scooter | Micro Kickboard",
+          "og_title": "Micro Maxi ECO Scooter | Child Scooter | Micro Kickboard",
+          "og_description": "For ages 5-12, our Micro Maxi Eco Scooter features parts made from recycled fishing nets and plastic, so now your little one can explore the planet and protect it, too! The Eco",
+          "og_image": "https://microkickboard.com/cdn/shop/files/Final-PDP-Maxi-ECO-Dark-Green-1.png?v=1743011320&amp;width=1200&amp;cb=1",
+          "json_ld_product": true,
+          "h1": "Cart0 items",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://microkickboard.com/products/maxi-eco-scooter?_pos=1&_sid=b684a7114&_ss=r",
+          "final_url": "https://microkickboard.com/products/maxi-eco-scooter?_pos=1&_sid=b684a7114&_ss=r",
+          "not_found": false,
+          "meta_description": "For ages 5-12, our Micro Maxi Eco Scooter features parts made from recycled fishing nets and plastic, so now your little one can explore the planet and protect it, too! The Eco"
+        },
+        {
+          "upc": "7640108560339",
+          "url_tried": "https://microkickboard.com/search?q=7640108560339",
+          "title": "Micro Mini Scooter | Toddler + Child Scooter | Micro Kickboard",
+          "og_title": "Micro Mini Scooter | Toddler + Child Scooter | Micro Kickboard",
+          "og_description": "The Micro Mini Scooter is one of our best selling scooters and sets the industry standard for child scooters. Get more information and view product details here.",
+          "og_image": "https://microkickboard.com/cdn/shop/files/Final-PDP-Mini-Ice-Blue-1.png?v=1766504211&amp;width=1200&amp;cb=1",
+          "json_ld_product": true,
+          "h1": "Cart0 items",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://microkickboard.com/products/micro-mini-scooter?_pos=1&_sid=d9be714e9&_ss=r&variant=37130484842648",
+          "final_url": "https://microkickboard.com/products/micro-mini-scooter?_pos=1&_sid=d9be714e9&_ss=r&variant=37130484842648",
+          "not_found": false,
+          "meta_description": "The Micro Mini Scooter is one of our best selling scooters and sets the industry standard for child scooters. Get more information and view product details here."
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 3,
+        "unique_images": 3
+      },
+      "score": 84
+    },
+    "search_s_upc": {
+      "results": [
+        {
+          "upc": "7640108560735",
+          "url_tried": "https://microkickboard.com/?s=7640108560735",
+          "title": "Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard",
+          "og_title": "Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard",
+          "og_description": "The Micro Mini Rock &amp; Go LED is our newest Mini scooter for young children, featuring 6 configurations and our iconic light-up wheels!",
+          "og_image": "https://microkickboard.com/cdn/shop/files/PDP-Rock-and-Go-Dusty-Rose-1_63792390-7103-46c6-aa12-6fd80acc4697.png?v=1768499906&amp;width=1200&amp;cb=1",
+          "json_ld_product": true,
+          "h1": "Cart0 items",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://microkickboard.com/products/mini-rock-and-go-led-scooter",
+          "final_url": "https://microkickboard.com/products/mini-rock-and-go-led-scooter",
+          "not_found": false,
+          "meta_description": "The Micro Mini Rock &amp; Go LED is our newest Mini scooter for young children, featuring 6 configurations and our iconic light-up wheels!"
+        },
+        {
+          "upc": "7630053532475",
+          "url_tried": "https://microkickboard.com/?s=7630053532475",
+          "title": "Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard",
+          "og_title": "Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard",
+          "og_description": "The Micro Mini Rock &amp; Go LED is our newest Mini scooter for young children, featuring 6 configurations and our iconic light-up wheels!",
+          "og_image": "https://microkickboard.com/cdn/shop/files/PDP-Rock-and-Go-Dusty-Rose-1_63792390-7103-46c6-aa12-6fd80acc4697.png?v=1768499906&amp;width=1200&amp;cb=1",
+          "json_ld_product": true,
+          "h1": "Cart0 items",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://microkickboard.com/products/mini-rock-and-go-led-scooter",
+          "final_url": "https://microkickboard.com/products/mini-rock-and-go-led-scooter",
+          "not_found": false,
+          "meta_description": "The Micro Mini Rock &amp; Go LED is our newest Mini scooter for young children, featuring 6 configurations and our iconic light-up wheels!"
+        },
+        {
+          "upc": "7640108560339",
+          "url_tried": "https://microkickboard.com/?s=7640108560339",
+          "title": "Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard",
+          "og_title": "Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard",
+          "og_description": "The Micro Mini Rock &amp; Go LED is our newest Mini scooter for young children, featuring 6 configurations and our iconic light-up wheels!",
+          "og_image": "https://microkickboard.com/cdn/shop/files/PDP-Rock-and-Go-Dusty-Rose-1_63792390-7103-46c6-aa12-6fd80acc4697.png?v=1768499906&amp;width=1200&amp;cb=1",
+          "json_ld_product": true,
+          "h1": "Cart0 items",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://microkickboard.com/products/mini-rock-and-go-led-scooter",
+          "final_url": "https://microkickboard.com/products/mini-rock-and-go-led-scooter",
+          "not_found": false,
+          "meta_description": "The Micro Mini Rock &amp; Go LED is our newest Mini scooter for young children, featuring 6 configurations and our iconic light-up wheels!"
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 1
+      },
+      "score": 68
+    },
+    "shopify_search": {
+      "results": [
+        {
+          "upc": "7640108560735",
+          "url_tried": "https://microkickboard.com/search?type=product&q=7640108560735",
+          "title": "Micro Maxi Scooter | Child Scooter | Micro Kickboard",
+          "og_title": "Micro Maxi Scooter | Child Scooter | Micro Kickboard",
+          "og_description": "The Micro Maxi Scooter scooter is a top selling scooter for children. Learn more, view pricing and check out available colors here.",
+          "og_image": "https://microkickboard.com/cdn/shop/files/Final-PDP-Maxi-Lavender-1.png?v=1742577907&amp;width=1200&amp;cb=1",
+          "json_ld_product": true,
+          "h1": "Cart0 items",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://microkickboard.com/products/maxi-scooter?_pos=1&_sid=15472a5dc&_ss=r&variant=37130483761304",
+          "final_url": "https://microkickboard.com/products/maxi-scooter?_pos=1&_sid=15472a5dc&_ss=r&variant=37130483761304",
+          "not_found": false,
+          "meta_description": "The Micro Maxi Scooter scooter is a top selling scooter for children. Learn more, view pricing and check out available colors here."
+        },
+        {
+          "upc": "7630053532475",
+          "url_tried": "https://microkickboard.com/search?type=product&q=7630053532475",
+          "title": "Micro Maxi ECO Scooter | Child Scooter | Micro Kickboard",
+          "og_title": "Micro Maxi ECO Scooter | Child Scooter | Micro Kickboard",
+          "og_description": "For ages 5-12, our Micro Maxi Eco Scooter features parts made from recycled fishing nets and plastic, so now your little one can explore the planet and protect it, too! The Eco",
+          "og_image": "https://microkickboard.com/cdn/shop/files/Final-PDP-Maxi-ECO-Dark-Green-1.png?v=1743011320&amp;width=1200&amp;cb=1",
+          "json_ld_product": true,
+          "h1": "Cart0 items",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://microkickboard.com/products/maxi-eco-scooter?_pos=1&_sid=86d549265&_ss=r",
+          "final_url": "https://microkickboard.com/products/maxi-eco-scooter?_pos=1&_sid=86d549265&_ss=r",
+          "not_found": false,
+          "meta_description": "For ages 5-12, our Micro Maxi Eco Scooter features parts made from recycled fishing nets and plastic, so now your little one can explore the planet and protect it, too! The Eco"
+        },
+        {
+          "upc": "7640108560339",
+          "url_tried": "https://microkickboard.com/search?type=product&q=7640108560339",
+          "title": "Search: 2 results found for \"7640108560339\" \u2013 Micro Kickboard",
+          "og_title": "Search: 2 results found for &quot;7640108560339&quot;",
+          "og_description": "Shop top-rated Micro Kickboard scooters with Swiss-designed quality. 2-wheeled and 3-wheeled kick scooters for kids, teenagers, and adults. High-quality, long-lasting scooters that will grow with your kids and provide miles of smiles.",
+          "og_image": "https://microkickboard.com/cdn/shop/files/Branded_Micro_Social_Share_Image_Draft_A.png?v=1761832156&amp;width=1200&amp;cb=1",
+          "json_ld_product": false,
+          "h1": "Cart0 items",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://microkickboard.com/search?type=product&q=7640108560339",
+          "not_found": false,
+          "meta_description": "Shop top-rated Micro Kickboard scooters with Swiss-designed quality. 2-wheeled and 3-wheeled kick scooters for kids, teenagers, and adults. High-quality, long-lasting scooters that will grow with your kids and provide miles of smiles."
+        }
+      ],
+      "non_generic": 2,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 3,
+        "unique_images": 3
+      },
+      "score": 66
+    },
+    "search_q_name": {
+      "results": [
+        {
+          "upc": "7640108560735",
+          "url_tried": "https://microkickboard.com/search?q=Micro+Maxi+Deluxe+Scooter-+Pink",
+          "title": "Micro Maxi LED Scooter | Child Scooter | Micro Kickboard",
+          "og_title": "Micro Maxi LED Scooter | Child Scooter | Micro Kickboard",
+          "og_description": "The Micro Maxi LED Scooter is fresh look for a classic scooter, now featuring light-up wheels. Check it out and view available colors here.",
+          "og_image": "https://microkickboard.com/cdn/shop/files/Final-PDP-Maxi-LED-Aqua-1.png?v=1766505934&amp;width=1200&amp;cb=1",
+          "json_ld_product": true,
+          "h1": "Cart0 items",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://microkickboard.com/products/maxi-led-scooter?_pos=1&_sid=71311da8d&_ss=r&variant=37130502209688",
+          "final_url": "https://microkickboard.com/products/maxi-led-scooter?_pos=1&_sid=71311da8d&_ss=r&variant=37130502209688",
+          "not_found": false,
+          "meta_description": "The Micro Maxi LED Scooter is fresh look for a classic scooter, now featuring light-up wheels. Check it out and view available colors here."
+        },
+        {
+          "upc": "7630053532475",
+          "url_tried": "https://microkickboard.com/search?q=Micro+Scooters+Maxi+Deluxe+Eco+Scooter+-+Green",
+          "title": "Parts: Handlebar Grips for Mini &amp; Maxi \u2013 Micro Kickboard",
+          "og_title": "Parts: Handlebar Grips for Mini &amp; Maxi",
+          "og_description": "This set of two rubber handle bar grips make it easy to update the T-grip portion of your scooter.",
+          "og_image": "https://microkickboard.com/cdn/shop/files/PDP-SKU-Neon-Pink-Handlebar-Grips-Mini.png?v=1747945672&amp;width=1200&amp;cb=1",
+          "json_ld_product": true,
+          "h1": "Cart0 items",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://microkickboard.com/products/micro-mini-maxi-handgrips?_pos=2&_sid=76a5b7343&_ss=r&variant=45505536393368",
+          "final_url": "https://microkickboard.com/products/micro-mini-maxi-handgrips?_pos=2&_sid=76a5b7343&_ss=r&variant=45505536393368",
+          "not_found": false,
+          "meta_description": "This set of two rubber handle bar grips make it easy to update the T-grip portion of your scooter."
+        },
+        {
+          "upc": "7640108560339",
+          "url_tried": "https://microkickboard.com/search?q=Micro+Mini+Deluxe+Scooter+-+Blue",
+          "title": "Micro Mini Scooter | Toddler + Child Scooter | Micro Kickboard",
+          "og_title": "Micro Mini Scooter | Toddler + Child Scooter | Micro Kickboard",
+          "og_description": "The Micro Mini Scooter is one of our best selling scooters and sets the industry standard for child scooters. Get more information and view product details here.",
+          "og_image": "https://microkickboard.com/cdn/shop/files/Final-PDP-Mini-Ice-Blue-1.png?v=1766504211&amp;width=1200&amp;cb=1",
+          "json_ld_product": true,
+          "h1": "Cart0 items",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://microkickboard.com/products/micro-mini-scooter?_pos=1&_sid=4d84bc626&_ss=r&variant=37130484842648",
+          "final_url": "https://microkickboard.com/products/micro-mini-scooter?_pos=1&_sid=4d84bc626&_ss=r&variant=37130484842648",
+          "not_found": false,
+          "meta_description": "The Micro Mini Scooter is one of our best selling scooters and sets the industry standard for child scooters. Get more information and view product details here."
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 3,
+        "unique_images": 3
+      },
+      "score": 84
+    },
+    "search_s_name": {
+      "results": [
+        {
+          "upc": "7640108560735",
+          "url_tried": "https://microkickboard.com/?s=Micro+Maxi+Deluxe+Scooter-+Pink",
+          "title": "Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard",
+          "og_title": "Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard",
+          "og_description": "The Micro Mini Rock &amp; Go LED is our newest Mini scooter for young children, featuring 6 configurations and our iconic light-up wheels!",
+          "og_image": "https://microkickboard.com/cdn/shop/files/PDP-Rock-and-Go-Dusty-Rose-1_63792390-7103-46c6-aa12-6fd80acc4697.png?v=1768499906&amp;width=1200&amp;cb=1",
+          "json_ld_product": true,
+          "h1": "Cart0 items",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://microkickboard.com/products/mini-rock-and-go-led-scooter",
+          "final_url": "https://microkickboard.com/products/mini-rock-and-go-led-scooter",
+          "not_found": false,
+          "meta_description": "The Micro Mini Rock &amp; Go LED is our newest Mini scooter for young children, featuring 6 configurations and our iconic light-up wheels!"
+        },
+        {
+          "upc": "7630053532475",
+          "url_tried": "https://microkickboard.com/?s=Micro+Scooters+Maxi+Deluxe+Eco+Scooter+-+Green",
+          "title": "Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard",
+          "og_title": "Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard",
+          "og_description": "The Micro Mini Rock &amp; Go LED is our newest Mini scooter for young children, featuring 6 configurations and our iconic light-up wheels!",
+          "og_image": "https://microkickboard.com/cdn/shop/files/PDP-Rock-and-Go-Dusty-Rose-1_63792390-7103-46c6-aa12-6fd80acc4697.png?v=1768499906&amp;width=1200&amp;cb=1",
+          "json_ld_product": true,
+          "h1": "Cart0 items",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://microkickboard.com/products/mini-rock-and-go-led-scooter",
+          "final_url": "https://microkickboard.com/products/mini-rock-and-go-led-scooter",
+          "not_found": false,
+          "meta_description": "The Micro Mini Rock &amp; Go LED is our newest Mini scooter for young children, featuring 6 configurations and our iconic light-up wheels!"
+        },
+        {
+          "upc": "7640108560339",
+          "url_tried": "https://microkickboard.com/?s=Micro+Mini+Deluxe+Scooter+-+Blue",
+          "title": "Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard",
+          "og_title": "Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard",
+          "og_description": "The Micro Mini Rock &amp; Go LED is our newest Mini scooter for young children, featuring 6 configurations and our iconic light-up wheels!",
+          "og_image": "https://microkickboard.com/cdn/shop/files/PDP-Rock-and-Go-Dusty-Rose-1_63792390-7103-46c6-aa12-6fd80acc4697.png?v=1768499906&amp;width=1200&amp;cb=1",
+          "json_ld_product": true,
+          "h1": "Cart0 items",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://microkickboard.com/products/mini-rock-and-go-led-scooter",
+          "final_url": "https://microkickboard.com/products/mini-rock-and-go-led-scooter",
+          "not_found": false,
+          "meta_description": "The Micro Mini Rock &amp; Go LED is our newest Mini scooter for young children, featuring 6 configurations and our iconic light-up wheels!"
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 1
+      },
+      "score": 68
+    }
+  },
+  "best": "search_q_upc",
+  "best_score": 84
+}

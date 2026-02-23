@@ -1,0 +1,22 @@
+/Users/shloimy/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[1/9] UPC=7640108560735 Micro Maxi Deluxe Scooter- Pink
+  OK: Micro Maxi Scooter
+[2/9] UPC=7640170574289 Mini Deluxe Ice Blue
+  OK: Micro Mini Scooter
+[3/9] UPC=7640108560308 Micro Mini Deluxe Scooter- pink
+  OK: Micro Mini Scooter
+[4/9] UPC=7630053532475 Micro Scooters Maxi Deluxe Eco Scooter -
+  OK: Micro Maxi ECO Scooter
+[5/9] UPC=7630053542016 Micro Scooters Ride on Air Hopper - Blue
+  SKIP: no product found
+[6/9] UPC=7630053542030 Micro Air Hopper - Pink
+  SKIP: no product found
+[7/9] UPC=7640108560339 Micro Mini Deluxe Scooter - Blue
+  OK: Micro Mini Scooter
+[8/9] UPC=7640108560759 Micro Maxi Deluxe - Blue
+  OK: Micro Maxi Scooter
+[9/9] UPC=7640170572940 Micro Mini Deluxe Blue Ocean
+  OK: Micro Mini Scooter
+
+Done: 7/9 products saved

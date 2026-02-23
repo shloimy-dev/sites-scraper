@@ -1,0 +1,388 @@
+{
+  "site_id": "gi_go",
+  "base_url": "https://www.gigotoys.com.hk",
+  "samples": [
+    {
+      "upc": "93905191560",
+      "name": "12\" baby and musical potty",
+      "product_url": ""
+    },
+    {
+      "upc": "93905805054",
+      "name": "16\" Best Friends",
+      "product_url": ""
+    },
+    {
+      "upc": "93905205045",
+      "name": "12\" Girl Hair Play Set",
+      "product_url": ""
+    }
+  ],
+  "baseline": {
+    "title": "GiGO",
+    "og_title": "",
+    "og_description": "",
+    "og_image": "",
+    "meta_description": "",
+    "json_ld_product": null,
+    "h1": ""
+  },
+  "strategies": {
+    "direct_p": {
+      "results": [
+        {
+          "upc": "93905191560",
+          "url_tried": "https://www.gigotoys.com.hk/?p=93905191560",
+          "title": "",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.gigotoys.com.hk/?p=93905191560",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "93905805054",
+          "url_tried": "https://www.gigotoys.com.hk/?p=93905805054",
+          "title": "",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.gigotoys.com.hk/?p=93905805054",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "93905205045",
+          "url_tried": "https://www.gigotoys.com.hk/?p=93905205045",
+          "title": "",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.gigotoys.com.hk/?p=93905205045",
+          "not_found": false,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 0,
+        "unique_images": 0
+      },
+      "score": 0
+    },
+    "search_q_upc": {
+      "results": [
+        {
+          "upc": "93905191560",
+          "url_tried": "https://www.gigotoys.com.hk/search?q=93905191560",
+          "title": "",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.gigotoys.com.hk/search?q=93905191560",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "93905805054",
+          "url_tried": "https://www.gigotoys.com.hk/search?q=93905805054",
+          "title": "",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.gigotoys.com.hk/search?q=93905805054",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "93905205045",
+          "url_tried": "https://www.gigotoys.com.hk/search?q=93905205045",
+          "title": "",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.gigotoys.com.hk/search?q=93905205045",
+          "not_found": false,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 0,
+        "unique_images": 0
+      },
+      "score": 0
+    },
+    "search_s_upc": {
+      "results": [
+        {
+          "upc": "93905191560",
+          "url_tried": "https://www.gigotoys.com.hk/?s=93905191560",
+          "title": "GiGO",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.gigotoys.com.hk/?s=93905191560",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "93905805054",
+          "url_tried": "https://www.gigotoys.com.hk/?s=93905805054",
+          "title": "GiGO",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.gigotoys.com.hk/?s=93905805054",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "93905205045",
+          "url_tried": "https://www.gigotoys.com.hk/?s=93905205045",
+          "title": "GiGO",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.gigotoys.com.hk/?s=93905205045",
+          "not_found": false,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 5
+    },
+    "shopify_search": {
+      "results": [
+        {
+          "upc": "93905191560",
+          "url_tried": "https://www.gigotoys.com.hk/search?type=product&q=93905191560",
+          "title": "GiGO",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.gigotoys.com.hk/search?type=product&q=93905191560",
+          "not_found": false,
+          "meta_description": "GiGO"
+        },
+        {
+          "upc": "93905805054",
+          "url_tried": "https://www.gigotoys.com.hk/search?type=product&q=93905805054",
+          "title": "GiGO",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.gigotoys.com.hk/search?type=product&q=93905805054",
+          "not_found": false,
+          "meta_description": "GiGO"
+        },
+        {
+          "upc": "93905205045",
+          "url_tried": "https://www.gigotoys.com.hk/search?type=product&q=93905205045",
+          "title": "GiGO",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.gigotoys.com.hk/search?type=product&q=93905205045",
+          "not_found": false,
+          "meta_description": "GiGO"
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 5
+    },
+    "search_q_name": {
+      "results": [
+        {
+          "upc": "93905191560",
+          "url_tried": "https://www.gigotoys.com.hk/search?q=12%22+baby+and+musical+potty",
+          "title": "",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.gigotoys.com.hk/search?q=12%22+baby+and+musical+potty",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "93905805054",
+          "url_tried": "https://www.gigotoys.com.hk/search?q=16%22+Best+Friends",
+          "title": "",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.gigotoys.com.hk/search?q=16%22+Best+Friends",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "93905205045",
+          "url_tried": "https://www.gigotoys.com.hk/search?q=12%22+Girl+Hair+Play+Set",
+          "title": "",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.gigotoys.com.hk/search?q=12%22+Girl+Hair+Play+Set",
+          "not_found": false,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 0,
+        "unique_images": 0
+      },
+      "score": 0
+    },
+    "search_s_name": {
+      "results": [
+        {
+          "upc": "93905191560",
+          "url_tried": "https://www.gigotoys.com.hk/?s=12%22+baby+and+musical+potty",
+          "title": "GiGO",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.gigotoys.com.hk/?s=12%22+baby+and+musical+potty",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "93905805054",
+          "url_tried": "https://www.gigotoys.com.hk/?s=16%22+Best+Friends",
+          "title": "GiGO",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.gigotoys.com.hk/?s=16%22+Best+Friends",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "93905205045",
+          "url_tried": "https://www.gigotoys.com.hk/?s=12%22+Girl+Hair+Play+Set",
+          "title": "GiGO",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.gigotoys.com.hk/?s=12%22+Girl+Hair+Play+Set",
+          "not_found": false,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 5
+    }
+  },
+  "best": "search_s_upc",
+  "best_score": 5
+}

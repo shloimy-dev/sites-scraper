@@ -1,0 +1,388 @@
+{
+  "site_id": "chazak",
+  "base_url": "https://www.chazakkinder.com",
+  "samples": [
+    {
+      "upc": "756542319987",
+      "name": "Leishev BaSukkah 3D Sukkah Model Craft Kit",
+      "product_url": ""
+    },
+    {
+      "upc": "9781680918663",
+      "name": "Misterye In Mexico",
+      "product_url": ""
+    },
+    {
+      "upc": "756542320402",
+      "name": "Der Aleph Bais Velt USB DVD",
+      "product_url": ""
+    }
+  ],
+  "baseline": {
+    "title": "Chazak Distribution",
+    "og_title": "Chazak Distribution",
+    "og_description": "Chazak Distribution Spreading Quality Toys Across The Globe",
+    "og_image": "https://cdn.shopify.com/s/files/1/0511/6674/0638/files/Chazak_Logo_Yiddish_9c6be1f6-4618-479c-9203-0cb7c3ecb67c.png?v=1625115550",
+    "meta_description": "Chazak Distribution Spreading Quality Toys Across The Globe",
+    "json_ld_product": null,
+    "h1": "Chazak kinder"
+  },
+  "strategies": {
+    "direct_p": {
+      "results": [
+        {
+          "upc": "756542319987",
+          "url_tried": "https://www.chazakkinder.com/?p=756542319987",
+          "title": "Der Alef-Beis Velt DVD",
+          "og_title": "Der Alef-Beis Velt DVD",
+          "og_description": "Der Alef-Beis Velt \u2013 DVD Edition Bring a beloved classic to life! Der Alef-Beis Velt has been teaching generations of children their \u05d0-\u05d1 in a warm, engaging way. Now, for the first time, this timeless book has been beautifully transformed into a fully updated 3D animated DVD. With bright characters, lively visuals, and",
+          "og_image": "http://www.chazakkinder.com/cdn/shop/files/254.png?v=1764347734",
+          "json_ld_product": true,
+          "h1": "Der Alef-Beis Velt DVD",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-copy?_pos=2&_sid=f1cb0197e&_ss=r",
+          "final_url": "https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-copy?_pos=2&_sid=f1cb0197e&_ss=r",
+          "not_found": false,
+          "meta_description": "Der Alef-Beis Velt \u2013 DVD Edition Bring a beloved classic to life! Der Alef-Beis Velt has been teaching generations of children their \u05d0-\u05d1 in a warm, engaging way. Now, for the first time, this timeless book has been beautifully transformed into a fully updated 3D animated DVD. With bright characters, lively visuals, and"
+        },
+        {
+          "upc": "9781680918663",
+          "url_tried": "https://www.chazakkinder.com/?p=9781680918663",
+          "title": "Der Alef-Beis Velt DVD",
+          "og_title": "Der Alef-Beis Velt DVD",
+          "og_description": "Der Alef-Beis Velt \u2013 DVD Edition Bring a beloved classic to life! Der Alef-Beis Velt has been teaching generations of children their \u05d0-\u05d1 in a warm, engaging way. Now, for the first time, this timeless book has been beautifully transformed into a fully updated 3D animated DVD. With bright characters, lively visuals, and",
+          "og_image": "http://www.chazakkinder.com/cdn/shop/files/254.png?v=1764347734",
+          "json_ld_product": true,
+          "h1": "Der Alef-Beis Velt DVD",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-copy?_pos=2&_sid=f1cb0197e&_ss=r",
+          "final_url": "https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-copy?_pos=2&_sid=f1cb0197e&_ss=r",
+          "not_found": false,
+          "meta_description": "Der Alef-Beis Velt \u2013 DVD Edition Bring a beloved classic to life! Der Alef-Beis Velt has been teaching generations of children their \u05d0-\u05d1 in a warm, engaging way. Now, for the first time, this timeless book has been beautifully transformed into a fully updated 3D animated DVD. With bright characters, lively visuals, and"
+        },
+        {
+          "upc": "756542320402",
+          "url_tried": "https://www.chazakkinder.com/?p=756542320402",
+          "title": "Der Alef-Beis Velt DVD",
+          "og_title": "Der Alef-Beis Velt DVD",
+          "og_description": "Der Alef-Beis Velt \u2013 DVD Edition Bring a beloved classic to life! Der Alef-Beis Velt has been teaching generations of children their \u05d0-\u05d1 in a warm, engaging way. Now, for the first time, this timeless book has been beautifully transformed into a fully updated 3D animated DVD. With bright characters, lively visuals, and",
+          "og_image": "http://www.chazakkinder.com/cdn/shop/files/254.png?v=1764347734",
+          "json_ld_product": true,
+          "h1": "Der Alef-Beis Velt DVD",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-copy?_pos=2&_sid=f1cb0197e&_ss=r",
+          "final_url": "https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-copy?_pos=2&_sid=f1cb0197e&_ss=r",
+          "not_found": false,
+          "meta_description": "Der Alef-Beis Velt \u2013 DVD Edition Bring a beloved classic to life! Der Alef-Beis Velt has been teaching generations of children their \u05d0-\u05d1 in a warm, engaging way. Now, for the first time, this timeless book has been beautifully transformed into a fully updated 3D animated DVD. With bright characters, lively visuals, and"
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 1
+      },
+      "score": 68
+    },
+    "search_q_upc": {
+      "results": [
+        {
+          "upc": "756542319987",
+          "url_tried": "https://www.chazakkinder.com/search?q=756542319987",
+          "title": "756542319987 - Chazak kinder",
+          "og_title": "Search: 0 results found for &quot;756542319987&quot;",
+          "og_description": "Chazak Distribution Spreading Quality Toys Across The Globe",
+          "og_image": "https://cdn.shopify.com/s/files/1/0511/6674/0638/files/Chazak_Logo_Yiddish_9c6be1f6-4618-479c-9203-0cb7c3ecb67c.png?v=1625115550",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.chazakkinder.com/search?q=756542319987",
+          "not_found": true,
+          "meta_description": "Chazak Distribution Spreading Quality Toys Across The Globe"
+        },
+        {
+          "upc": "9781680918663",
+          "url_tried": "https://www.chazakkinder.com/search?q=9781680918663",
+          "title": "9781680918663 - Chazak kinder",
+          "og_title": "Search: 0 results found for &quot;9781680918663&quot;",
+          "og_description": "Chazak Distribution Spreading Quality Toys Across The Globe",
+          "og_image": "https://cdn.shopify.com/s/files/1/0511/6674/0638/files/Chazak_Logo_Yiddish_9c6be1f6-4618-479c-9203-0cb7c3ecb67c.png?v=1625115550",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.chazakkinder.com/search?q=9781680918663",
+          "not_found": true,
+          "meta_description": "Chazak Distribution Spreading Quality Toys Across The Globe"
+        },
+        {
+          "upc": "756542320402",
+          "url_tried": "https://www.chazakkinder.com/search?q=756542320402",
+          "title": "756542320402 - Chazak kinder",
+          "og_title": "Search: 0 results found for &quot;756542320402&quot;",
+          "og_description": "Chazak Distribution Spreading Quality Toys Across The Globe",
+          "og_image": "https://cdn.shopify.com/s/files/1/0511/6674/0638/files/Chazak_Logo_Yiddish_9c6be1f6-4618-479c-9203-0cb7c3ecb67c.png?v=1625115550",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.chazakkinder.com/search?q=756542320402",
+          "not_found": true,
+          "meta_description": "Chazak Distribution Spreading Quality Toys Across The Globe"
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 3,
+        "unique_images": 1
+      },
+      "score": 24
+    },
+    "search_s_upc": {
+      "results": [
+        {
+          "upc": "756542319987",
+          "url_tried": "https://www.chazakkinder.com/?s=756542319987",
+          "title": "Der Alef-Beis Velt DVD",
+          "og_title": "Der Alef-Beis Velt DVD",
+          "og_description": "Der Alef-Beis Velt \u2013 DVD Edition Bring a beloved classic to life! Der Alef-Beis Velt has been teaching generations of children their \u05d0-\u05d1 in a warm, engaging way. Now, for the first time, this timeless book has been beautifully transformed into a fully updated 3D animated DVD. With bright characters, lively visuals, and",
+          "og_image": "http://www.chazakkinder.com/cdn/shop/files/254.png?v=1764347734",
+          "json_ld_product": true,
+          "h1": "Der Alef-Beis Velt DVD",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-copy?_pos=2&_sid=f1cb0197e&_ss=r",
+          "final_url": "https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-copy?_pos=2&_sid=f1cb0197e&_ss=r",
+          "not_found": false,
+          "meta_description": "Der Alef-Beis Velt \u2013 DVD Edition Bring a beloved classic to life! Der Alef-Beis Velt has been teaching generations of children their \u05d0-\u05d1 in a warm, engaging way. Now, for the first time, this timeless book has been beautifully transformed into a fully updated 3D animated DVD. With bright characters, lively visuals, and"
+        },
+        {
+          "upc": "9781680918663",
+          "url_tried": "https://www.chazakkinder.com/?s=9781680918663",
+          "title": "Der Alef-Beis Velt DVD",
+          "og_title": "Der Alef-Beis Velt DVD",
+          "og_description": "Der Alef-Beis Velt \u2013 DVD Edition Bring a beloved classic to life! Der Alef-Beis Velt has been teaching generations of children their \u05d0-\u05d1 in a warm, engaging way. Now, for the first time, this timeless book has been beautifully transformed into a fully updated 3D animated DVD. With bright characters, lively visuals, and",
+          "og_image": "http://www.chazakkinder.com/cdn/shop/files/254.png?v=1764347734",
+          "json_ld_product": true,
+          "h1": "Der Alef-Beis Velt DVD",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-copy?_pos=2&_sid=f1cb0197e&_ss=r",
+          "final_url": "https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-copy?_pos=2&_sid=f1cb0197e&_ss=r",
+          "not_found": false,
+          "meta_description": "Der Alef-Beis Velt \u2013 DVD Edition Bring a beloved classic to life! Der Alef-Beis Velt has been teaching generations of children their \u05d0-\u05d1 in a warm, engaging way. Now, for the first time, this timeless book has been beautifully transformed into a fully updated 3D animated DVD. With bright characters, lively visuals, and"
+        },
+        {
+          "upc": "756542320402",
+          "url_tried": "https://www.chazakkinder.com/?s=756542320402",
+          "title": "Der Alef-Beis Velt DVD",
+          "og_title": "Der Alef-Beis Velt DVD",
+          "og_description": "Der Alef-Beis Velt \u2013 DVD Edition Bring a beloved classic to life! Der Alef-Beis Velt has been teaching generations of children their \u05d0-\u05d1 in a warm, engaging way. Now, for the first time, this timeless book has been beautifully transformed into a fully updated 3D animated DVD. With bright characters, lively visuals, and",
+          "og_image": "http://www.chazakkinder.com/cdn/shop/files/254.png?v=1764347734",
+          "json_ld_product": true,
+          "h1": "Der Alef-Beis Velt DVD",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-copy?_pos=2&_sid=f1cb0197e&_ss=r",
+          "final_url": "https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-copy?_pos=2&_sid=f1cb0197e&_ss=r",
+          "not_found": false,
+          "meta_description": "Der Alef-Beis Velt \u2013 DVD Edition Bring a beloved classic to life! Der Alef-Beis Velt has been teaching generations of children their \u05d0-\u05d1 in a warm, engaging way. Now, for the first time, this timeless book has been beautifully transformed into a fully updated 3D animated DVD. With bright characters, lively visuals, and"
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 1
+      },
+      "score": 68
+    },
+    "shopify_search": {
+      "results": [
+        {
+          "upc": "756542319987",
+          "url_tried": "https://www.chazakkinder.com/search?type=product&q=756542319987",
+          "title": "756542319987 - Chazak kinder",
+          "og_title": "Search: 0 results found for &quot;756542319987&quot;",
+          "og_description": "Chazak Distribution Spreading Quality Toys Across The Globe",
+          "og_image": "https://cdn.shopify.com/s/files/1/0511/6674/0638/files/Chazak_Logo_Yiddish_9c6be1f6-4618-479c-9203-0cb7c3ecb67c.png?v=1625115550",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.chazakkinder.com/search?type=product&q=756542319987",
+          "not_found": true,
+          "meta_description": "Chazak Distribution Spreading Quality Toys Across The Globe"
+        },
+        {
+          "upc": "9781680918663",
+          "url_tried": "https://www.chazakkinder.com/search?type=product&q=9781680918663",
+          "title": "9781680918663 - Chazak kinder",
+          "og_title": "Search: 0 results found for &quot;9781680918663&quot;",
+          "og_description": "Chazak Distribution Spreading Quality Toys Across The Globe",
+          "og_image": "https://cdn.shopify.com/s/files/1/0511/6674/0638/files/Chazak_Logo_Yiddish_9c6be1f6-4618-479c-9203-0cb7c3ecb67c.png?v=1625115550",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.chazakkinder.com/search?type=product&q=9781680918663",
+          "not_found": true,
+          "meta_description": "Chazak Distribution Spreading Quality Toys Across The Globe"
+        },
+        {
+          "upc": "756542320402",
+          "url_tried": "https://www.chazakkinder.com/search?type=product&q=756542320402",
+          "title": "756542320402 - Chazak kinder",
+          "og_title": "Search: 0 results found for &quot;756542320402&quot;",
+          "og_description": "Chazak Distribution Spreading Quality Toys Across The Globe",
+          "og_image": "https://cdn.shopify.com/s/files/1/0511/6674/0638/files/Chazak_Logo_Yiddish_9c6be1f6-4618-479c-9203-0cb7c3ecb67c.png?v=1625115550",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.chazakkinder.com/search?type=product&q=756542320402",
+          "not_found": true,
+          "meta_description": "Chazak Distribution Spreading Quality Toys Across The Globe"
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 3,
+        "unique_images": 1
+      },
+      "score": 24
+    },
+    "search_q_name": {
+      "results": [
+        {
+          "upc": "756542319987",
+          "url_tried": "https://www.chazakkinder.com/search?q=Leishev+BaSukkah+3D+Sukkah+Model+Craft+Kit",
+          "title": "Leishev BaSukkah 3D Sukkah Model Craft Kit - Chazak kinder",
+          "og_title": "Search: 0 results found for &quot;Leishev BaSukkah 3D Sukkah Model Craft Kit&quot;",
+          "og_description": "Chazak Distribution Spreading Quality Toys Across The Globe",
+          "og_image": "https://cdn.shopify.com/s/files/1/0511/6674/0638/files/Chazak_Logo_Yiddish_9c6be1f6-4618-479c-9203-0cb7c3ecb67c.png?v=1625115550",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.chazakkinder.com/search?q=Leishev+BaSukkah+3D+Sukkah+Model+Craft+Kit",
+          "not_found": true,
+          "meta_description": "Chazak Distribution Spreading Quality Toys Across The Globe"
+        },
+        {
+          "upc": "9781680918663",
+          "url_tried": "https://www.chazakkinder.com/search?q=Misterye+In+Mexico",
+          "title": "Mystery in Mexico",
+          "og_title": "Mystery in Mexico",
+          "og_description": "",
+          "og_image": "http://www.chazakkinder.com/cdn/shop/files/8557.png?v=1725562342",
+          "json_ld_product": true,
+          "h1": "Mystery in Mexico",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://www.chazakkinder.com/products/mystery-in-mexico?_pos=1&_sid=fa2976f6c&_ss=r",
+          "final_url": "https://www.chazakkinder.com/products/mystery-in-mexico?_pos=1&_sid=fa2976f6c&_ss=r",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "756542320402",
+          "url_tried": "https://www.chazakkinder.com/search?q=Der+Aleph+Bais+Velt+USB+DVD",
+          "title": "Der Aleph Bais Velt USB DVD - Chazak kinder",
+          "og_title": "Search: 0 results found for &quot;Der Aleph Bais Velt USB DVD&quot;",
+          "og_description": "Chazak Distribution Spreading Quality Toys Across The Globe",
+          "og_image": "https://cdn.shopify.com/s/files/1/0511/6674/0638/files/Chazak_Logo_Yiddish_9c6be1f6-4618-479c-9203-0cb7c3ecb67c.png?v=1625115550",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.chazakkinder.com/search?q=Der+Aleph+Bais+Velt+USB+DVD",
+          "not_found": true,
+          "meta_description": "Chazak Distribution Spreading Quality Toys Across The Globe"
+        }
+      ],
+      "non_generic": 1,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 3,
+        "unique_images": 2
+      },
+      "score": 43
+    },
+    "search_s_name": {
+      "results": [
+        {
+          "upc": "756542319987",
+          "url_tried": "https://www.chazakkinder.com/?s=Leishev+BaSukkah+3D+Sukkah+Model+Craft+Kit",
+          "title": "Der Alef-Beis Velt DVD",
+          "og_title": "Der Alef-Beis Velt DVD",
+          "og_description": "Der Alef-Beis Velt \u2013 DVD Edition Bring a beloved classic to life! Der Alef-Beis Velt has been teaching generations of children their \u05d0-\u05d1 in a warm, engaging way. Now, for the first time, this timeless book has been beautifully transformed into a fully updated 3D animated DVD. With bright characters, lively visuals, and",
+          "og_image": "http://www.chazakkinder.com/cdn/shop/files/254.png?v=1764347734",
+          "json_ld_product": true,
+          "h1": "Der Alef-Beis Velt DVD",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-copy?_pos=2&_sid=f1cb0197e&_ss=r",
+          "final_url": "https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-copy?_pos=2&_sid=f1cb0197e&_ss=r",
+          "not_found": false,
+          "meta_description": "Der Alef-Beis Velt \u2013 DVD Edition Bring a beloved classic to life! Der Alef-Beis Velt has been teaching generations of children their \u05d0-\u05d1 in a warm, engaging way. Now, for the first time, this timeless book has been beautifully transformed into a fully updated 3D animated DVD. With bright characters, lively visuals, and"
+        },
+        {
+          "upc": "9781680918663",
+          "url_tried": "https://www.chazakkinder.com/?s=Misterye+In+Mexico",
+          "title": "Der Alef-Beis Velt DVD",
+          "og_title": "Der Alef-Beis Velt DVD",
+          "og_description": "Der Alef-Beis Velt \u2013 DVD Edition Bring a beloved classic to life! Der Alef-Beis Velt has been teaching generations of children their \u05d0-\u05d1 in a warm, engaging way. Now, for the first time, this timeless book has been beautifully transformed into a fully updated 3D animated DVD. With bright characters, lively visuals, and",
+          "og_image": "http://www.chazakkinder.com/cdn/shop/files/254.png?v=1764347734",
+          "json_ld_product": true,
+          "h1": "Der Alef-Beis Velt DVD",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-copy?_pos=2&_sid=f1cb0197e&_ss=r",
+          "final_url": "https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-copy?_pos=2&_sid=f1cb0197e&_ss=r",
+          "not_found": false,
+          "meta_description": "Der Alef-Beis Velt \u2013 DVD Edition Bring a beloved classic to life! Der Alef-Beis Velt has been teaching generations of children their \u05d0-\u05d1 in a warm, engaging way. Now, for the first time, this timeless book has been beautifully transformed into a fully updated 3D animated DVD. With bright characters, lively visuals, and"
+        },
+        {
+          "upc": "756542320402",
+          "url_tried": "https://www.chazakkinder.com/?s=Der+Aleph+Bais+Velt+USB+DVD",
+          "title": "Der Alef-Beis Velt DVD",
+          "og_title": "Der Alef-Beis Velt DVD",
+          "og_description": "Der Alef-Beis Velt \u2013 DVD Edition Bring a beloved classic to life! Der Alef-Beis Velt has been teaching generations of children their \u05d0-\u05d1 in a warm, engaging way. Now, for the first time, this timeless book has been beautifully transformed into a fully updated 3D animated DVD. With bright characters, lively visuals, and",
+          "og_image": "http://www.chazakkinder.com/cdn/shop/files/254.png?v=1764347734",
+          "json_ld_product": true,
+          "h1": "Der Alef-Beis Velt DVD",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-copy?_pos=2&_sid=f1cb0197e&_ss=r",
+          "final_url": "https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-copy?_pos=2&_sid=f1cb0197e&_ss=r",
+          "not_found": false,
+          "meta_description": "Der Alef-Beis Velt \u2013 DVD Edition Bring a beloved classic to life! Der Alef-Beis Velt has been teaching generations of children their \u05d0-\u05d1 in a warm, engaging way. Now, for the first time, this timeless book has been beautifully transformed into a fully updated 3D animated DVD. With bright characters, lively visuals, and"
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 1
+      },
+      "score": 68
+    }
+  },
+  "best": "direct_p",
+  "best_score": 68
+}

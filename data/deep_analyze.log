@@ -1,0 +1,914 @@
+SKIP atiko (data/ready/)
+SKIP aurora (data/ready/)
+SKIP bazic (data/ready/)
+
+Analyzing 16 site(s): bruder, chazak, colours_craft, enday, gi_go, goplay, lchaim, metal_earth, microkick, moore, playkidiz, razor, rhode_island, samvix, sands, winning_moves
+
+
+============================================================
+  ANALYZING: bruder (https://brudertoyshop.com)
+============================================================
+  Samples (3):
+    UPC=4001702025007  Name=RAM 2500 Pickup Truck
+    UPC=4001702025113  Name=Linde H30D Fork lift with Pallet
+    UPC=4001702026769  Name=Sprinter Ambulance with Driver
+
+  Fetching homepage...
+    Title : Bruder Toy Shop
+    OG Img: -
+
+  [direct_p]
+    UPC=4001702025007: listing/search page → following https://brudertoyshop.com/products/2831-mack-granite-recovery-and-towi
+    UPC=4001702025007: [OK] JSON-LD title='MACK Granite Recovery and Towing Truck with light and s'
+    UPC=4001702025113: listing/search page → following https://brudertoyshop.com/products/2831-mack-granite-recovery-and-towi
+    UPC=4001702025113: [OK] JSON-LD title='MACK Granite Recovery and Towing Truck with light and s'
+    UPC=4001702026769: listing/search page → following https://brudertoyshop.com/products/2831-mack-granite-recovery-and-towi
+    UPC=4001702026769: [OK] JSON-LD title='MACK Granite Recovery and Towing Truck with light and s'
+    => non-generic 3/3, unique titles 1, images 1
+
+  [search_q_upc]
+    UPC=4001702025007: listing/search page → following https://brudertoyshop.com/products/2500-ram-2500-power-wagon-bruder?va
+    UPC=4001702025007: [OK] JSON-LD title='RAM 2500 Power Wagon – Bruder – Bruder Toy Shop'
+    UPC=4001702025113: listing/search page → following https://brudertoyshop.com/products/2511-linde-fork-lift-h30d-with-2-pa
+    UPC=4001702025113: [OK] JSON-LD title='Linde fork lift H30D with 2 pallets – Bruder – Bruder T'
+    UPC=4001702026769: listing/search page → following https://brudertoyshop.com/products/2676-mb-sprinter-ambulance-with-dri
+    UPC=4001702026769: [OK] JSON-LD title='MB Sprinter Ambulance with driver and Light + Sound Mod'
+    => non-generic 3/3, unique titles 3, images 3
+
+  [search_s_upc]
+    UPC=4001702025007: listing/search page → following https://brudertoyshop.com/products/2831-mack-granite-recovery-and-towi
+    UPC=4001702025007: [OK] JSON-LD title='MACK Granite Recovery and Towing Truck with light and s'
+    UPC=4001702025113: listing/search page → following https://brudertoyshop.com/products/2831-mack-granite-recovery-and-towi
+    UPC=4001702025113: [OK] JSON-LD title='MACK Granite Recovery and Towing Truck with light and s'
+    UPC=4001702026769: listing/search page → following https://brudertoyshop.com/products/2831-mack-granite-recovery-and-towi
+    UPC=4001702026769: [OK] JSON-LD title='MACK Granite Recovery and Towing Truck with light and s'
+    => non-generic 3/3, unique titles 1, images 1
+
+  [shopify_search]
+    UPC=4001702025007: listing/search page → following https://brudertoyshop.com/products/2500-ram-2500-power-wagon-bruder?va
+    UPC=4001702025007: [OK] JSON-LD title='RAM 2500 Power Wagon – Bruder – Bruder Toy Shop'
+    UPC=4001702025113: listing/search page → following https://brudertoyshop.com/products/2511-linde-fork-lift-h30d-with-2-pa
+    UPC=4001702025113: [OK] JSON-LD title='Linde fork lift H30D with 2 pallets – Bruder – Bruder T'
+    UPC=4001702026769: listing/search page → following https://brudertoyshop.com/products/2676-mb-sprinter-ambulance-with-dri
+    UPC=4001702026769: [OK] JSON-LD title='MB Sprinter Ambulance with driver and Light + Sound Mod'
+    => non-generic 3/3, unique titles 3, images 3
+
+  [search_q_name]
+    UPC=4001702025007: listing/search page → following https://brudertoyshop.com/products/2509-ram-2500-service-truck-with-ro
+    UPC=4001702025007: [OK] JSON-LD title='RAM 2500 Service truck with rotating beacon light – Bru'
+    UPC=4001702025113: listing/search page → following https://brudertoyshop.com/products/2511-linde-fork-lift-h30d-with-2-pa
+    UPC=4001702025113: [OK] JSON-LD title='Linde fork lift H30D with 2 pallets – Bruder – Bruder T'
+    UPC=4001702026769: listing/search page → following https://brudertoyshop.com/products/2676-mb-sprinter-ambulance-with-dri
+    UPC=4001702026769: [OK] JSON-LD title='MB Sprinter Ambulance with driver and Light + Sound Mod'
+    => non-generic 3/3, unique titles 3, images 3
+
+  [search_s_name]
+    UPC=4001702025007: listing/search page → following https://brudertoyshop.com/products/2831-mack-granite-recovery-and-towi
+    UPC=4001702025007: [OK] JSON-LD title='MACK Granite Recovery and Towing Truck with light and s'
+    UPC=4001702025113: listing/search page → following https://brudertoyshop.com/products/2831-mack-granite-recovery-and-towi
+    UPC=4001702025113: [OK] JSON-LD title='MACK Granite Recovery and Towing Truck with light and s'
+    UPC=4001702026769: listing/search page → following https://brudertoyshop.com/products/2831-mack-granite-recovery-and-towi
+    UPC=4001702026769: [OK] JSON-LD title='MACK Granite Recovery and Towing Truck with light and s'
+    => non-generic 3/3, unique titles 1, images 1
+  => Wrote docs/sites/bruder.md
+
+============================================================
+  ANALYZING: chazak (https://www.chazakkinder.com)
+============================================================
+  Samples (3):
+    UPC=756542319987  Name=Leishev BaSukkah 3D Sukkah Model Craft Kit
+    UPC=9781680918663  Name=Misterye In Mexico
+    UPC=756542320402  Name=Der Aleph Bais Velt USB DVD
+
+  Fetching homepage...
+    Title : Chazak Distribution
+    OG Img: https://cdn.shopify.com/s/files/1/0511/6674/0638/files/Chazak_Logo_Yiddish_9c6be
+
+  [direct_p]
+    UPC=756542319987: listing/search page → following https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-
+    UPC=756542319987: [OK] JSON-LD title='Der Alef-Beis Velt DVD'
+    UPC=9781680918663: listing/search page → following https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-
+    UPC=9781680918663: [OK] JSON-LD title='Der Alef-Beis Velt DVD'
+    UPC=756542320402: listing/search page → following https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-
+    UPC=756542320402: [OK] JSON-LD title='Der Alef-Beis Velt DVD'
+    => non-generic 3/3, unique titles 1, images 1
+
+  [search_q_upc]
+    UPC=756542319987: [GENERIC]  title='756542319987 - Chazak kinder'
+    UPC=9781680918663: [GENERIC]  title='9781680918663 - Chazak kinder'
+    UPC=756542320402: [GENERIC]  title='756542320402 - Chazak kinder'
+    => non-generic 0/3, unique titles 3, images 1
+
+  [search_s_upc]
+    UPC=756542319987: listing/search page → following https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-
+    UPC=756542319987: [OK] JSON-LD title='Der Alef-Beis Velt DVD'
+    UPC=9781680918663: listing/search page → following https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-
+    UPC=9781680918663: [OK] JSON-LD title='Der Alef-Beis Velt DVD'
+    UPC=756542320402: listing/search page → following https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-
+    UPC=756542320402: [OK] JSON-LD title='Der Alef-Beis Velt DVD'
+    => non-generic 3/3, unique titles 1, images 1
+
+  [shopify_search]
+    UPC=756542319987: [GENERIC]  title='756542319987 - Chazak kinder'
+    UPC=9781680918663: [GENERIC]  title='9781680918663 - Chazak kinder'
+    UPC=756542320402: [GENERIC]  title='756542320402 - Chazak kinder'
+    => non-generic 0/3, unique titles 3, images 1
+
+  [search_q_name]
+    UPC=756542319987: [GENERIC]  title='Leishev BaSukkah 3D Sukkah Model Craft Kit - Chazak kin'
+    UPC=9781680918663: listing/search page → following https://www.chazakkinder.com/products/mystery-in-mexico?_pos=1&_sid=fa
+    UPC=9781680918663: [OK] JSON-LD title='Mystery in Mexico'
+    UPC=756542320402: [GENERIC]  title='Der Aleph Bais Velt USB DVD - Chazak kinder'
+    => non-generic 1/3, unique titles 3, images 2
+
+  [search_s_name]
+    UPC=756542319987: listing/search page → following https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-
+    UPC=756542319987: [OK] JSON-LD title='Der Alef-Beis Velt DVD'
+    UPC=9781680918663: listing/search page → following https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-
+    UPC=9781680918663: [OK] JSON-LD title='Der Alef-Beis Velt DVD'
+    UPC=756542320402: listing/search page → following https://www.chazakkinder.com/products/mitzvos-with-the-kindervelt-dvd-
+    UPC=756542320402: [OK] JSON-LD title='Der Alef-Beis Velt DVD'
+    => non-generic 3/3, unique titles 1, images 1
+  => Wrote docs/sites/chazak.md
+
+============================================================
+  ANALYZING: colours_craft (https://colourscrafts.com)
+============================================================
+  Samples (3):
+    UPC=123698965458  Name=Paint By Number Teddy Hearts 2
+    UPC=197644247967  Name=Sequin Art Rainbow Kit
+    UPC=195893383238  Name=Rhinestone Butterfly Stretched Canvas
+
+  Fetching homepage...
+    Title : Colours Crafts
+    OG Img: -
+
+  [direct_p]
+    UPC=123698965458: listing/search page → following https://colourscrafts.com/products/gift-card
+    UPC=123698965458: [OK] JSON-LD title='Gift Card – Colours Crafts'
+    UPC=197644247967: listing/search page → following https://colourscrafts.com/products/gift-card
+    UPC=197644247967: [OK] JSON-LD title='Gift Card – Colours Crafts'
+    UPC=195893383238: listing/search page → following https://colourscrafts.com/products/gift-card
+    UPC=195893383238: [OK] JSON-LD title='Gift Card – Colours Crafts'
+    => non-generic 3/3, unique titles 1, images 1
+
+  [search_q_upc]
+    UPC=123698965458: [OK]  title='Search: 0 results found for "123698965458" – Colours Cr'
+    UPC=197644247967: [OK]  title='Search: 0 results found for "197644247967" – Colours Cr'
+    UPC=195893383238: [OK]  title='Search: 0 results found for "195893383238" – Colours Cr'
+    => non-generic 3/3, unique titles 3, images 0
+
+  [search_s_upc]
+    UPC=123698965458: listing/search page → following https://colourscrafts.com/products/gift-card
+    UPC=123698965458: [OK] JSON-LD title='Gift Card – Colours Crafts'
+    UPC=197644247967: listing/search page → following https://colourscrafts.com/products/gift-card
+    UPC=197644247967: [OK] JSON-LD title='Gift Card – Colours Crafts'
+    UPC=195893383238: listing/search page → following https://colourscrafts.com/products/gift-card
+    UPC=195893383238: [OK] JSON-LD title='Gift Card – Colours Crafts'
+    => non-generic 3/3, unique titles 1, images 1
+
+  [shopify_search]
+    UPC=123698965458: [OK]  title='Search: 0 results found for "123698965458" – Colours Cr'
+    UPC=197644247967: [OK]  title='Search: 0 results found for "197644247967" – Colours Cr'
+    UPC=195893383238: [OK]  title='Search: 0 results found for "195893383238" – Colours Cr'
+    => non-generic 3/3, unique titles 3, images 0
+
+  [search_q_name]
+    UPC=123698965458: [OK]  title='Search: 0 results found for "Paint By Number Teddy Hear'
+    UPC=197644247967: [OK]  title='Search: 0 results found for "Sequin Art Rainbow Kit" – '
+    UPC=195893383238: [OK]  title='Search: 0 results found for "Rhinestone Butterfly Stret'
+    => non-generic 3/3, unique titles 3, images 0
+
+  [search_s_name]
+    UPC=123698965458: listing/search page → following https://colourscrafts.com/products/gift-card
+    UPC=123698965458: [OK] JSON-LD title='Gift Card – Colours Crafts'
+    UPC=197644247967: listing/search page → following https://colourscrafts.com/products/gift-card
+    UPC=197644247967: [OK] JSON-LD title='Gift Card – Colours Crafts'
+    UPC=195893383238: listing/search page → following https://colourscrafts.com/products/gift-card
+    UPC=195893383238: [OK] JSON-LD title='Gift Card – Colours Crafts'
+    => non-generic 3/3, unique titles 1, images 1
+  => Wrote docs/sites/colours_craft.md
+
+============================================================
+  ANALYZING: enday (https://enday.com)
+============================================================
+  Samples (3):
+    UPC=840195601442  Name=Double Desk Organizer Box, Purple
+    UPC=840195604191  Name=Oval Bright Color 4pack
+    UPC=840195611984  Name=8 pocket folder Pink
+
+  Fetching homepage...
+    Title : Enday
+    OG Img: -
+
+  [direct_p]
+    UPC=840195601442: [OK]  title='Just a moment...'
+    UPC=840195604191: [OK]  title='Just a moment...'
+    UPC=840195611984: [OK]  title='Just a moment...'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_q_upc]
+    UPC=840195601442: [OK]  title='Just a moment...'
+    UPC=840195604191: [OK]  title='Just a moment...'
+    UPC=840195611984: [OK]  title='Just a moment...'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_s_upc]
+    UPC=840195601442: [OK]  title='Just a moment...'
+    UPC=840195604191: [OK]  title='Just a moment...'
+    UPC=840195611984: [OK]  title='Just a moment...'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [shopify_search]
+    UPC=840195601442: [OK]  title='Just a moment...'
+    UPC=840195604191: [OK]  title='Just a moment...'
+    UPC=840195611984: [OK]  title='Just a moment...'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_q_name]
+    UPC=840195601442: [OK]  title='Just a moment...'
+    UPC=840195604191: [OK]  title='Just a moment...'
+    UPC=840195611984: [OK]  title='Just a moment...'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_s_name]
+    UPC=840195601442: [OK]  title='Just a moment...'
+    UPC=840195604191: [OK]  title='Just a moment...'
+    UPC=840195611984: [OK]  title='Just a moment...'
+    => non-generic 3/3, unique titles 1, images 0
+  => Wrote docs/sites/enday.md
+
+============================================================
+  ANALYZING: gi_go (https://www.gigotoys.com.hk)
+============================================================
+  Samples (3):
+    UPC=93905191560  Name=12" baby and musical potty
+    UPC=93905805054  Name=16" Best Friends
+    UPC=93905205045  Name=12" Girl Hair Play Set
+
+  Fetching homepage...
+    Title : GiGO
+    OG Img: -
+
+  [direct_p]
+    UPC=93905191560: [GENERIC]  title=''
+    UPC=93905805054: [GENERIC]  title=''
+    UPC=93905205045: [GENERIC]  title=''
+    => non-generic 0/3, unique titles 0, images 0
+
+  [search_q_upc]
+    UPC=93905191560: [GENERIC]  title=''
+    UPC=93905805054: [GENERIC]  title=''
+    UPC=93905205045: [GENERIC]  title=''
+    => non-generic 0/3, unique titles 0, images 0
+
+  [search_s_upc]
+    UPC=93905191560: [GENERIC]  title='GiGO'
+    UPC=93905805054: [GENERIC]  title='GiGO'
+    UPC=93905205045: [GENERIC]  title='GiGO'
+    => non-generic 0/3, unique titles 1, images 0
+
+  [shopify_search]
+    UPC=93905191560: [GENERIC]  title='GiGO'
+    UPC=93905805054: [GENERIC]  title='GiGO'
+    UPC=93905205045: [GENERIC]  title='GiGO'
+    => non-generic 0/3, unique titles 1, images 0
+
+  [search_q_name]
+    UPC=93905191560: [GENERIC]  title=''
+    UPC=93905805054: [GENERIC]  title=''
+    UPC=93905205045: [GENERIC]  title=''
+    => non-generic 0/3, unique titles 0, images 0
+
+  [search_s_name]
+    UPC=93905191560: [GENERIC]  title='GiGO'
+    UPC=93905805054: [GENERIC]  title='GiGO'
+    UPC=93905205045: [GENERIC]  title='GiGO'
+    => non-generic 0/3, unique titles 1, images 0
+  => Wrote docs/sites/gi_go.md
+
+============================================================
+  ANALYZING: goplay (https://www.goplay.shopping)
+============================================================
+  Samples (3):
+    UPC=786138702633  Name=SHOOTER PLAYSET
+    UPC=786138709267  Name=Car Launcher
+    UPC=786138709410  Name=Planes Launcher
+
+  Fetching homepage...
+    Title : GoPlay
+    OG Img: http://www.goplay.shopping/cdn/shop/files/D44D237D-4B96-4771-ACBB-5CE54EA3E818.p
+
+  [direct_p]
+    UPC=786138702633: [GENERIC]  title='GoPlay'
+    UPC=786138709267: [GENERIC]  title='GoPlay'
+    UPC=786138709410: [GENERIC]  title='GoPlay'
+    => non-generic 0/3, unique titles 1, images 1
+
+  [search_q_upc]
+    UPC=786138702633: [GENERIC]  title='GoPlay'
+    UPC=786138709267: [GENERIC]  title='GoPlay'
+    UPC=786138709410: [GENERIC]  title='GoPlay'
+    => non-generic 0/3, unique titles 1, images 1
+
+  [search_s_upc]
+    UPC=786138702633: [GENERIC]  title='GoPlay'
+    UPC=786138709267: [GENERIC]  title='GoPlay'
+    UPC=786138709410: [GENERIC]  title='GoPlay'
+    => non-generic 0/3, unique titles 1, images 1
+
+  [shopify_search]
+    UPC=786138702633: [GENERIC]  title='GoPlay'
+    UPC=786138709267: [GENERIC]  title='GoPlay'
+    UPC=786138709410: [GENERIC]  title='GoPlay'
+    => non-generic 0/3, unique titles 1, images 1
+
+  [search_q_name]
+    UPC=786138702633: [GENERIC]  title='GoPlay'
+    UPC=786138709267: [GENERIC]  title='GoPlay'
+    UPC=786138709410: [GENERIC]  title='GoPlay'
+    => non-generic 0/3, unique titles 1, images 1
+
+  [search_s_name]
+    UPC=786138702633: [GENERIC]  title='GoPlay'
+    UPC=786138709267: [GENERIC]  title='GoPlay'
+    UPC=786138709410: [GENERIC]  title='GoPlay'
+    => non-generic 0/3, unique titles 1, images 1
+  => Wrote docs/sites/goplay.md
+
+============================================================
+  ANALYZING: lchaim (https://lchaimstore.com)
+============================================================
+  Samples (3):
+    UPC=9798893260595  Name=Reusable Stickers Winter
+    UPC=7290018087084  Name=KIDS PLAY SHABBOS TISH (Lchaim)
+    UPC=9798893262193  Name=Comic Only 300
+
+  Fetching homepage...
+    Title : Lchaim Productions
+    OG Img: -
+
+  [direct_p]
+    UPC=9798893260595: [GENERIC]  title='Lchaim Productions'
+    UPC=7290018087084: [GENERIC]  title='Lchaim Productions'
+    UPC=9798893262193: [GENERIC]  title='Lchaim Productions'
+    => non-generic 0/3, unique titles 1, images 0
+
+  [search_q_upc]
+    UPC=9798893260595: [OK]  title='404 - Page Not Found'
+    UPC=7290018087084: [OK]  title='404 - Page Not Found'
+    UPC=9798893262193: [OK]  title='404 - Page Not Found'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_s_upc]
+    UPC=9798893260595: [GENERIC]  title='Lchaim Productions'
+    UPC=7290018087084: [GENERIC]  title='Lchaim Productions'
+    UPC=9798893262193: [GENERIC]  title='Lchaim Productions'
+    => non-generic 0/3, unique titles 1, images 0
+
+  [shopify_search]
+    UPC=9798893260595: [OK]  title='404 - Page Not Found'
+    UPC=7290018087084: [OK]  title='404 - Page Not Found'
+    UPC=9798893262193: [OK]  title='404 - Page Not Found'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_q_name]
+    UPC=9798893260595: [OK]  title='404 - Page Not Found'
+    UPC=7290018087084: [OK]  title='404 - Page Not Found'
+    UPC=9798893262193: [OK]  title='404 - Page Not Found'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_s_name]
+    UPC=9798893260595: [GENERIC]  title='Lchaim Productions'
+    UPC=7290018087084: [GENERIC]  title='Lchaim Productions'
+    UPC=9798893262193: [GENERIC]  title='Lchaim Productions'
+    => non-generic 0/3, unique titles 1, images 0
+  => Wrote docs/sites/lchaim.md
+
+============================================================
+  ANALYZING: metal_earth (https://www.metalearth.com)
+============================================================
+  Samples (3):
+    UPC=32309010329  Name=Metal Earth White House
+    UPC=32309010800  Name=Metal Earth Grand Piano
+    UPC=32309000160  Name=F-22 RAPTOR
+
+  Fetching homepage...
+    Title : 3D Metal Model Kits
+    OG Img: -
+
+  [product_url_column]  Sheet has Product URL – testing...
+    UPC=32309010329: [GENERIC]  title='3D Metal Model Kits'
+    UPC=32309010800: [GENERIC]  title='3D Metal Model Kits'
+    UPC=32309000160: [GENERIC]  title='3D Metal Model Kits'
+    => non-generic 0/3, unique titles 1, images 0
+
+  [direct_p]
+    UPC=32309010329: [GENERIC]  title='3D Metal Model Kits'
+    UPC=32309010800: [GENERIC]  title='3D Metal Model Kits'
+    UPC=32309000160: [GENERIC]  title='3D Metal Model Kits'
+    => non-generic 0/3, unique titles 1, images 0
+
+  [search_q_upc]
+    UPC=32309010329: [OK]  title='Search | 3D Metal Model Kits'
+    UPC=32309010800: [OK]  title='Search | 3D Metal Model Kits'
+    UPC=32309000160: [OK]  title='Search | 3D Metal Model Kits'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_s_upc]
+    UPC=32309010329: [GENERIC]  title='3D Metal Model Kits'
+    UPC=32309010800: [GENERIC]  title='3D Metal Model Kits'
+    UPC=32309000160: [GENERIC]  title='3D Metal Model Kits'
+    => non-generic 0/3, unique titles 1, images 0
+
+  [shopify_search]
+    UPC=32309010329: [OK]  title='Search | 3D Metal Model Kits'
+    UPC=32309010800: [OK]  title='Search | 3D Metal Model Kits'
+    UPC=32309000160: [OK]  title='Search | 3D Metal Model Kits'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_q_name]
+    UPC=32309010329: [OK]  title='Search | 3D Metal Model Kits'
+    UPC=32309010800: [OK]  title='Search | 3D Metal Model Kits'
+    UPC=32309000160: [OK]  title='Search | 3D Metal Model Kits'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_s_name]
+    UPC=32309010329: [GENERIC]  title='3D Metal Model Kits'
+    UPC=32309010800: [GENERIC]  title='3D Metal Model Kits'
+    UPC=32309000160: [GENERIC]  title='3D Metal Model Kits'
+    => non-generic 0/3, unique titles 1, images 0
+  => Wrote docs/sites/metal_earth.md
+
+============================================================
+  ANALYZING: microkick (https://microkickboard.com)
+============================================================
+  Samples (3):
+    UPC=7640108560735  Name=Micro Maxi Deluxe Scooter- Pink
+    UPC=7630053532475  Name=Micro Scooters Maxi Deluxe Eco Scooter - Green
+    UPC=7640108560339  Name=Micro Mini Deluxe Scooter - Blue
+
+  Fetching homepage...
+    Title : Micro Kickboard
+    OG Img: https://microkickboard.com/cdn/shop/files/Branded_Micro_Social_Share_Image_Draft
+
+  [direct_p]
+    UPC=7640108560735: listing/search page → following https://microkickboard.com/products/mini-rock-and-go-led-scooter
+    UPC=7640108560735: [OK] JSON-LD title='Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard'
+    UPC=7630053532475: listing/search page → following https://microkickboard.com/products/mini-rock-and-go-led-scooter
+    UPC=7630053532475: [OK] JSON-LD title='Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard'
+    UPC=7640108560339: listing/search page → following https://microkickboard.com/products/mini-rock-and-go-led-scooter
+    UPC=7640108560339: [OK] JSON-LD title='Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard'
+    => non-generic 3/3, unique titles 1, images 1
+
+  [search_q_upc]
+    UPC=7640108560735: listing/search page → following https://microkickboard.com/products/maxi-scooter?_pos=1&_sid=e1bc6de0d
+    UPC=7640108560735: [OK] JSON-LD title='Micro Maxi Scooter | Child Scooter | Micro Kickboard'
+    UPC=7630053532475: listing/search page → following https://microkickboard.com/products/maxi-eco-scooter?_pos=1&_sid=b684a
+    UPC=7630053532475: [OK] JSON-LD title='Micro Maxi ECO Scooter | Child Scooter | Micro Kickboar'
+    UPC=7640108560339: listing/search page → following https://microkickboard.com/products/micro-mini-scooter?_pos=1&_sid=d9b
+    UPC=7640108560339: [OK] JSON-LD title='Micro Mini Scooter | Toddler + Child Scooter | Micro Ki'
+    => non-generic 3/3, unique titles 3, images 3
+
+  [search_s_upc]
+    UPC=7640108560735: listing/search page → following https://microkickboard.com/products/mini-rock-and-go-led-scooter
+    UPC=7640108560735: [OK] JSON-LD title='Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard'
+    UPC=7630053532475: listing/search page → following https://microkickboard.com/products/mini-rock-and-go-led-scooter
+    UPC=7630053532475: [OK] JSON-LD title='Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard'
+    UPC=7640108560339: listing/search page → following https://microkickboard.com/products/mini-rock-and-go-led-scooter
+    UPC=7640108560339: [OK] JSON-LD title='Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard'
+    => non-generic 3/3, unique titles 1, images 1
+
+  [shopify_search]
+    UPC=7640108560735: listing/search page → following https://microkickboard.com/products/maxi-scooter?_pos=1&_sid=15472a5dc
+    UPC=7640108560735: [OK] JSON-LD title='Micro Maxi Scooter | Child Scooter | Micro Kickboard'
+    UPC=7630053532475: listing/search page → following https://microkickboard.com/products/maxi-eco-scooter?_pos=1&_sid=86d54
+    UPC=7630053532475: [OK] JSON-LD title='Micro Maxi ECO Scooter | Child Scooter | Micro Kickboar'
+    UPC=7640108560339: listing/search page → following https://microkickboard.com/products/micro-mini-scooter?_pos=1&_sid=a95
+    follow error: Page.goto: net::ERR_NETWORK_CHANGED at https://microkickboard.com/products/micro-mini-scooter?_pos=1&_sid=a958a7646&_ss=r&variant=37130484842648
+Call log:
+  - navigating to "https://microkickboard.com/products/micro-mini-scooter?_pos=1&_sid=a958a7646&_ss=r&variant=37130484842648", waiting until "domcontentloaded"
+
+    UPC=7640108560339: [GENERIC]  title='Search: 2 results found for "7640108560339" – Micro Kic'
+    => non-generic 2/3, unique titles 3, images 3
+
+  [search_q_name]
+    UPC=7640108560735: listing/search page → following https://microkickboard.com/products/maxi-led-scooter?_pos=1&_sid=71311
+    UPC=7640108560735: [OK] JSON-LD title='Micro Maxi LED Scooter | Child Scooter | Micro Kickboar'
+    UPC=7630053532475: listing/search page → following https://microkickboard.com/products/micro-mini-maxi-handgrips?_pos=2&_
+    UPC=7630053532475: [OK] JSON-LD title='Parts: Handlebar Grips for Mini &amp; Maxi – Micro Kick'
+    UPC=7640108560339: listing/search page → following https://microkickboard.com/products/micro-mini-scooter?_pos=1&_sid=4d8
+    UPC=7640108560339: [OK] JSON-LD title='Micro Mini Scooter | Toddler + Child Scooter | Micro Ki'
+    => non-generic 3/3, unique titles 3, images 3
+
+  [search_s_name]
+    UPC=7640108560735: listing/search page → following https://microkickboard.com/products/mini-rock-and-go-led-scooter
+    UPC=7640108560735: [OK] JSON-LD title='Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard'
+    UPC=7630053532475: listing/search page → following https://microkickboard.com/products/mini-rock-and-go-led-scooter
+    UPC=7630053532475: [OK] JSON-LD title='Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard'
+    UPC=7640108560339: listing/search page → following https://microkickboard.com/products/mini-rock-and-go-led-scooter
+    UPC=7640108560339: [OK] JSON-LD title='Micro Mini Rock &amp; Go LED Scooter | Micro Kickboard'
+    => non-generic 3/3, unique titles 1, images 1
+  => Wrote docs/sites/microkick.md
+
+============================================================
+  ANALYZING: moore (https://www.mooreoffice.com)
+============================================================
+  Samples (3):
+    UPC=786138700080  Name=SEQUIN BACJPACK
+    UPC=786138701667  Name=200 SHEET PROTECTORS (MOORE)
+    UPC=86138103219  Name=MOORE 3 ZIPPER PENCIL CASE
+
+  Fetching homepage...
+    Title : Maintenance is in progress!
+    OG Img: -
+
+  [direct_p]
+    UPC=786138700080: [GENERIC]  title='Maintenance is in progress!'
+    UPC=786138701667: [GENERIC]  title='Maintenance is in progress!'
+    UPC=86138103219: [GENERIC]  title='Maintenance is in progress!'
+    => non-generic 0/3, unique titles 1, images 0
+
+  [search_q_upc]
+    UPC=786138700080: [OK]  title='404 Not Found'
+    UPC=786138701667: [OK]  title='404 Not Found'
+    UPC=86138103219: [OK]  title='404 Not Found'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_s_upc]
+    UPC=786138700080: [GENERIC]  title='Maintenance is in progress!'
+    UPC=786138701667: [GENERIC]  title='Maintenance is in progress!'
+    UPC=86138103219: [GENERIC]  title='Maintenance is in progress!'
+    => non-generic 0/3, unique titles 1, images 0
+
+  [shopify_search]
+    UPC=786138700080: [OK]  title='404 Not Found'
+    UPC=786138701667: [OK]  title='404 Not Found'
+    UPC=86138103219: [OK]  title='404 Not Found'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_q_name]
+    UPC=786138700080: [OK]  title='404 Not Found'
+    UPC=786138701667: [OK]  title='404 Not Found'
+    UPC=86138103219: [OK]  title='404 Not Found'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_s_name]
+    UPC=786138700080: [GENERIC]  title='Maintenance is in progress!'
+    UPC=786138701667: [GENERIC]  title='Maintenance is in progress!'
+    UPC=86138103219: [GENERIC]  title='Maintenance is in progress!'
+    => non-generic 0/3, unique titles 1, images 0
+  => Wrote docs/sites/moore.md
+
+============================================================
+  ANALYZING: playkidiz (https://playkidiz.com)
+============================================================
+  Samples (3):
+    UPC=786138700264  Name=CLEANING PLAY SET
+    UPC=786138705696  Name=DELUXE SHOPPING CART W REGISTER
+    UPC=786138803149  Name=PUDDLE JUMPER PINK
+
+  Fetching homepage...
+    Title : Playkidiz
+    OG Img: -
+
+  [direct_p]
+    UPC=786138700264: [OK]  title='Page not found – Playkidiz'
+    UPC=786138705696: [OK]  title='Search Results for “786138705696” – Playkidiz'
+    UPC=786138803149: [OK]  title='Search Results for “786138803149” – Playkidiz'
+    => non-generic 3/3, unique titles 3, images 0
+
+  [search_q_upc]
+    UPC=786138700264: [OK]  title='Page not found – Playkidiz'
+    UPC=786138705696: [OK]  title='Page not found – Playkidiz'
+    UPC=786138803149: [OK]  title='Page not found – Playkidiz'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_s_upc]
+    UPC=786138700264: listing/search page → following https://playkidiz.com/product/26pc-stamp-set-emoji/
+    UPC=786138700264: [OK]  title='26pc Stamp Set – Emoji – Playkidiz'
+    UPC=786138705696: [OK]  title='Search Results for “786138705696” – Playkidiz'
+    UPC=786138803149: [OK]  title='Search Results for “786138803149” – Playkidiz'
+    => non-generic 3/3, unique titles 3, images 0
+
+  [shopify_search]
+    UPC=786138700264: [OK]  title='Page not found – Playkidiz'
+    UPC=786138705696: [OK]  title='Page not found – Playkidiz'
+    UPC=786138803149: [OK]  title='Page not found – Playkidiz'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_q_name]
+    UPC=786138700264: [OK]  title='Page not found – Playkidiz'
+    UPC=786138705696: [OK]  title='Page not found – Playkidiz'
+    UPC=786138803149: [OK]  title='Page not found – Playkidiz'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_s_name]
+    UPC=786138700264: listing/search page → following https://playkidiz.com/product/playkidiz-cleaning-pail-set-6pcs-stand/
+    UPC=786138700264: [OK]  title='PlayKidiz Cleaning Pail set, 6Pcs – Stand – Playkidiz'
+    UPC=786138705696: [OK]  title='Search Results for “DELUXE SHOPPING CART W REGISTER” – '
+    UPC=786138803149: [OK]  title='Search Results for “PUDDLE JUMPER PINK” – Playkidiz'
+    => non-generic 3/3, unique titles 3, images 0
+  => Wrote docs/sites/playkidiz.md
+
+============================================================
+  ANALYZING: razor (https://razor.com)
+============================================================
+  Samples (3):
+    UPC=4542300264  Name=RAZOR A SCOOTER CLEAR
+    UPC=845423002640  Name=Razor A Scooter Clear Wheels
+    UPC=845423018207  Name=RipRider
+
+  Fetching homepage...
+    Title : Razor - Electric Scooters, Ride-Ons &amp; Carts for Every Age
+    OG Img: https://razor.com/wp-content/uploads/2025/04/default_featured.jpg
+
+  [direct_p]
+    UPC=4542300264: [OK]  title='Page not found - Razor'
+    UPC=845423002640: [OK]  title='Page not found - Razor'
+    UPC=845423018207: [OK]  title='Page not found - Razor'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_q_upc]
+    UPC=4542300264: [OK]  title='Page not found - Razor'
+    UPC=845423002640: [OK]  title='Page not found - Razor'
+    UPC=845423018207: [OK]  title='Page not found - Razor'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_s_upc]
+    UPC=4542300264: [OK]  title='Search Results for “4542300264” - Razor'
+    UPC=845423002640: [OK]  title='Search Results for “845423002640” - Razor'
+    UPC=845423018207: [OK]  title='Search Results for “845423018207” - Razor'
+    => non-generic 3/3, unique titles 3, images 1
+
+  [shopify_search]
+    UPC=4542300264: [OK]  title='Page not found - Razor'
+    UPC=845423002640: [OK]  title='Page not found - Razor'
+    UPC=845423018207: [OK]  title='Page not found - Razor'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_q_name]
+    UPC=4542300264: [OK]  title='Page not found - Razor'
+    UPC=845423002640: [OK]  title='Page not found - Razor'
+    UPC=845423018207: [OK]  title='Page not found - Razor'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_s_name]
+    UPC=4542300264: [OK]  title='Search Results for “RAZOR A SCOOTER CLEAR” - Razor'
+    UPC=845423002640: [OK]  title='Search Results for “Razor A Scooter Clear Wheels” - Raz'
+    UPC=845423018207: listing/search page → following https://razor.com/product/riprider-360-mini/
+    UPC=845423018207: [OK] JSON-LD title='RipRider 360 Mini - Razor'
+    => non-generic 3/3, unique titles 3, images 2
+  => Wrote docs/sites/razor.md
+
+============================================================
+  ANALYZING: rhode_island (https://www.rinovelty.com)
+============================================================
+  Samples (3):
+    UPC=97138915757  Name=BAT AND BALL SET
+    UPC=97138635730  Name=DISAPPEARING INK
+    UPC=97138818362  Name=CHILD COWBOY HAT
+
+  Fetching homepage...
+    Title : Rhode Island Novelty
+    OG Img: -
+
+  [direct_p]
+    UPC=97138915757: [GENERIC]  title='Rhode Island Novelty'
+    UPC=97138635730: [GENERIC]  title='Rhode Island Novelty'
+    UPC=97138818362: [GENERIC]  title='Rhode Island Novelty'
+    => non-generic 0/3, unique titles 1, images 0
+
+  [search_q_upc]
+    UPC=97138915757: [GENERIC]  title=''
+    UPC=97138635730: [GENERIC]  title=''
+    UPC=97138818362: [GENERIC]  title=''
+    => non-generic 0/3, unique titles 0, images 0
+
+  [search_s_upc]
+    UPC=97138915757: [GENERIC]  title='Rhode Island Novelty'
+    UPC=97138635730: [GENERIC]  title='Rhode Island Novelty'
+    UPC=97138818362: [GENERIC]  title='Rhode Island Novelty'
+    => non-generic 0/3, unique titles 1, images 0
+
+  [shopify_search]
+    UPC=97138915757: [GENERIC]  title=''
+    UPC=97138635730: [GENERIC]  title=''
+    UPC=97138818362: [GENERIC]  title=''
+    => non-generic 0/3, unique titles 0, images 0
+
+  [search_q_name]
+    UPC=97138915757: [GENERIC]  title=''
+    UPC=97138635730: [GENERIC]  title=''
+    UPC=97138818362: [GENERIC]  title=''
+    => non-generic 0/3, unique titles 0, images 0
+
+  [search_s_name]
+    UPC=97138915757: [GENERIC]  title='Rhode Island Novelty'
+    UPC=97138635730: [GENERIC]  title='Rhode Island Novelty'
+    UPC=97138818362: [GENERIC]  title='Rhode Island Novelty'
+    => non-generic 0/3, unique titles 1, images 0
+  => Wrote docs/sites/rhode_island.md
+
+============================================================
+  ANALYZING: samvix (https://www.samvix.com)
+============================================================
+  Samples (3):
+    UPC=766162174866  Name=Q5 Case - Black
+    UPC=638455681460  Name=DYNAMITE 8GB MP3 PLAYER - Black
+    UPC=638455681651  Name=Samvix Glasba 64 MP3, Black No SD slot
+
+  Fetching homepage...
+    Title : Samvix | סאמויקס – Personal Electronic Devices
+    OG Img: -
+
+  [direct_p]
+    UPC=766162174866: listing/search page → following https://www.samvix.com/index.php/products/
+    UPC=766162174866: [OK]  title='Products Categories – Samvix | סאמויקס'
+    UPC=638455681460: listing/search page → following https://www.samvix.com/index.php/products/
+    UPC=638455681460: [OK]  title='Products Categories – Samvix | סאמויקס'
+    UPC=638455681651: listing/search page → following https://www.samvix.com/index.php/products/
+    UPC=638455681651: [OK]  title='Products Categories – Samvix | סאמויקס'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_q_upc]
+    UPC=766162174866: listing/search page → following https://www.samvix.com/index.php/products/
+    UPC=766162174866: [OK]  title='Products Categories – Samvix | סאמויקס'
+    UPC=638455681460: listing/search page → following https://www.samvix.com/index.php/products/
+    UPC=638455681460: [OK]  title='Products Categories – Samvix | סאמויקס'
+    UPC=638455681651: listing/search page → following https://www.samvix.com/index.php/products/
+    UPC=638455681651: [OK]  title='Products Categories – Samvix | סאמויקס'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_s_upc]
+    UPC=766162174866: listing/search page → following https://www.samvix.com/index.php/products/
+    UPC=766162174866: [OK]  title='Products Categories – Samvix | סאמויקס'
+    UPC=638455681460: listing/search page → following https://www.samvix.com/index.php/products/
+    UPC=638455681460: [OK]  title='Products Categories – Samvix | סאמויקס'
+    UPC=638455681651: listing/search page → following https://www.samvix.com/index.php/products/
+    UPC=638455681651: [OK]  title='Products Categories – Samvix | סאמויקס'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [shopify_search]
+    UPC=766162174866: listing/search page → following https://www.samvix.com/index.php/products/
+    UPC=766162174866: [OK]  title='Products Categories – Samvix | סאמויקס'
+    UPC=638455681460: listing/search page → following https://www.samvix.com/index.php/products/
+    UPC=638455681460: [OK]  title='Products Categories – Samvix | סאמויקס'
+    UPC=638455681651: listing/search page → following https://www.samvix.com/index.php/products/
+    UPC=638455681651: [OK]  title='Products Categories – Samvix | סאמויקס'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_q_name]
+    UPC=766162174866: listing/search page → following https://www.samvix.com/index.php/products/
+    UPC=766162174866: [OK]  title='Products Categories – Samvix | סאמויקס'
+    UPC=638455681460: listing/search page → following https://www.samvix.com/index.php/products/
+    UPC=638455681460: [OK]  title='Products Categories – Samvix | סאמויקס'
+    UPC=638455681651: listing/search page → following https://www.samvix.com/index.php/products/
+    UPC=638455681651: [OK]  title='Products Categories – Samvix | סאמויקס'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_s_name]
+    UPC=766162174866: listing/search page → following https://www.samvix.com/index.php/products/
+    UPC=766162174866: [OK]  title='Products Categories – Samvix | סאמויקס'
+    UPC=638455681460: listing/search page → following https://www.samvix.com/index.php/products/
+    UPC=638455681460: [OK]  title='Products Categories – Samvix | סאמויקס'
+    UPC=638455681651: listing/search page → following https://www.samvix.com/products/samvix-glasba-64-mp3-player
+    UPC=638455681651: [OK]  title='SAMVIX GLASBA 64 MP3 PLAYER – Samvix | סאמויקס'
+    => non-generic 3/3, unique titles 2, images 0
+  => Wrote docs/sites/samvix.md
+
+============================================================
+  ANALYZING: sands (https://www.sands.com)
+============================================================
+  Samples (3):
+    UPC=786138703739  Name=SANDS SILICONE WATCH - BLACK
+    UPC=786138704118  Name=SANDS DELUXE DIGITAL WATCH - PINK
+    UPC=786138703807  Name=SANDS DIGITAL WATCH - WHITE
+
+  Fetching homepage...
+    Title : Invalid URL
+    OG Img: -
+
+  [direct_p]
+    UPC=786138703739: [GENERIC]  title='Invalid URL'
+    UPC=786138704118: [GENERIC]  title='Invalid URL'
+    UPC=786138703807: [GENERIC]  title='Invalid URL'
+    => non-generic 0/3, unique titles 1, images 0
+
+  [search_q_upc]
+    UPC=786138703739: [OK]  title='Access Denied'
+    UPC=786138704118: [OK]  title='Access Denied'
+    UPC=786138703807: [OK]  title='Access Denied'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_s_upc]
+    UPC=786138703739: [GENERIC]  title='Invalid URL'
+    UPC=786138704118: [GENERIC]  title='Invalid URL'
+    UPC=786138703807: [GENERIC]  title='Invalid URL'
+    => non-generic 0/3, unique titles 1, images 0
+
+  [shopify_search]
+    UPC=786138703739: [OK]  title='Access Denied'
+    UPC=786138704118: [OK]  title='Access Denied'
+    UPC=786138703807: [OK]  title='Access Denied'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_q_name]
+    UPC=786138703739: [OK]  title='Access Denied'
+    UPC=786138704118: [OK]  title='Access Denied'
+    UPC=786138703807: [OK]  title='Access Denied'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_s_name]
+    UPC=786138703739: [GENERIC]  title='Invalid URL'
+    UPC=786138704118: [GENERIC]  title='Invalid URL'
+    UPC=786138703807: [GENERIC]  title='Invalid URL'
+    => non-generic 0/3, unique titles 1, images 0
+  => Wrote docs/sites/sands.md
+
+============================================================
+  ANALYZING: winning_moves (https://www.winning-moves.com)
+============================================================
+  Samples (3):
+    UPC=714043011922  Name=HI HO! CHERRY-O
+    UPC=714043011762  Name=Classic Trouble
+    UPC=714043012264  Name=WINNING MOVES PRECIOUS CARGO
+
+  Fetching homepage...
+    Title : Winning Moves Games, Inc.
+    OG Img: -
+
+  [direct_p]
+    UPC=714043011922: listing/search page → following https://winning-moves.com/product/crazycanoe.asp
+    UPC=714043011922: [OK]  title='Winning Moves Games: Crazy Canoe™'
+    UPC=714043011762: listing/search page → following https://winning-moves.com/product/crazycanoe.asp
+    UPC=714043011762: [OK]  title='Winning Moves Games: Crazy Canoe™'
+    UPC=714043012264: listing/search page → following https://winning-moves.com/product/crazycanoe.asp
+    UPC=714043012264: [OK]  title='Winning Moves Games: Crazy Canoe™'
+    => non-generic 3/3, unique titles 1, images 1
+
+  [search_q_upc]
+    UPC=714043011922: listing/search page → following https://www.winning-moves.com/product/passthepigsbrand.asp
+    UPC=714043011922: [OK]  title='Winning Moves Games: Pass The Pigs'
+    UPC=714043011762: listing/search page → following https://www.winning-moves.com/product/passthepigsbrand.asp
+    UPC=714043011762: [OK]  title='Winning Moves Games: Pass The Pigs'
+    UPC=714043012264: listing/search page → following https://www.winning-moves.com/product/passthepigsbrand.asp
+    UPC=714043012264: [OK]  title='Winning Moves Games: Pass The Pigs'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_s_upc]
+    UPC=714043011922: listing/search page → following https://winning-moves.com/product/crazycanoe.asp
+    UPC=714043011922: [OK]  title='Winning Moves Games: Crazy Canoe™'
+    UPC=714043011762: listing/search page → following https://winning-moves.com/product/crazycanoe.asp
+    UPC=714043011762: [OK]  title='Winning Moves Games: Crazy Canoe™'
+    UPC=714043012264: listing/search page → following https://winning-moves.com/product/crazycanoe.asp
+    UPC=714043012264: [OK]  title='Winning Moves Games: Crazy Canoe™'
+    => non-generic 3/3, unique titles 1, images 1
+
+  [shopify_search]
+    UPC=714043011922: listing/search page → following https://www.winning-moves.com/product/passthepigsbrand.asp
+    UPC=714043011922: [OK]  title='Winning Moves Games: Pass The Pigs'
+    UPC=714043011762: listing/search page → following https://www.winning-moves.com/product/passthepigsbrand.asp
+    UPC=714043011762: [OK]  title='Winning Moves Games: Pass The Pigs'
+    UPC=714043012264: listing/search page → following https://www.winning-moves.com/product/passthepigsbrand.asp
+    UPC=714043012264: [OK]  title='Winning Moves Games: Pass The Pigs'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_q_name]
+    UPC=714043011922: listing/search page → following https://www.winning-moves.com/product/passthepigsbrand.asp
+    UPC=714043011922: [OK]  title='Winning Moves Games: Pass The Pigs'
+    UPC=714043011762: listing/search page → following https://www.winning-moves.com/product/passthepigsbrand.asp
+    UPC=714043011762: [OK]  title='Winning Moves Games: Pass The Pigs'
+    UPC=714043012264: listing/search page → following https://www.winning-moves.com/product/passthepigsbrand.asp
+    UPC=714043012264: [OK]  title='Winning Moves Games: Pass The Pigs'
+    => non-generic 3/3, unique titles 1, images 0
+
+  [search_s_name]
+    UPC=714043011922: listing/search page → following https://winning-moves.com/product/crazycanoe.asp
+    UPC=714043011922: [OK]  title='Winning Moves Games: Crazy Canoe™'
+    UPC=714043011762: listing/search page → following https://winning-moves.com/product/crazycanoe.asp
+    UPC=714043011762: [OK]  title='Winning Moves Games: Crazy Canoe™'
+    UPC=714043012264: listing/search page → following https://winning-moves.com/product/crazycanoe.asp
+    UPC=714043012264: [OK]  title='Winning Moves Games: Crazy Canoe™'
+    => non-generic 3/3, unique titles 1, images 1
+  => Wrote docs/sites/winning_moves.md
+
+============================================================
+  SUMMARY
+============================================================
+  [GOOD] bruder                best=search_q_upc            score= 84  ok=3/3  uniq_titles=3
+  [WEAK] chazak                best=direct_p                score= 68  ok=3/3  uniq_titles=1
+  [WEAK] colours_craft         best=direct_p                score= 68  ok=3/3  uniq_titles=1
+  [WEAK] enday                 best=direct_p                score= 35  ok=3/3  uniq_titles=1
+  [FAIL] gi_go                 best=search_s_upc            score=  5  ok=0/3  uniq_titles=1
+  [FAIL] goplay                best=direct_p                score= 14  ok=0/3  uniq_titles=1
+  [WEAK] lchaim                best=search_q_upc            score= 35  ok=3/3  uniq_titles=1
+  [WEAK] metal_earth           best=search_q_upc            score= 35  ok=3/3  uniq_titles=1
+  [GOOD] microkick             best=search_q_upc            score= 84  ok=3/3  uniq_titles=3
+  [WEAK] moore                 best=search_q_upc            score= 35  ok=3/3  uniq_titles=1
+  [GOOD] playkidiz             best=direct_p                score= 45  ok=3/3  uniq_titles=3
+  [GOOD] razor                 best=search_s_name           score= 59  ok=3/3  uniq_titles=3
+  [FAIL] rhode_island          best=direct_p                score=  5  ok=0/3  uniq_titles=1
+  [GOOD] samvix                best=search_s_name           score= 40  ok=3/3  uniq_titles=2
+  [WEAK] sands                 best=search_q_upc            score= 35  ok=3/3  uniq_titles=1
+  [WEAK] winning_moves         best=direct_p                score= 38  ok=3/3  uniq_titles=1

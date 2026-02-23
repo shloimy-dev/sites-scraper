@@ -1,0 +1,37 @@
+Found 8 scrapers:
+  scrape_bruder.py
+  scrape_chazak.py
+  scrape_metal_earth.py
+  scrape_microkick.py
+  scrape_playkidiz.py
+  scrape_razor.py
+  scrape_samvix.py
+  scrape_winning_moves.py
+
+Starting bruder...
+
+Starting chazak...
+
+Starting metal_earth...
+  DONE: metal_earth (exit 0)
+
+Starting microkick...
+  DONE: microkick (exit 0)
+
+Starting playkidiz...
+  DONE: bruder (exit 0)
+
+Starting razor...
+  DONE: razor (exit 0)
+
+Starting samvix...
+  DONE: samvix (exit 0)
+
+Starting winning_moves...
+  DONE: winning_moves (exit 0)
+  DONE: playkidiz (exit 0)
+  DONE: chazak (exit 0)
+
+==================================================
+RESULTS: 8 done, 0 failed
+  Done: metal_earth, microkick, bruder, razor, samvix, winning_moves, playkidiz, chazak

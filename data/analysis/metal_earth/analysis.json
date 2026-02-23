@@ -1,0 +1,447 @@
+{
+  "site_id": "metal_earth",
+  "base_url": "https://www.metalearth.com",
+  "samples": [
+    {
+      "upc": "32309010329",
+      "name": "Metal Earth White House",
+      "product_url": "https://www.metalearth.com/?p=32309010329"
+    },
+    {
+      "upc": "32309010800",
+      "name": "Metal Earth Grand Piano",
+      "product_url": "https://www.metalearth.com/?p=32309010800"
+    },
+    {
+      "upc": "32309000160",
+      "name": "F-22 RAPTOR",
+      "product_url": "https://www.metalearth.com/?p=32309000160"
+    }
+  ],
+  "baseline": {
+    "title": "3D Metal Model Kits",
+    "og_title": "",
+    "og_description": "",
+    "og_image": "",
+    "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models",
+    "json_ld_product": null,
+    "h1": ""
+  },
+  "strategies": {
+    "product_url_column": {
+      "results": [
+        {
+          "upc": "32309010329",
+          "url_tried": "https://www.metalearth.com/?p=32309010329",
+          "title": "3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/?p=32309010329",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        },
+        {
+          "upc": "32309010800",
+          "url_tried": "https://www.metalearth.com/?p=32309010800",
+          "title": "3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/?p=32309010800",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        },
+        {
+          "upc": "32309000160",
+          "url_tried": "https://www.metalearth.com/?p=32309000160",
+          "title": "3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/?p=32309000160",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 5
+    },
+    "direct_p": {
+      "results": [
+        {
+          "upc": "32309010329",
+          "url_tried": "https://www.metalearth.com/?p=32309010329",
+          "title": "3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/?p=32309010329",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        },
+        {
+          "upc": "32309010800",
+          "url_tried": "https://www.metalearth.com/?p=32309010800",
+          "title": "3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/?p=32309010800",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        },
+        {
+          "upc": "32309000160",
+          "url_tried": "https://www.metalearth.com/?p=32309000160",
+          "title": "3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/?p=32309000160",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 5
+    },
+    "search_q_upc": {
+      "results": [
+        {
+          "upc": "32309010329",
+          "url_tried": "https://www.metalearth.com/search?q=32309010329",
+          "title": "Search | 3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Search",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/search?q=32309010329",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        },
+        {
+          "upc": "32309010800",
+          "url_tried": "https://www.metalearth.com/search?q=32309010800",
+          "title": "Search | 3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Search",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/search?q=32309010800",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        },
+        {
+          "upc": "32309000160",
+          "url_tried": "https://www.metalearth.com/search?q=32309000160",
+          "title": "Search | 3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Search",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/search?q=32309000160",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 35
+    },
+    "search_s_upc": {
+      "results": [
+        {
+          "upc": "32309010329",
+          "url_tried": "https://www.metalearth.com/?s=32309010329",
+          "title": "3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/?s=32309010329",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        },
+        {
+          "upc": "32309010800",
+          "url_tried": "https://www.metalearth.com/?s=32309010800",
+          "title": "3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/?s=32309010800",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        },
+        {
+          "upc": "32309000160",
+          "url_tried": "https://www.metalearth.com/?s=32309000160",
+          "title": "3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/?s=32309000160",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 5
+    },
+    "shopify_search": {
+      "results": [
+        {
+          "upc": "32309010329",
+          "url_tried": "https://www.metalearth.com/search?type=product&q=32309010329",
+          "title": "Search | 3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Search",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/search?type=product&q=32309010329",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        },
+        {
+          "upc": "32309010800",
+          "url_tried": "https://www.metalearth.com/search?type=product&q=32309010800",
+          "title": "Search | 3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Search",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/search?type=product&q=32309010800",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        },
+        {
+          "upc": "32309000160",
+          "url_tried": "https://www.metalearth.com/search?type=product&q=32309000160",
+          "title": "Search | 3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Search",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/search?type=product&q=32309000160",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 35
+    },
+    "search_q_name": {
+      "results": [
+        {
+          "upc": "32309010329",
+          "url_tried": "https://www.metalearth.com/search?q=Metal+Earth+White+House",
+          "title": "Search | 3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Search",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/search?q=Metal+Earth+White+House",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        },
+        {
+          "upc": "32309010800",
+          "url_tried": "https://www.metalearth.com/search?q=Metal+Earth+Grand+Piano",
+          "title": "Search | 3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Search",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/search?q=Metal+Earth+Grand+Piano",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        },
+        {
+          "upc": "32309000160",
+          "url_tried": "https://www.metalearth.com/search?q=F-22+RAPTOR",
+          "title": "Search | 3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Search",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/search?q=F-22+RAPTOR",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 35
+    },
+    "search_s_name": {
+      "results": [
+        {
+          "upc": "32309010329",
+          "url_tried": "https://www.metalearth.com/?s=Metal+Earth+White+House",
+          "title": "3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/?s=Metal+Earth+White+House",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        },
+        {
+          "upc": "32309010800",
+          "url_tried": "https://www.metalearth.com/?s=Metal+Earth+Grand+Piano",
+          "title": "3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/?s=Metal+Earth+Grand+Piano",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        },
+        {
+          "upc": "32309000160",
+          "url_tried": "https://www.metalearth.com/?s=F-22+RAPTOR",
+          "title": "3D Metal Model Kits",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "",
+          "generic": true,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://www.metalearth.com/?s=F-22+RAPTOR",
+          "not_found": false,
+          "meta_description": "Metal Earth is made from high quality steel sheets to amazing 3D models"
+        }
+      ],
+      "non_generic": 0,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 5
+    }
+  },
+  "best": "search_q_upc",
+  "best_score": 35
+}

@@ -22,6 +22,16 @@ Clean base: sheets (product lists), good extracted data for aurora/bazic/atiko, 
    ```
    This fetches sample product and search pages, detects URL pattern and extraction method (JSON-LD, og:meta, or selectors), and writes `docs/sites/<site>.md`.
 
-2. **Implement one scraper per site** in `scripts/sites/` using that spec (e.g. `scrape_aurora.py`), then run it to fill `data/extracted/<site>.csv` and `data/images/<site>/`.
-
-No generic all-sites script: each site is analyzed and scraped in its own way.
+2. **Run scrapers** — either all at once (3 in parallel) or in 3 batches in 3 terminals:
+   ```bash
+   # Option A: run all, 3 at a time (one script)
+   python3 scripts/run_all_scrapers.py --parallel 3
+   python3 scripts/run_all_scrapers.py --skip-ready   # skip aurora, bazic, atiko (already in data/ready)
+   ```
+   ```bash
+   # Option B: run 3 batch scripts (in 3 terminals) to scrape all sites
+   python3 scripts/run_batch_1.py   # atiko, aurora, bazic, bruder, chazak, colours_craft, enday
+   python3 scripts/run_batch_2.py   # gi_go, goplay, lchaim, metal_earth, microkick, moore
+   python3 scripts/run_batch_3.py   # playkidiz, razor, rhode_island, samvix, sands, winning_moves
+   ```
+   Logs go to `data/run_<site>.log`.

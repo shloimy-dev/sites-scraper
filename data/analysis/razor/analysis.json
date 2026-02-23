@@ -1,0 +1,388 @@
+{
+  "site_id": "razor",
+  "base_url": "https://razor.com",
+  "samples": [
+    {
+      "upc": "4542300264",
+      "name": "RAZOR A SCOOTER CLEAR",
+      "product_url": ""
+    },
+    {
+      "upc": "845423002640",
+      "name": "Razor A Scooter Clear Wheels",
+      "product_url": ""
+    },
+    {
+      "upc": "845423018207",
+      "name": "RipRider",
+      "product_url": ""
+    }
+  ],
+  "baseline": {
+    "title": "Razor - Electric Scooters, Ride-Ons &amp; Carts for Every Age",
+    "og_title": "Razor - Electric Scooters, Ride-Ons &amp; Carts for Every Age",
+    "og_description": "Explore Razor\u2019s world of electric scooters, ride-ons, hoverboards, and crazy carts for kids, teens, and adults. Since 2000, we\u2019ve been redefining how you ride.",
+    "og_image": "https://razor.com/wp-content/uploads/2025/04/default_featured.jpg",
+    "meta_description": "Explore Razor\u2019s world of electric scooters, ride-ons, hoverboards, and crazy carts for kids, teens, and adults. Since 2000, we\u2019ve been redefining how you ride.",
+    "json_ld_product": null,
+    "h1": ""
+  },
+  "strategies": {
+    "direct_p": {
+      "results": [
+        {
+          "upc": "4542300264",
+          "url_tried": "https://razor.com/?p=4542300264",
+          "title": "Page not found - Razor",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Oops\u2026 You\u2019ve gone off road!",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://razor.com/?p=4542300264",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "845423002640",
+          "url_tried": "https://razor.com/?p=845423002640",
+          "title": "Page not found - Razor",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Oops\u2026 You\u2019ve gone off road!",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://razor.com/?p=845423002640",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "845423018207",
+          "url_tried": "https://razor.com/?p=845423018207",
+          "title": "Page not found - Razor",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Oops\u2026 You\u2019ve gone off road!",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://razor.com/?p=845423018207",
+          "not_found": true,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 35
+    },
+    "search_q_upc": {
+      "results": [
+        {
+          "upc": "4542300264",
+          "url_tried": "https://razor.com/search?q=4542300264",
+          "title": "Page not found - Razor",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Oops\u2026 You\u2019ve gone off road!",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://razor.com/search?q=4542300264",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "845423002640",
+          "url_tried": "https://razor.com/search?q=845423002640",
+          "title": "Page not found - Razor",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Oops\u2026 You\u2019ve gone off road!",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://razor.com/search?q=845423002640",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "845423018207",
+          "url_tried": "https://razor.com/search?q=845423018207",
+          "title": "Page not found - Razor",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Oops\u2026 You\u2019ve gone off road!",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://razor.com/search?q=845423018207",
+          "not_found": true,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 35
+    },
+    "search_s_upc": {
+      "results": [
+        {
+          "upc": "4542300264",
+          "url_tried": "https://razor.com/?s=4542300264",
+          "title": "Search Results for \u201c4542300264\u201d - Razor",
+          "og_title": "Search Results for \u201c4542300264\u201d",
+          "og_description": "",
+          "og_image": "https://razor.com/wp-content/uploads/2025/07/razor_blade_icon.png",
+          "json_ld_product": false,
+          "h1": "Search Results",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://razor.com/?s=4542300264",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "845423002640",
+          "url_tried": "https://razor.com/?s=845423002640",
+          "title": "Search Results for \u201c845423002640\u201d - Razor",
+          "og_title": "Search Results for \u201c845423002640\u201d",
+          "og_description": "",
+          "og_image": "https://razor.com/wp-content/uploads/2025/07/razor_blade_icon.png",
+          "json_ld_product": false,
+          "h1": "Search Results",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://razor.com/?s=845423002640",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "845423018207",
+          "url_tried": "https://razor.com/?s=845423018207",
+          "title": "Search Results for \u201c845423018207\u201d - Razor",
+          "og_title": "Search Results for \u201c845423018207\u201d",
+          "og_description": "",
+          "og_image": "https://razor.com/wp-content/uploads/2025/07/razor_blade_icon.png",
+          "json_ld_product": false,
+          "h1": "Search Results",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://razor.com/?s=845423018207",
+          "not_found": false,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 3,
+        "unique_images": 1
+      },
+      "score": 48
+    },
+    "shopify_search": {
+      "results": [
+        {
+          "upc": "4542300264",
+          "url_tried": "https://razor.com/search?type=product&q=4542300264",
+          "title": "Page not found - Razor",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Oops\u2026 You\u2019ve gone off road!",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://razor.com/search?type=product&q=4542300264",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "845423002640",
+          "url_tried": "https://razor.com/search?type=product&q=845423002640",
+          "title": "Page not found - Razor",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Oops\u2026 You\u2019ve gone off road!",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://razor.com/search?type=product&q=845423002640",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "845423018207",
+          "url_tried": "https://razor.com/search?type=product&q=845423018207",
+          "title": "Page not found - Razor",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Oops\u2026 You\u2019ve gone off road!",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://razor.com/search?type=product&q=845423018207",
+          "not_found": true,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 35
+    },
+    "search_q_name": {
+      "results": [
+        {
+          "upc": "4542300264",
+          "url_tried": "https://razor.com/search?q=RAZOR+A+SCOOTER+CLEAR",
+          "title": "Page not found - Razor",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Oops\u2026 You\u2019ve gone off road!",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://razor.com/search?q=RAZOR+A+SCOOTER+CLEAR",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "845423002640",
+          "url_tried": "https://razor.com/search?q=Razor+A+Scooter+Clear+Wheels",
+          "title": "Page not found - Razor",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Oops\u2026 You\u2019ve gone off road!",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://razor.com/search?q=Razor+A+Scooter+Clear+Wheels",
+          "not_found": true,
+          "meta_description": ""
+        },
+        {
+          "upc": "845423018207",
+          "url_tried": "https://razor.com/search?q=RipRider",
+          "title": "Page not found - Razor",
+          "og_title": "",
+          "og_description": "",
+          "og_image": "",
+          "json_ld_product": false,
+          "h1": "Oops\u2026 You\u2019ve gone off road!",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://razor.com/search?q=RipRider",
+          "not_found": true,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 1,
+        "unique_images": 0
+      },
+      "score": 35
+    },
+    "search_s_name": {
+      "results": [
+        {
+          "upc": "4542300264",
+          "url_tried": "https://razor.com/?s=RAZOR+A+SCOOTER+CLEAR",
+          "title": "Search Results for \u201cRAZOR A SCOOTER CLEAR\u201d - Razor",
+          "og_title": "Search Results for \u201cRAZOR A SCOOTER CLEAR\u201d",
+          "og_description": "",
+          "og_image": "https://razor.com/wp-content/uploads/2025/07/razor_blade_icon.png",
+          "json_ld_product": false,
+          "h1": "Search Results",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://razor.com/?s=RAZOR+A+SCOOTER+CLEAR",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "845423002640",
+          "url_tried": "https://razor.com/?s=Razor+A+Scooter+Clear+Wheels",
+          "title": "Search Results for \u201cRazor A Scooter Clear Wheels\u201d - Razor",
+          "og_title": "Search Results for \u201cRazor A Scooter Clear Wheels\u201d",
+          "og_description": "",
+          "og_image": "https://razor.com/wp-content/uploads/2025/07/razor_blade_icon.png",
+          "json_ld_product": false,
+          "h1": "Search Results",
+          "generic": false,
+          "followed": false,
+          "followed_url": "",
+          "final_url": "https://razor.com/?s=Razor+A+Scooter+Clear+Wheels",
+          "not_found": false,
+          "meta_description": ""
+        },
+        {
+          "upc": "845423018207",
+          "url_tried": "https://razor.com/?s=RipRider",
+          "title": "RipRider 360 Mini - Razor",
+          "og_title": "RipRider 360 Mini",
+          "og_description": "",
+          "og_image": "https://razor.com/wp-content/uploads/2025/05/RipRider360_Mini_Product_Photo_001.jpg",
+          "json_ld_product": true,
+          "h1": "RipRider 360 Mini",
+          "generic": false,
+          "followed": true,
+          "followed_url": "https://razor.com/product/riprider-360-mini/",
+          "final_url": "https://razor.com/product/riprider-360-mini/",
+          "not_found": false,
+          "meta_description": ""
+        }
+      ],
+      "non_generic": 3,
+      "uniqueness": {
+        "total": 3,
+        "unique_titles": 3,
+        "unique_images": 2
+      },
+      "score": 59
+    }
+  },
+  "best": "search_s_name",
+  "best_score": 59
+}
