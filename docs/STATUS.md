@@ -1,22 +1,4 @@
-# Toys4U2 — Product Data Scraper
-
-Scrapes product data (title, description, image) from manufacturer websites for each product in our inventory sheets. Each site has a dedicated scraper tailored to how that site works — Shopify API, WooCommerce search, AJAX endpoints, browser automation, etc.
-
----
-
-## Results at a Glance
-
-```
-  ╔═══════════════════════════════════════════╗
-  ║  Products scraped:     1,026+             ║
-  ║  Images downloaded:    1,200+             ║
-  ║  Sites completed:      12 / 16            ║
-  ║  Sheet items covered:  2,480              ║
-  ║  Blocked items:        150  (4 sites)     ║
-  ╚═══════════════════════════════════════════╝
-```
-
----
+# Project Status — Visual Overview
 
 ## Match Rate by Site
 
@@ -51,8 +33,6 @@ Scrapes product data (title, description, image) from manufacturer websites for 
   razor           █                                      4 products  │    4 images
   rhode_island    ░░░░░░░░░░░░░░░░░░░░  (still running, ~297 images so far)
 ```
-
----
 
 ## Site Status Overview
 
@@ -98,70 +78,14 @@ Scrapes product data (title, description, image) from manufacturer websites for 
   Product page crawl ·········· winning_moves
 ```
 
----
-
-## Project Structure
+## Totals
 
 ```
-config/sites.yaml            # Site definitions (id, base_url, sheet name)
-data/
-  sheets/                    # Input CSVs — product lists with UPC codes and names
-  ready/
-    extracted/               # Verified scraped data (CSV per site)
-    images/                  # Verified product images (folder per site)
-  extracted/                 # Newly scraped data (CSV per site)
-  images/                    # Newly downloaded images (folder per site)
-scripts/
-  deep_analyze.py            # Phase 1: tests URL strategies per site
-  deep_investigate.py        # Phase 2: probes hidden APIs, sitemaps, Shopify JSON
-  scraper_lib.py             # Shared utilities (CSV I/O, extraction, image download)
-  run_scrapers.py            # Runs all scrapers in parallel batches
-  sites/                     # One dedicated scraper per site
-    scrape_bruder.py         #   Shopify UPC search
-    scrape_chazak.py         #   Shopify UPC search
-    scrape_colours_craft.py  #   Shopify predictive search API
-    scrape_enday.py          #   Shopify predictive search API (bypasses Cloudflare)
-    scrape_lchaim.py         #   Custom AJAX API with UPC matching
-    scrape_metal_earth.py    #   Autocomplete API
-    scrape_microkick.py      #   Shopify UPC search
-    scrape_playkidiz.py      #   WooCommerce search + DOM selectors
-    scrape_razor.py          #   Shopify name search
-    scrape_rhode_island.py   #   Browser search with JS evaluation
-    scrape_samvix.py         #   WooCommerce search + DOM selectors
-    scrape_winning_moves.py  #   Direct product page crawl
-docs/sites/                  # Per-site analysis specs
-```
-
-## How It Works
-
-1. **Analyze** — `deep_analyze.py` tests each site with sample products across multiple URL strategies (direct URL, search by UPC, search by name). Compares results against the homepage baseline and checks that different products get different data.
-
-2. **Investigate** — `deep_investigate.py` probes sites that failed standard analysis: checks for hidden Shopify JSON APIs, sitemaps, AJAX search endpoints, WordPress REST APIs, and stealth browser access.
-
-3. **Scrape** — Each site has a dedicated scraper in `scripts/sites/` using the best strategy found:
-   - **Shopify sites**: `products.json`, `search/suggest.json`, or `?q=` search
-   - **WooCommerce sites**: `/?s=` search + DOM extraction
-   - **Custom platforms**: Site-specific AJAX APIs or browser automation
-   - **Static catalogs**: Direct product page crawling
-
-4. **Run** — `run_scrapers.py` runs all scrapers in parallel (3 at a time). Each scraper outputs a CSV and downloads product images.
-
-## Setup
-
-```bash
-pip install -r requirements.txt
-python3 -m playwright install chromium
-```
-
-## Running
-
-```bash
-# Run all scrapers
-python3 scripts/run_scrapers.py
-
-# Run a single site
-python3 scripts/sites/scrape_lchaim.py
-
-# Investigate unsolved sites
-python3 scripts/deep_investigate.py
+  ╔═══════════════════════════════════════════╗
+  ║  Products scraped:     1,026+             ║
+  ║  Images downloaded:    1,200+             ║
+  ║  Sites completed:      12 / 16            ║
+  ║  Sheet items covered:  2,480              ║
+  ║  Blocked items:        150  (4 sites)     ║
+  ╚═══════════════════════════════════════════╝
 ```
