@@ -1,6 +1,6 @@
 # Data
 
-- **sheets/** — Input CSVs: one per site (product list with UPC, name, etc.).
-- **extracted/** — Output from scrapers (per-product CSV). New runs write here.
-- **images/** — Downloaded product images. New runs write here.
-- **ready/** — **Finished sites (do not rerun).** aurora, bazic, atiko extracted CSVs and aurora/bazic images are here. Use this data for downstream; scrapers should skip these sites.
+- **sheets/** — Input CSVs: one per site (product lists with UPC, name, category, etc.)
+- **ready/** — Final scraped data for all completed sites. This is the output.
+  - `ready/extracted/` — One CSV per site (upc, title, description, image_url, product_url)
+  - `ready/images/` — Downloaded product images organized by site
