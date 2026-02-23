@@ -1,4 +1,4 @@
-# Toys4U2 — Product Data Scraper
+# Toys4U — Product Data Scraper
 
 Scrapes product data (title, description, image) from manufacturer websites for each product in our inventory sheets. Each site has a dedicated scraper tailored to how that site works — Shopify API, WooCommerce search, AJAX endpoints, browser automation, etc.
 
@@ -165,3 +165,4 @@ python3 scripts/sites/scrape_lchaim.py
 # Investigate unsolved sites
 python3 scripts/deep_investigate.py
 ```
+
