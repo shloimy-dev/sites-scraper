@@ -106,11 +106,13 @@ def download_image(url, dest_path):
         url = "https:" + url
     try:
         r = requests.get(url, timeout=20, stream=True, headers={"User-Agent": "Mozilla/5.0"})
-        if r.status_code == 200 and int(r.headers.get("content-length", 1)) > 500:
+        if r.status_code == 200:
             with open(dest_path, "wb") as f:
                 for chunk in r.iter_content(8192):
                     f.write(chunk)
-            return True
+            if dest_path.stat().st_size > 500:
+                return True
+            dest_path.unlink(missing_ok=True)
     except Exception:
         pass
     return False

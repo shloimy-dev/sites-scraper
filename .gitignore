@@ -2,8 +2,6 @@
 __pycache__/
 *.pyc
 data/analysis/
-data/extracted/
-data/images/
 data/*.log
 *.log
 .env
