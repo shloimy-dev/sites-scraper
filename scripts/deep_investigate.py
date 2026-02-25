@@ -30,6 +30,7 @@ REPORT_DIR = ROOT / "docs" / "sites"
 UNSOLVED = {
     "colours_craft", "enday", "gi_go", "goplay",
     "lchaim", "moore", "rhode_island", "sands", "winning_moves",
+    "cazenove", "steiff",  # Shloimy Levy sites needing investigation
 }
 
 WAIT = 5000
