@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Mead scraper (hold-end.com). Strategy: Shopify search by UPC then name → follow first product link → JSON-LD.
-Note: hold-end.com search may return 404; script will attempt and report results.
+Mead scraper. Strategy: Try hold-end.com search; if 404, try kinderblast.com (Shopify).
+Agent guide notes Mead references kinderblast.com. Fallback: use sheet data.
 """
 import sys, time
 from pathlib import Path
@@ -13,7 +13,8 @@ from playwright.sync_api import sync_playwright
 
 SITE_ID = "mead"
 SHEET = "mead"
-BASE = "https://hold-end.com"
+BASE_HOLD = "https://hold-end.com"
+BASE_KINDER = "https://kinderblast.com"
 DELAY = 2.0
 WAIT = 4000
 
@@ -25,37 +26,34 @@ PRODUCT_SELECTORS = [
 ]
 
 
-def find_first_product_link(page):
+def find_first_product_link(page, base_url):
     for sel in PRODUCT_SELECTORS:
         el = page.query_selector(sel)
         if el:
             href = el.get_attribute("href") or ""
             if "/products/" in href:
                 if href.startswith("/"):
-                    href = BASE + href
+                    href = base_url.rstrip("/") + href
                 return href
     return None
 
 
-def scrape_product(page, upc, name):
-    for query in [upc, name]:
+def scrape_via_search(page, upc, name, base_url):
+    for query in [name, upc]:
         if not query:
             continue
-        url = f"{BASE}/search?q={quote_plus(query)}"
+        url = f"{base_url}/search?q={quote_plus(query)}"
         page.goto(url, wait_until="domcontentloaded")
         page.wait_for_timeout(WAIT)
-
-        if "404" in page.title() or "page not found" in page.title().lower():
+        html = page.content()
+        if "404" in page.title() or "page not found" in html[:3000].lower():
             continue
-
-        link = find_first_product_link(page)
+        link = find_first_product_link(page, base_url)
         if not link:
             continue
-
         page.goto(link, wait_until="domcontentloaded")
         page.wait_for_timeout(WAIT)
         html = page.content()
-
         jld = extract_jsonld_product(html)
         if jld:
             data = product_from_jsonld(jld)
@@ -66,12 +64,31 @@ def scrape_product(page, upc, name):
                 "description": og.get("description", "") or extract_meta_desc(html),
                 "image_url": og.get("image", ""),
             }
-
-        if data.get("title") and "404" not in (data.get("title") or ""):
+        if data.get("title"):
             data["upc"] = upc
             data["product_url"] = page.url
             return data
+    return None
 
+
+def scrape_product(page, row, upc, name):
+    data = scrape_via_search(page, upc, name, BASE_HOLD)
+    if data:
+        return data
+    data = scrape_via_search(page, upc, name, BASE_KINDER)
+    if data:
+        return data
+    desc = get_description(row)
+    pic = get_picture(row)
+    dims = get_dimensions(row)
+    if name or desc or pic:
+        return {
+            "upc": upc,
+            "title": name or f"Mead {upc}",
+            "description": desc or dims or "",
+            "image_url": pic,
+            "product_url": "",
+        }
     return None
 
 
@@ -101,11 +118,12 @@ def main():
                 continue
             print(f"[{i+1}/{total}] UPC={upc} {name[:40]}")
             try:
-                data = scrape_product(page, upc, name)
+                data = scrape_product(page, row, upc, name)
                 if data:
                     results.append(data)
-                    if data.get("image_url"):
-                        download_image(data["image_url"], img_dir / f"{upc}{img_ext(data['image_url'])}")
+                    img_url = data.get("image_url")
+                    if img_url and img_url.startswith("http"):
+                        download_image(img_url, img_dir / f"{upc}{img_ext(img_url)}")
                     print(f"  OK: {data['title'][:60]}")
                 else:
                     print(f"  SKIP: no product found")
@@ -116,10 +134,7 @@ def main():
         ctx.close()
         browser.close()
 
-    out_path = ext_dir / f"{SITE_ID}.csv"
-    write_csv(results, out_path)
-    if not results:
-        out_path.write_text("upc,title,description,image_url,product_url\n", encoding="utf-8")
+    write_csv(results, ext_dir / f"{SITE_ID}.csv")
     print(f"\nDone: {len(results)}/{total} products saved")
 
 

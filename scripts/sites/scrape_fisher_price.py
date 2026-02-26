@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Fisher-Price scraper (shop.mattel.com). Strategy: Shopify search by UPC then name → follow first product link → JSON-LD.
+Fisher-Price scraper. Strategy: Shopify search by name → follow first product link → JSON-LD.
+Proven: 3/3 unique products in analysis via search_q_name.
 """
 import sys, time
 from pathlib import Path
@@ -14,7 +15,7 @@ SITE_ID = "fisher_price"
 SHEET = "fisher_price"
 BASE = "https://shop.mattel.com"
 DELAY = 2.0
-WAIT = 5000
+WAIT = 4000
 
 PRODUCT_SELECTORS = [
     "main a[href*='/products/']",
@@ -37,9 +38,7 @@ def find_first_product_link(page):
 
 
 def scrape_product(page, upc, name):
-    # Prefer Fisher-Price branded search to avoid wrong brand matches
-    queries = [f"Fisher-Price {name}", name, upc] if name else [upc]
-    for query in queries:
+    for query in [name, upc]:
         if not query:
             continue
         url = f"{BASE}/search?q={quote_plus(query)}"
@@ -89,7 +88,7 @@ def main():
         browser = p.chromium.launch(headless=True)
         ctx = browser.new_context(ignore_https_errors=True)
         page = ctx.new_page()
-        page.set_default_timeout(25000)
+        page.set_default_timeout(20000)
 
         total = len(rows)
         for i, row in enumerate(rows):

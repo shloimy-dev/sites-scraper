@@ -1,119 +1,84 @@
 #!/usr/bin/env python3
 """
-Crayola scraper (crayola.com). Strategy: Shopify collections/products.json API → match by UPC (barcode) or name.
-Deep-investigate found: www.crayola.com has /collections/all/products.json. Search returns category pages.
+Crayola scraper. Strategy: Search by name/UPC → follow first product link → JSON-LD.
+Crayola.com search returns product listings; follow to individual product pages.
 """
-import re, sys, time
+import sys, time
 from pathlib import Path
-from html import unescape
-
-import requests
+from urllib.parse import quote_plus
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from scraper_lib import *
+from playwright.sync_api import sync_playwright
 
 SITE_ID = "crayola"
 SHEET = "crayola"
 BASE = "https://www.crayola.com"
-API_URL = f"{BASE}/collections/all/products.json"
-DELAY = 0.3
+DELAY = 2.0
+WAIT = 4000
+
+PRODUCT_SELECTORS = [
+    "main a[href*='/products/']",
+    "#MainContent a[href*='/products/']",
+    ".product-list a[href*='/products/']",
+    ".product-grid a[href*='/products/']",
+    "a[href*='/products/']",
+]
 
 
-def normalize(s):
-    s = (s or "").lower()
-    s = re.sub(r"[^a-z0-9 ]", " ", s)
-    return re.sub(r"\s+", " ", s).strip()
+def find_first_product_link(page):
+    for sel in PRODUCT_SELECTORS:
+        els = page.query_selector_all(sel)
+        for el in els:
+            href = el.get_attribute("href") or ""
+            if "/products/" in href and "crayons" not in href.lower():
+                if href.startswith("/"):
+                    href = BASE + href
+                return href
+    for sel in PRODUCT_SELECTORS:
+        el = page.query_selector(sel)
+        if el:
+            href = el.get_attribute("href") or ""
+            if "/products/" in href:
+                if href.startswith("/"):
+                    href = BASE + href
+                return href
+    return None
 
 
-def get_all_products(session):
-    """Fetch full catalog from Shopify collections API."""
-    all_products = []
-    page = 1
-    while True:
-        try:
-            r = session.get(f"{API_URL}?limit=250&page={page}", timeout=60)
-            if r.status_code != 200:
-                break
-            data = r.json()
-            prods = data.get("products", [])
-            if not prods:
-                break
-            all_products.extend(prods)
-            page += 1
-            if len(prods) < 250:
-                break
-            time.sleep(DELAY)
-        except Exception as e:
-            print(f"  API error page {page}: {e}")
-            break
-    return all_products
+def scrape_product(page, upc, name):
+    for query in [name, upc]:
+        if not query:
+            continue
+        url = f"{BASE}/search?q={quote_plus(query)}"
+        page.goto(url, wait_until="domcontentloaded")
+        page.wait_for_timeout(WAIT)
 
+        link = find_first_product_link(page)
+        if not link:
+            continue
 
-def product_to_info(p):
-    """Convert Shopify product dict to our format."""
-    title = p.get("title", "")
-    if not title:
-        return None
-    image = ""
-    if p.get("images"):
-        image = p["images"][0].get("src", "")
-    elif p.get("image"):
-        img = p["image"]
-        image = img.get("src", "") if isinstance(img, dict) else (img or "")
-    desc = ""
-    body = p.get("body_html", "")
-    if body:
-        desc = re.sub(r"<[^>]+>", " ", body)
-        desc = re.sub(r"\s+", " ", desc).strip()[:500]
-    handle = p.get("handle", "")
-    url = f"{BASE}/products/{handle}" if handle else ""
-    barcodes = set()
-    for v in p.get("variants", []):
-        bc = (v.get("barcode") or "").strip()
-        if bc and len(bc) >= 5:
-            barcodes.add(bc)
-    return {
-        "title": unescape(title),
-        "description": unescape(desc),
-        "image_url": image,
-        "product_url": url,
-        "barcodes": barcodes,
-        "norm": normalize(title),
-        "words": set(normalize(title).split()),
-    }
+        page.goto(link, wait_until="domcontentloaded")
+        page.wait_for_timeout(WAIT)
+        html = page.content()
 
+        jld = extract_jsonld_product(html)
+        if jld:
+            data = product_from_jsonld(jld)
+        else:
+            og = extract_og(html)
+            data = {
+                "title": og.get("title", "") or extract_title(html),
+                "description": og.get("description", "") or extract_meta_desc(html),
+                "image_url": og.get("image", ""),
+            }
 
-def match_score(sheet_name, info):
-    sn = normalize(sheet_name)
-    pw = info["words"]
-    sw = set(sn.split())
-    filler = {"the", "a", "ct", "pack", "set", "crayola"}
-    sw_sig = sw - filler
-    pw_sig = pw - filler
-    if not sw_sig:
-        sw_sig = sw
-    overlap = sw_sig & pw_sig
-    if not sw_sig:
-        return 0
-    return len(overlap) / len(sw_sig) if len(overlap) >= len(sw_sig) * 0.5 else 0
+        if data.get("title") and "search" not in (data.get("title") or "").lower():
+            data["upc"] = upc
+            data["product_url"] = page.url
+            return data
 
-
-def find_match(upc, name, catalog_index):
-    """Match sheet row to catalog. Prefer UPC, fallback to name."""
-    if upc:
-        for info in catalog_index.values():
-            if upc in info["barcodes"]:
-                return info
-    if not name:
-        return None
-    best = None
-    best_score = 0
-    for info in catalog_index.values():
-        sc = match_score(name, info)
-        if sc > best_score:
-            best_score = sc
-            best = info
-    return best if best_score >= 0.5 else None
+    return None
 
 
 def main():
@@ -122,53 +87,42 @@ def main():
         idx = sys.argv.index("--limit")
         if idx + 1 < len(sys.argv):
             rows = rows[: int(sys.argv[idx + 1])]
-
-    session = requests.Session()
-    session.headers["User-Agent"] = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
-
-    print("Fetching Crayola catalog from Shopify API...")
-    products = get_all_products(session)
-    print(f"  Got {len(products)} products")
-
-    catalog_index = {}
-    for p in products:
-        info = product_to_info(p)
-        if info:
-            catalog_index[info["norm"]] = info
-
     results = []
     ext_dir = EXTRACTED_DIR
     ext_dir.mkdir(parents=True, exist_ok=True)
     img_dir = IMAGES_DIR / SITE_ID
     img_dir.mkdir(parents=True, exist_ok=True)
 
-    total = len(rows)
-    for i, row in enumerate(rows):
-        upc = get_upc(row)
-        name = get_name(row)
-        if not upc:
-            continue
-        print(f"[{i+1}/{total}] UPC={upc} {name[:40]}")
-        match = find_match(upc, name, catalog_index)
-        if match:
-            entry = {
-                "upc": upc,
-                "title": match["title"],
-                "description": match["description"],
-                "image_url": match["image_url"],
-                "product_url": match["product_url"],
-            }
-            results.append(entry)
-            if match["image_url"]:
-                download_image(match["image_url"], img_dir / f"{upc}{img_ext(match['image_url'])}")
-            print(f"  OK: {match['title'][:60]}")
-        else:
-            print(f"  SKIP: no match")
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        ctx = browser.new_context(ignore_https_errors=True)
+        page = ctx.new_page()
+        page.set_default_timeout(20000)
 
-    out_path = ext_dir / f"{SITE_ID}.csv"
-    write_csv(results, out_path)
-    if not results:
-        out_path.write_text("upc,title,description,image_url,product_url\n", encoding="utf-8")
+        total = len(rows)
+        for i, row in enumerate(rows):
+            upc = get_upc(row)
+            name = get_name(row)
+            if not upc:
+                continue
+            print(f"[{i+1}/{total}] UPC={upc} {name[:40]}")
+            try:
+                data = scrape_product(page, upc, name)
+                if data:
+                    results.append(data)
+                    if data.get("image_url"):
+                        download_image(data["image_url"], img_dir / f"{upc}{img_ext(data['image_url'])}")
+                    print(f"  OK: {data['title'][:60]}")
+                else:
+                    print(f"  SKIP: no product found")
+            except Exception as e:
+                print(f"  ERROR: {e}")
+            time.sleep(DELAY)
+
+        ctx.close()
+        browser.close()
+
+    write_csv(results, ext_dir / f"{SITE_ID}.csv")
     print(f"\nDone: {len(results)}/{total} products saved")
 
 
