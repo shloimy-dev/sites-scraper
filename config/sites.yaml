@@ -27,3 +27,29 @@ sites:
   kinder_blast:   { sheet: kinder_blast,    base_url: https://kinderblast.com }
   steiff:         { sheet: steiff,         base_url: https://www.steiff.com/en-us }
   kent:           { sheet: kent,           base_url: https://kent.bike }
+  # Shloimy Levy - additional brands
+  mead:           { sheet: mead,           base_url: https://hold-end.com }
+  crayola:        { sheet: crayola,        base_url: https://www.crayola.com }
+  fisher_price:   { sheet: fisher_price,   base_url: https://shop.mattel.com }
+  kinder_shpiel:  { sheet: kinder_shpiel,  base_url: https://www.steiff.com/en-us }
+  new_bounce:     { sheet: new_bounce,     base_url: https://newbouncesport.com }
+  casio:          { sheet: casio,          base_url: https://www.casio.com }
+  daron:          { sheet: daron,          base_url: https://modeltoycars.com }
+  kindervelt:     { sheet: kindervelt,     base_url: https://kindervelt.com }
+  play_build:     { sheet: play_build,     base_url: https://www.playbuild.com }
+  perler:         { sheet: perler,         base_url: https://perler.com }
+  ner_mitzvah:    { sheet: ner_mitzvah,    base_url: https://www.nermitzvah.com }
+  vtech:          { sheet: vtech,          base_url: https://www.vtechkids.com }
+  winfun:         { sheet: winfun,         base_url: https://thelittleluxury.com }
+  playmags:       { sheet: playmags,       base_url: https://www.playmags.com }
+  gigo:           { sheet: gigo,           base_url: https://www.gigotoys.com }
+  puzelworx:      { sheet: puzelworx,      base_url: https://toys4u.com }
+  rubiks:         { sheet: rubiks,         base_url: https://www.spinmasterspecialty.com }
+  thinkfun:       { sheet: thinkfun,       base_url: https://www.ravensburger.us }
+  tiny_love:      { sheet: tiny_love,      base_url: https://tinylove.com }
+  quercetti:      { sheet: quercetti,      base_url: https://www.quercettistore.com }
+  audster:        { sheet: audster,        base_url: https://audster.com }
+  bz_kinder:      { sheet: bz_kinder,      base_url: https://bzkinder.com }
+  step2:          { sheet: step2,          base_url: https://www.step2.com }
+  marvins_magic:  { sheet: marvins_magic,  base_url: https://www.marvinsmagic.com }
+  kidztech:       { sheet: kidztech,       base_url: https://www.kidztech.com }
