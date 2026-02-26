@@ -1,15 +1,10 @@
 # puzelworx
 
 - **URL:** https://toys4u.com
-- **Platform:** BigCommerce (not Shopify)
 - **Homepage title:** Toys 4 U - Toys Superstore - Better Toys, Better Brands
 - **Homepage og:image:** 
 
-## Recommended strategy: sheet-only extraction
-
-- toys4u.com is BigCommerce; search returns wrong products (first result often unrelated)
-- Catalog crawl would require extensive category traversal
-- Extract from sheet: Name(En), UPC, Picture, Description
+## Recommended strategy: `search_q_upc` (score 35)
 
 - Non-generic: 3/3
 - Unique titles: 1, images: 0
