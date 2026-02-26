@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """
-Metal Earth scraper. Strategy: Use autocomplete API → get product URL → extract.
-The ?p= URLs don't work. Search page returns empty. But the site has an autocomplete
-endpoint at /catalog/searchtermautocomplete that returns product URLs.
+Metal Earth scraper. Strategy: Shopify search by name → follow first product link → JSON-LD.
+Autocomplete API may be deprecated; search page has product links.
 """
-import sys, time, json, re
+import sys, time
 from pathlib import Path
 from urllib.parse import quote_plus
 
@@ -15,62 +14,70 @@ from playwright.sync_api import sync_playwright
 SITE_ID = "metal_earth"
 SHEET = "metal_earth"
 BASE = "https://www.metalearth.com"
-DELAY = 1.5
+DELAY = 2.0
 WAIT = 4000
 
+PRODUCT_SELECTORS = [
+    "main a[href*='/products/']",
+    "#MainContent a[href*='/products/']",
+    ".product-list a[href*='/products/']",
+    "a[href*='/products/']",
+]
 
-def try_autocomplete(page, query):
-    """Use the site's autocomplete API to find product URL."""
-    url = f"{BASE}/catalog/searchtermautocomplete?term={quote_plus(query)}"
-    try:
-        resp = page.evaluate(f"""
-            async () => {{
-                const r = await fetch("{url}");
-                return await r.text();
-            }}
-        """)
-        data = json.loads(resp)
-        if isinstance(data, list):
-            for item in data:
-                if isinstance(item, dict) and item.get("producturl"):
-                    return item["producturl"], item.get("label", "")
-    except Exception:
-        pass
-    return None, None
+
+def find_first_product_link(page):
+    for sel in PRODUCT_SELECTORS:
+        el = page.query_selector(sel)
+        if el:
+            href = el.get_attribute("href") or ""
+            if "/products/" in href:
+                if href.startswith("/"):
+                    href = BASE + href
+                return href
+    return None
 
 
 def scrape_product(page, upc, name):
     for query in [name, upc]:
         if not query:
             continue
-        purl, label = try_autocomplete(page, query)
-        if purl:
-            full_url = purl if purl.startswith("http") else BASE + purl
-            page.goto(full_url, wait_until="domcontentloaded")
-            page.wait_for_timeout(WAIT)
-            html = page.content()
+        url = f"{BASE}/search?q={quote_plus(query)}"
+        page.goto(url, wait_until="domcontentloaded")
+        page.wait_for_timeout(WAIT)
 
-            jld = extract_jsonld_product(html)
-            if jld:
-                data = product_from_jsonld(jld)
-            else:
-                og = extract_og(html)
-                data = {
-                    "title": og.get("title", "") or extract_title(html),
-                    "description": og.get("description", "") or extract_meta_desc(html),
-                    "image_url": og.get("image", ""),
-                }
+        link = find_first_product_link(page)
+        if not link:
+            continue
 
-            if data.get("title"):
-                data["upc"] = upc
-                data["product_url"] = page.url
-                return data
+        page.goto(link, wait_until="domcontentloaded")
+        page.wait_for_timeout(WAIT)
+        html = page.content()
+
+        jld = extract_jsonld_product(html)
+        if jld:
+            data = product_from_jsonld(jld)
+        else:
+            og = extract_og(html)
+            data = {
+                "title": og.get("title", "") or extract_title(html),
+                "description": og.get("description", "") or extract_meta_desc(html),
+                "image_url": og.get("image", ""),
+            }
+
+        if data.get("title") and "search" not in (data.get("title") or "").lower():
+            data["upc"] = upc
+            data["product_url"] = page.url
+            return data
 
     return None
 
 
 def main():
     rows = load_sheet(SHEET)
+    if "--limit" in sys.argv:
+        idx = sys.argv.index("--limit")
+        if idx + 1 < len(sys.argv):
+            rows = rows[: int(sys.argv[idx + 1])]
     results = []
     ext_dir = EXTRACTED_DIR
     ext_dir.mkdir(parents=True, exist_ok=True)

@@ -21,3 +21,9 @@ sites:
   samvix:         { sheet: samvix,         base_url: https://www.samvix.com }
   sands:          { sheet: sands,          base_url: https://www.sands.com }
   winning_moves:  { sheet: winning_moves,  base_url: https://www.winning-moves.com }
+  # Shloimy Levy sites
+  new_york_doll:  { sheet: new_york_doll,  base_url: https://www.thenewyorkdollcollection.com }
+  cazenove:       { sheet: cazenove,       base_url: https://cazenovejudaica.com/us }
+  kinder_blast:   { sheet: kinder_blast,    base_url: https://kinderblast.com }
+  steiff:         { sheet: steiff,         base_url: https://www.steiff.com/en-us }
+  kent:           { sheet: kent,           base_url: https://kent.bike }
