@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Playmags scraper. Site returns 403 Forbidden to scrapers; extract from sheet only.
-Reference: playmags.com
+Puzelworx scraper. Strategy: Extract from sheet (toys4u.com BigCommerce search returns
+wrong products; catalog crawl would require extensive category traversal).
+Site: toys4u.com. Sheet has Name(En), UPC, Picture.
 """
 import sys
 from pathlib import Path
@@ -9,8 +10,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from scraper_lib import *
 
-SITE_ID = "playmags"
-SHEET = "playmags"
+SITE_ID = "puzelworx"
+SHEET = "puzelworx"
 
 
 def main():
