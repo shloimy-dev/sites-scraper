@@ -41,19 +41,19 @@
   - [OK] 840172025094: UPPABABY CRUZ V3 STROLLER — Little Luxury
   - [OK] 840172010809: UPPABABY CRUZ V3 STROLLER — Little Luxury
 
-### search_s_upc — score 68
-- Non-generic: 3/3
-- Unique titles: 1, images: 1
-  - [OK] 840172025155: UPPABABY CRUZ V3 STROLLER — Little Luxury
-  - [OK] 840172025094: UPPABABY CRUZ V3 STROLLER — Little Luxury
-  - [OK] 840172010809: UPPABABY CRUZ V3 STROLLER — Little Luxury
-
 ### search_s_name — score 68
 - Non-generic: 3/3
 - Unique titles: 1, images: 1
   - [OK] 840172025155: UPPABABY CRUZ V3 STROLLER — Little Luxury
   - [OK] 840172025094: UPPABABY CRUZ V3 STROLLER — Little Luxury
   - [OK] 840172010809: UPPABABY CRUZ V3 STROLLER — Little Luxury
+
+### search_s_upc — score 63
+- Non-generic: 3/3
+- Unique titles: 2, images: 1
+  - [OK] 840172025155: UPPABABY CRUZ V3 STROLLER — Little Luxury
+  - [OK] 840172025094: UPPABABY CRUZ V3 STROLLER — Little Luxury
+  - [OK] 840172010809: Something went wrong
 
 ### search_q_name — score 45
 - Non-generic: 1/3

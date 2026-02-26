@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Winfun scraper. Strategy: Shopify search by name/UPC → follow first product link → JSON-LD.
-Reference: thelittleluxury.com
+Winfun scraper. Strategy: Shopify search by name on thelittleluxury.com → follow product link → JSON-LD.
+Analysis: search_q_name found Winfun products; direct_p returns wrong product (UPPABABY).
 """
 import sys, time
 from pathlib import Path
@@ -33,7 +33,7 @@ def find_first_product_link(page):
             if "/products/" in href:
                 if href.startswith("/"):
                     href = BASE + href
-                return href
+                return href.split("?")[0]
     return None
 
 
@@ -41,9 +41,12 @@ def scrape_product(page, upc, name):
     for query in [name, upc]:
         if not query:
             continue
-        url = f"{BASE}/search?q={quote_plus(query)}"
+        url = f"{BASE}/search?q={quote_plus(query)}&type=product"
         page.goto(url, wait_until="domcontentloaded")
         page.wait_for_timeout(WAIT)
+
+        if "0 results found" in (page.content()[:3000] or ""):
+            continue
 
         link = find_first_product_link(page)
         if not link:
@@ -58,26 +61,17 @@ def scrape_product(page, upc, name):
             data = product_from_jsonld(jld)
         else:
             og = extract_og(html)
-            data = {
-                "title": og.get("title", "") or extract_title(html),
-                "description": og.get("description", "") or extract_meta_desc(html),
-                "image_url": og.get("image", ""),
-            }
+            data = {"title": og.get("title", ""), "description": og.get("description", ""), "image_url": og.get("image", "")}
 
-        if data.get("title"):
+        if data.get("title") and "0 results" not in data.get("title", ""):
             data["upc"] = upc
             data["product_url"] = page.url
             return data
-
     return None
 
 
 def main():
     rows = load_sheet(SHEET)
-    if "--limit" in sys.argv:
-        idx = sys.argv.index("--limit")
-        if idx + 1 < len(sys.argv):
-            rows = rows[: int(sys.argv[idx + 1])]
     results = []
     ext_dir = EXTRACTED_DIR
     ext_dir.mkdir(parents=True, exist_ok=True)
@@ -113,10 +107,7 @@ def main():
         ctx.close()
         browser.close()
 
-    out_path = ext_dir / f"{SITE_ID}.csv"
-    write_csv(results, out_path)
-    if not results:
-        out_path.write_text("upc,title,description,image_url,product_url\n")
+    write_csv(results, ext_dir / f"{SITE_ID}.csv")
     print(f"\nDone: {len(results)}/{total} products saved")
 
 
