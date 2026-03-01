@@ -32,6 +32,31 @@ def get_name(row):
     return ""
 
 
+def get_picture(row):
+    """Get image URL from sheet (Picture column)."""
+    val = (row.get("Picture") or "").strip()
+    if val and val.startswith("http"):
+        return val
+    return ""
+
+
+def get_description(row):
+    """Get description from sheet."""
+    return (row.get("Description") or "").strip()
+
+
+def get_dimensions(row):
+    """Build dimensions string from Piece Length/Width/Height (in ft)."""
+    parts = []
+    for col in ("Piece Length(ft)", "Piece Width(ft)", "Piece Height(ft)"):
+        v = (row.get(col) or "").strip()
+        if v:
+            parts.append(v)
+    if parts:
+        return " x ".join(parts) + " ft"
+    return ""
+
+
 def extract_jsonld_product(html):
     for m in re.finditer(
         r'<script[^>]*type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
