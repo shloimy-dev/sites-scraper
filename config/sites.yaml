@@ -28,7 +28,7 @@ sites:
   steiff:         { sheet: steiff,         base_url: https://www.steiff.com/en-us }
   kent:           { sheet: kent,           base_url: https://kent.bike }
   # Shloimy Levy - additional brands
-  mead:           { sheet: mead,           base_url: https://hold-end.com }
+  mead:           { sheet: mead,           base_url: https://www.mead.com }
   crayola:        { sheet: crayola,        base_url: https://www.crayola.com }
   fisher_price:   { sheet: fisher_price,   base_url: https://shop.mattel.com/pages/fisher-price }
   kinder_shpiel:  { sheet: kinder_shpiel,  base_url: https://www.steiff.com/en-us }

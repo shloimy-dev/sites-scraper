@@ -32,14 +32,22 @@ CATEGORY_URLS = [
     f"{BASE}/cards/passover",
     f"{BASE}/cards/purim",
     f"{BASE}/cards/rosh-hashanah",
+    f"{BASE}/cards/anniversary",
+    f"{BASE}/cards/baby",
+    f"{BASE}/cards/birthday",
+    f"{BASE}/cards/mazeltov",
+    f"{BASE}/cards/wedding",
     f"{BASE}/bags",
     f"{BASE}/boxes",
     f"{BASE}/stickers",
+    f"{BASE}/stickers/purim",
     f"{BASE}/arts-and-crafts",
     f"{BASE}/toys",
     f"{BASE}/honey-pots",
     f"{BASE}/honey-dippers",
     f"{BASE}/kitchenware",
+    f"{BASE}/wine-bags",
+    f"{BASE}/noise-maker",
 ]
 
 

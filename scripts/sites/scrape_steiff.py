@@ -27,12 +27,18 @@ CATEGORY_URLS = [
     f"{BASE}/stuffed-animals-baby-gifts/all-stuffed-animals/stuffed-animals/pets-farm-animals",
     f"{BASE}/stuffed-animals-baby-gifts/all-stuffed-animals/stuffed-animals/forest-meadow-animals",
     f"{BASE}/stuffed-animals-baby-gifts/all-stuffed-animals/stuffed-animals/wild-animals",
+    f"{BASE}/stuffed-animals-baby-gifts/all-stuffed-animals/stuffed-animals/dinosaurs",
+    f"{BASE}/stuffed-animals-baby-gifts/all-stuffed-animals/stuffed-animals/fantasy-animals",
     f"{BASE}/stuffed-animals-baby-gifts/all-stuffed-animals/stuffed-animals/film-comic-heroes",
     f"{BASE}/stuffed-animals-baby-gifts/all-stuffed-animals/stuffed-animals/disney-plush",
     f"{BASE}/stuffed-animals-baby-gifts/all-stuffed-animals/stuffed-animals/peanuts",
+    f"{BASE}/stuffed-animals-baby-gifts/all-stuffed-animals/stuffed-animals/marine-life-arctic-animals",
+    f"{BASE}/stuffed-animals-baby-gifts/all-stuffed-animals/stuffed-animals/dc-superheroes-batman-and-superman",
     f"{BASE}/gifts/gifts-by-product-type/plush",
     f"{BASE}/gifts/gifts-by-product-type/toys",
     f"{BASE}/gifts/gifts-by-product-type/collector-editions",
+    f"{BASE}/gifts/special-occasions/birth",
+    f"{BASE}/gifts/special-occasions/birthday",
 ]
 
 

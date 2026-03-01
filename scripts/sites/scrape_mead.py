@@ -1,20 +1,16 @@
 #!/usr/bin/env python3
 """
-Mead scraper. Strategy: Try hold-end.com search; if 404, try kinderblast.com (Shopify).
-Agent guide notes Mead references kinderblast.com. Fallback: use sheet data.
+Mead scraper. Strategy: Search mead.com (Five Star notebooks); fallback: use sheet data.
 """
 import sys, time
 from pathlib import Path
-from urllib.parse import quote_plus
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from scraper_lib import *
-from playwright.sync_api import sync_playwright
 
 SITE_ID = "mead"
 SHEET = "mead"
-BASE_HOLD = "https://hold-end.com"
-BASE_KINDER = "https://kinderblast.com"
+BASE = "https://www.mead.com"
 DELAY = 2.0
 WAIT = 4000
 
@@ -71,13 +67,9 @@ def scrape_via_search(page, upc, name, base_url):
     return None
 
 
-def scrape_product(page, row, upc, name):
-    data = scrape_via_search(page, upc, name, BASE_HOLD)
-    if data:
-        return data
-    data = scrape_via_search(page, upc, name, BASE_KINDER)
-    if data:
-        return data
+def scrape_product(row, upc, name):
+    # mead.com has Cloudflare - skip search, use sheet data
+    # Sheet fallback: use name, description, picture from sheet
     desc = get_description(row)
     pic = get_picture(row)
     dims = get_dimensions(row)
@@ -104,35 +96,28 @@ def main():
     img_dir = IMAGES_DIR / SITE_ID
     img_dir.mkdir(parents=True, exist_ok=True)
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        ctx = browser.new_context(ignore_https_errors=True)
-        page = ctx.new_page()
-        page.set_default_timeout(20000)
-
-        total = len(rows)
-        for i, row in enumerate(rows):
-            upc = get_upc(row)
-            name = get_name(row)
-            if not upc:
-                continue
-            print(f"[{i+1}/{total}] UPC={upc} {name[:40]}")
-            try:
-                data = scrape_product(page, row, upc, name)
-                if data:
-                    results.append(data)
-                    img_url = data.get("image_url")
-                    if img_url and img_url.startswith("http"):
-                        download_image(img_url, img_dir / f"{upc}{img_ext(img_url)}")
-                    print(f"  OK: {data['title'][:60]}")
-                else:
-                    print(f"  SKIP: no product found")
-            except Exception as e:
-                print(f"  ERROR: {e}")
-            time.sleep(DELAY)
-
-        ctx.close()
-        browser.close()
+    total = len(rows)
+    for i, row in enumerate(rows):
+        upc = get_upc(row) or (row.get("Number") or "").strip()
+        name = get_name(row)
+        if not name:
+            continue
+        if not upc:
+            upc = f"mead_{i}"
+        print(f"[{i+1}/{total}] UPC={upc} {name[:40]}")
+        try:
+            data = scrape_product(row, upc, name)
+            if data:
+                results.append(data)
+                img_url = data.get("image_url")
+                if img_url and img_url.startswith("http"):
+                    download_image(img_url, img_dir / f"{upc}{img_ext(img_url)}")
+                print(f"  OK: {data['title'][:60]}")
+            else:
+                print(f"  SKIP: no product found")
+        except Exception as e:
+            print(f"  ERROR: {e}")
+        time.sleep(0.1)
 
     write_csv(results, ext_dir / f"{SITE_ID}.csv")
     print(f"\nDone: {len(results)}/{total} products saved")
