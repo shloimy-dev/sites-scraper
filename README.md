@@ -8,49 +8,47 @@ Scrapes product data (title, description, image) from manufacturer websites for 
 
 ```
   ╔═══════════════════════════════════════════╗
-  ║  Products matched:     1,701              ║
-  ║  Images downloaded:    1,515              ║
-  ║  Sites completed:      12 / 16            ║
-  ║  Sheet items covered:  2,480              ║
-  ║  Overall match rate:   69%                ║
-  ║  Blocked sites:        4  (unavailable)   ║
+  ║  Products matched:     ~6,500             ║
+  ║  Sites completed:      27+                ║
+  ║  Shloimy Levy brands:  Playkidiz, Bazic,  ║
+  ║    Mead, Cazenove, Steiff, Kinder Blast,   ║
+  ║    New York Doll, and 20+ more            ║
   ╚═══════════════════════════════════════════╝
 ```
 
 ---
 
-## Match Rate by Site
+## Match Rate by Site (Top Sites)
 
 ```
-  rhode_island    ██████████████████████████████████████████████████  99%  (487/494)
-  bruder          ██████████████████████████████████████████████████  99%  (71/72)
-  metal_earth     █████████████████████████████████████████████████░  98%  (60/61)
-  lchaim          ██████████████████████████████████████████████░░░░  92%  (335/365)
-  razor           ███████████████████████████████████████████████░░░  87%  (26/30)
-  microkick       ███████████████████████████████████████░░░░░░░░░░░  78%  (7/9)
-  chazak          ██████████████████████████████████████░░░░░░░░░░░░  76%  (359/471)
-  colours_craft   ██████████████████████████████████░░░░░░░░░░░░░░░░  69%  (58/84)
-  samvix          ███████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░  46%  (58/126)
-  playkidiz       █████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  35%  (93/263)
-  enday           ███████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  31%  (140/445)
-  winning_moves   █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  12%  (7/60)
+  bazic           ██████████████████████████████████████████████████  2,313 products
+  tiny_love       ████████████████████████████████████████████████  527 products
+  rhode_island    ████████████████████████████████████████████████  487 products
+  playkidiz       ████████████████████████████████████████████████  352 products
+  lchaim          ████████████████████████████████████████████████  335 products
+  mead            ████████████████████████████████████████████████  314 products
+  winfun          ████████████████████████████████████████████████  209 products
+  kinder_blast    ████████████████████████████████████████████████  209 products
+  new_york_doll   ████████████████████████████████████████████████  167 products
+  cazenove        ████████████████████████████████████████████████  135 products
+  winning_moves   ████                                                      7 products
 ```
 
 ## Products & Images Collected
 
 ```
-  rhode_island    █████████████████████████████████████████████  487 products  │  304 images
-  lchaim          ███████████████████████████████████           335 products  │  331 images
-  chazak          ████████████████████████████████████          359 products  │  359 images
-  enday           ██████████████                               140 products  │  140 images
-  playkidiz       █████████                                     93 products  │   92 images
-  bruder          ███████                                       71 products  │   71 images
-  metal_earth     ██████                                        60 products  │   60 images
-  colours_craft   ██████                                        58 products  │   58 images
-  samvix          ██████                                        58 products  │   65 images
-  razor           ███                                           26 products  │   26 images
-  microkick       █                                              7 products  │    7 images
-  winning_moves   █                                              7 products  │    2 images
+  bazic           ████████████████████████████████████████████  2,313 products
+  tiny_love       ████████████████████████████████████████████    527 products
+  rhode_island    ████████████████████████████████████████████    487 products
+  playkidiz       ████████████████████████████████████████████    352 products
+  lchaim          ████████████████████████████████████████████    335 products
+  mead            ████████████████████████████████████████████    314 products
+  winfun          ████████████████████████████████████████████    209 products
+  kinder_blast    ████████████████████████████████████████████    209 products
+  new_york_doll   ████████████████████████████████████████████    167 products
+  enday           ████████████████████████████████████████████    140 products
+  cazenove        ████████████████████████████████████████████    135 products
+  (+ 15 more sites: ner_mitzvah, kinder_shpiel, casio, kindervelt, perler, etc.)
 ```
 
 ---
@@ -137,18 +135,23 @@ scripts/
   fix_missing_images.py      # Batch download missing images from existing CSVs
   fix_playkidiz_images.py    # Playwright-based image download (Cloudflare bypass)
   sites/                     # One dedicated scraper per site
+    scrape_bazic.py          #   Shopify search
+    scrape_playkidiz.py      #   WooCommerce search + DOM selectors
     scrape_bruder.py         #   Shopify UPC search
     scrape_chazak.py         #   Shopify name search
+    scrape_cazenove.py       #   Crawl category pages for .html links
+    scrape_steiff.py         #   Crawl category pages for product links
+    scrape_mead.py           #   Sheet fallback (mead.com has Cloudflare)
     scrape_colours_craft.py  #   Shopify predictive search API
-    scrape_enday.py          #   Shopify predictive search API (bypasses Cloudflare)
+    scrape_enday.py          #   Shopify predictive search API
     scrape_lchaim.py         #   Custom AJAX API with UPC matching
-    scrape_metal_earth.py    #   Autocomplete API
+    scrape_metal_earth.py    #   Autocomplete API (Cloudflare blocks)
     scrape_microkick.py      #   Shopify UPC search
-    scrape_playkidiz.py      #   WooCommerce search + DOM selectors
     scrape_razor.py          #   WordPress name search
     scrape_rhode_island.py   #   Browser search with JS evaluation
     scrape_samvix.py         #   WooCommerce search + DOM selectors
     scrape_winning_moves.py  #   Direct product page crawl
+    (+ 20+ more Shloimy Levy scrapers)
 ```
 
 ## How It Works
