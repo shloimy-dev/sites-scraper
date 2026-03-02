@@ -45,13 +45,19 @@ def get_description(row):
     return (row.get("Description") or "").strip()
 
 
+def get_piece_dimensions(row):
+    """Return (length, width, height) as separate values from sheet.
+    Checks Piece first, then IPK Length/Width/Height."""
+    length = (row.get("Piece Length(ft)") or row.get("IPK Length(ft)") or "").strip()
+    width = (row.get("Piece Width(ft)") or row.get("IPK Width(ft)") or "").strip()
+    height = (row.get("Piece Height(ft)") or row.get("IPK Height(ft)") or "").strip()
+    return length, width, height
+
+
 def get_dimensions(row):
-    """Build dimensions string from Piece Length/Width/Height (in ft)."""
-    parts = []
-    for col in ("Piece Length(ft)", "Piece Width(ft)", "Piece Height(ft)"):
-        v = (row.get(col) or "").strip()
-        if v:
-            parts.append(v)
+    """Build dimensions string from Piece or IPK Length/Width/Height (in ft)."""
+    length, width, height = get_piece_dimensions(row)
+    parts = [x for x in (length, width, height) if x]
     if parts:
         return " x ".join(parts) + " ft"
     return ""
@@ -157,9 +163,10 @@ def img_ext(url):
 def write_csv(rows, path):
     if not rows:
         return
-    fields = ["upc", "title", "description", "image_url", "product_url"]
+    fields = ["upc", "title", "description", "image_url", "product_url", "piece_length", "piece_width", "piece_height"]
     with open(path, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()
         for r in rows:
-            w.writerow({k: r.get(k, "") for k in fields})
+            row = {k: r.get(k, "") for k in fields}
+            w.writerow(row)
