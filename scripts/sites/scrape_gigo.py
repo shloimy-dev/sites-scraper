@@ -48,6 +48,10 @@ def name_match(sheet_name, site_title):
 
 def main():
     rows = load_sheet(SHEET)
+    if "--limit" in sys.argv:
+        idx = sys.argv.index("--limit")
+        if idx + 1 < len(sys.argv):
+            rows = rows[: int(sys.argv[idx + 1])]
     ext_dir = EXTRACTED_DIR
     ext_dir.mkdir(parents=True, exist_ok=True)
     img_dir = IMAGES_DIR / SITE_ID
@@ -93,6 +97,9 @@ def main():
                         "image_url": og.get("image", ""),
                     }
                 data["product_url"] = url
+                img = data.get("image_url", "")
+                if img and img.startswith("/"):
+                    data["image_url"] = BASE.rstrip("/") + img
                 if data.get("title") and "gigotoys" not in (data.get("title", "") or "").lower():
                     catalog.append(data)
                     print(f"  {data['title'][:50]}")

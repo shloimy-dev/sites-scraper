@@ -111,6 +111,10 @@ def _extract(page, upc):
 
 def main():
     rows = load_sheet(SHEET)
+    if "--limit" in sys.argv:
+        idx = sys.argv.index("--limit")
+        if idx + 1 < len(sys.argv):
+            rows = rows[: int(sys.argv[idx + 1])]
     results = []
     ext_dir = EXTRACTED_DIR
     ext_dir.mkdir(parents=True, exist_ok=True)

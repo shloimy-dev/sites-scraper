@@ -36,3 +36,16 @@ Per `docs/AGENT_GUIDE_SHLOLIMY_SITES.md`. Last updated: 2025-02-25.
 ## Sites Needing Sheets
 
 Mead, Chazak Kinder, IZZY&DIZZY, Crayola, Fisher-Price, Point Games, Kinder Shpiel — confirm if they share another brand's sheet (kinderblast.com or steiff.com) before implementing.
+
+## Image Status (Brands with Missing Images — Fixed)
+
+| Brand | site_id | Images Before | Images After | Notes |
+|-------|---------|---------------|--------------|-------|
+| New Bounce | new_bounce | 0 | 24+ | Shopify search on newbouncesport.com; name_match added |
+| Play Build | play_build | 0 | 0 | Sheet has no Picture; newbouncesport.com search for "Play Build" finds few matches |
+| Playmags | playmags | 0 | 18+ | WooCommerce search on playmags.co.uk |
+| Gigo | gigo | 0 | — | Fixed relative og:image URLs (prepend BASE); scraper runs slowly (crawls all categories) |
+| Puzelworx | puzelworx | 0 | 40 | toys4u.com BigCommerce; sheet recreated from extracted data |
+| Rubik's | rubiks | — | — | No sheet in Brands; needs sheet link |
+| Audster | audster | — | — | No sheet in Brands; needs sheet link |
+| Marvin's Magic | marvins_magic | — | — | No sheet in Brands; needs sheet link |
