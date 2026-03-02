@@ -72,6 +72,7 @@ def scrape_product(row, upc, name):
     # Sheet fallback: use name, description, picture from sheet
     desc = get_description(row)
     pic = get_picture(row)
+    pl, pw, ph = get_piece_dimensions(row)
     dims = get_dimensions(row)
     if name or desc or pic:
         return {
@@ -80,6 +81,9 @@ def scrape_product(row, upc, name):
             "description": desc or dims or "",
             "image_url": pic,
             "product_url": "",
+            "piece_length": pl,
+            "piece_width": pw,
+            "piece_height": ph,
         }
     return None
 

@@ -98,12 +98,11 @@ def main():
             print(f"[{done}/{total}] UPC={upc} {name[:40]}")
             pic = get_picture(row)
             desc = get_description(row)
-            dims = get_dimensions(row)
-            if dims and desc:
-                desc = f"{desc} Dimensions: {dims}"
-            elif dims:
-                desc = f"Dimensions: {dims}"
-            entry = {"upc": upc, "title": name or "", "description": desc, "image_url": pic, "product_url": ""}
+            pl, pw, ph = get_piece_dimensions(row)
+            if pl or pw or ph:
+                dims = " x ".join(x for x in [pl, pw, ph] if x) + " ft"
+                desc = f"{desc} Dimensions: {dims}" if desc else f"Dimensions: {dims}"
+            entry = {"upc": upc, "title": name or "", "description": desc, "image_url": pic, "product_url": "", "piece_length": pl, "piece_width": pw, "piece_height": ph}
             try:
                 web_data = scrape_from_web(page, upc, name)
                 if web_data and web_data.get("image_url"):
