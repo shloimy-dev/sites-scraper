@@ -52,6 +52,9 @@ def main():
         idx = sys.argv.index("--limit")
         if idx + 1 < len(sys.argv):
             rows = rows[: int(sys.argv[idx + 1])]
+    quick = "--quick" in sys.argv
+    CATEGORY_PAGES_TO_USE = CATEGORY_PAGES[:3] if quick else CATEGORY_PAGES
+    MAX_PRODUCTS = 15 if quick else None
     ext_dir = EXTRACTED_DIR
     ext_dir.mkdir(parents=True, exist_ok=True)
     img_dir = IMAGES_DIR / SITE_ID
@@ -65,7 +68,7 @@ def main():
 
         print("Crawling gigo category pages for product links...")
         product_urls = set()
-        for cat in CATEGORY_PAGES:
+        for cat in CATEGORY_PAGES_TO_USE:
             try:
                 page.goto(BASE + cat, wait_until="domcontentloaded")
                 page.wait_for_timeout(WAIT)
@@ -78,6 +81,8 @@ def main():
             time.sleep(DELAY)
 
         product_urls = sorted(product_urls)
+        if MAX_PRODUCTS:
+            product_urls = product_urls[:MAX_PRODUCTS]
         print(f"Found {len(product_urls)} product pages")
 
         catalog = []
@@ -91,15 +96,30 @@ def main():
                     data = product_from_jsonld(jld)
                 else:
                     og = extract_og(html)
+                    og_title = og.get("title", "") or ""
+                    og_desc = og.get("description", "") or ""
+                    # gigotoys.com uses og:title="#123" (product code); real name is in og:description
+                    if re.match(r"^#?\d+[a-zA-Z]?$", og_title.strip()) and og_desc:
+                        title = og_desc
+                        desc = og_title
+                    else:
+                        title = og_title or extract_title(html)
+                        desc = og_desc
                     data = {
-                        "title": og.get("title", "") or extract_title(html),
-                        "description": og.get("description", "") or extract_meta_desc(html),
-                        "image_url": og.get("image", ""),
+                        "title": title,
+                        "description": desc or extract_meta_desc(html),
+                        "image_url": og.get("image", "") or extract_product_image_fallback(html),
                     }
+                if not data.get("image_url"):
+                    data["image_url"] = extract_product_image_fallback(html)
                 data["product_url"] = url
                 img = data.get("image_url", "")
-                if img and img.startswith("/"):
-                    data["image_url"] = BASE.rstrip("/") + img
+                if img:
+                    if img.startswith("//"):
+                        img = "https:" + img
+                    elif img.startswith("/"):
+                        img = BASE.rstrip("/") + img
+                    data["image_url"] = img
                 if data.get("title") and "gigotoys" not in (data.get("title", "") or "").lower():
                     catalog.append(data)
                     print(f"  {data['title'][:50]}")
@@ -119,19 +139,36 @@ def main():
                 if name_match(name, item["title"]):
                     best = item
                     break
+            pl, pw, ph = get_piece_dimensions(row)
             if best:
                 entry = {
                     "upc": upc,
                     "title": best["title"],
                     "description": best.get("description", ""),
-                    "image_url": best.get("image_url", ""),
+                    "image_url": best.get("image_url", "") or get_picture(row),
                     "product_url": best.get("product_url", ""),
+                    "piece_length": pl,
+                    "piece_width": pw,
+                    "piece_height": ph,
                 }
                 results.append(entry)
                 if entry.get("image_url"):
                     download_image(entry["image_url"], img_dir / f"{upc}{img_ext(entry['image_url'])}")
                 print(f"  [{i+1}] MATCH '{name[:30]}' -> '{best['title'][:40]}'")
             else:
+                entry = {
+                    "upc": upc,
+                    "title": name or "",
+                    "description": get_description(row),
+                    "image_url": get_picture(row),
+                    "product_url": "",
+                    "piece_length": pl,
+                    "piece_width": pw,
+                    "piece_height": ph,
+                }
+                results.append(entry)
+                if entry.get("image_url"):
+                    download_image(entry["image_url"], img_dir / f"{upc}{img_ext(entry['image_url'])}")
                 print(f"  [{i+1}] MISS  '{name[:40]}'")
 
         ctx.close()

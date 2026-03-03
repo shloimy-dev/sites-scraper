@@ -15,7 +15,7 @@ READY = ROOT / "data" / "ready" / "extracted"
 
 
 def get_upc(row):
-    for col in ("UPC Code", "Origin(UPC)", "Lookup Code", "upc"):
+    for col in ("UPC Code", "UPC Code*", "Origin(UPC)", "Lookup Code", "upc", "product_id"):
         val = (row.get(col) or "").strip()
         if val and len(val) >= 5:
             return val
@@ -48,9 +48,9 @@ def load_sheet_dims(sheet_path):
                 upc = get_upc(row)
                 if not upc:
                     continue
-                length = (row.get("Piece Length(ft)") or row.get("IPK Length(ft)") or "").strip()
-                width = (row.get("Piece Width(ft)") or row.get("IPK Width(ft)") or "").strip()
-                height = (row.get("Piece Height(ft)") or row.get("IPK Height(ft)") or "").strip()
+                length = (row.get("Piece Length(ft)") or row.get("IPK Length(ft)") or row.get("Item Length(ft)") or "").strip()
+                width = (row.get("Piece Width(ft)") or row.get("IPK Width(ft)") or row.get("Item Width(ft)") or "").strip()
+                height = (row.get("Piece Height(ft)") or row.get("IPK Height(ft)") or row.get("Item Height(ft)") or "").strip()
                 if length or width or height:
                     dims[upc] = (length, width, height)
     except Exception as e:
