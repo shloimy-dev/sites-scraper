@@ -115,6 +115,21 @@ def extract_meta_desc(html):
     return unescape(m.group(1).strip()) if m else ""
 
 
+def extract_product_image_fallback(html):
+    """Fallback: find first img with product-imgs or similar product image path in src."""
+    m = re.search(
+        r'<img[^>]+src=["\']([^"\']*product-imgs[^"\']+)["\']',
+        html, re.I,
+    )
+    if m:
+        return unescape(m.group(1).strip())
+    m = re.search(
+        r'<img[^>]+src=["\']([^"\']+\.(?:jpg|jpeg|png|webp)[^"\']*)["\']',
+        html, re.I,
+    )
+    return unescape(m.group(1).strip()) if m else ""
+
+
 def product_from_jsonld(jld):
     """Pull title, description, image from a JSON-LD Product object."""
     title = jld.get("name", "")

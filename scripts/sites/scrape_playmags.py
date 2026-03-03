@@ -139,12 +139,29 @@ def main():
             try:
                 data = scrape_product(page, upc, name)
                 if data:
+                    pl, pw, ph = get_piece_dimensions(row)
+                    data["piece_length"], data["piece_width"], data["piece_height"] = pl, pw, ph
                     results.append(data)
                     if data.get("image_url"):
                         download_image(data["image_url"], img_dir / f"{upc}{img_ext(data['image_url'])}")
                     print(f"  OK: {data['title'][:60]}")
                 else:
-                    print(f"  SKIP: no product found")
+                    # Sheet fallback
+                    pl, pw, ph = get_piece_dimensions(row)
+                    entry = {
+                        "upc": upc,
+                        "title": name or "",
+                        "description": get_description(row),
+                        "image_url": get_picture(row),
+                        "product_url": "",
+                        "piece_length": pl,
+                        "piece_width": pw,
+                        "piece_height": ph,
+                    }
+                    results.append(entry)
+                    if entry.get("image_url"):
+                        download_image(entry["image_url"], img_dir / f"{upc}{img_ext(entry['image_url'])}")
+                    print(f"  SHEET: {name[:50]} (no site match)")
             except Exception as e:
                 print(f"  ERROR: {e}")
             time.sleep(DELAY)
