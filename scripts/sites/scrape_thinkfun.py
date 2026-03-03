@@ -104,19 +104,38 @@ def main():
                     best = item
                     break
             if best:
+                pl, pw, ph = get_piece_dimensions(row)
                 entry = {
                     "upc": upc,
                     "title": best["title"],
                     "description": best.get("description", ""),
                     "image_url": best.get("image_url", ""),
                     "product_url": best.get("product_url", ""),
+                    "piece_length": pl,
+                    "piece_width": pw,
+                    "piece_height": ph,
                 }
                 results.append(entry)
                 if entry.get("image_url"):
                     download_image(entry["image_url"], img_dir / f"{upc}{img_ext(entry['image_url'])}")
                 print(f"  [{i+1}] MATCH '{name[:30]}' -> '{best['title'][:40]}'")
             else:
-                print(f"  [{i+1}] MISS  '{name[:40]}'")
+                # Sheet fallback
+                pl, pw, ph = get_piece_dimensions(row)
+                entry = {
+                    "upc": upc,
+                    "title": name or "",
+                    "description": get_description(row),
+                    "image_url": get_picture(row),
+                    "product_url": "",
+                    "piece_length": pl,
+                    "piece_width": pw,
+                    "piece_height": ph,
+                }
+                results.append(entry)
+                if entry.get("image_url"):
+                    download_image(entry["image_url"], img_dir / f"{upc}{img_ext(entry['image_url'])}")
+                print(f"  [{i+1}] SHEET '{name[:40]}' (no site match)")
 
         ctx.close()
         browser.close()
