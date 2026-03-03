@@ -17,7 +17,7 @@ def load_sheet(sheet_name):
 
 
 def get_upc(row):
-    for col in ("UPC Code", "Origin(UPC)", "Lookup Code"):
+    for col in ("UPC Code", "UPC Code*", "Origin(UPC)", "Lookup Code", "product_id"):
         val = (row.get(col) or "").strip()
         if val and len(val) >= 5:
             return val
@@ -25,7 +25,7 @@ def get_upc(row):
 
 
 def get_name(row):
-    for col in ("Name(En)", "Item Name"):
+    for col in ("Name(En)", "Name(En)*", "Item Name", "product_name"):
         val = (row.get(col) or "").strip()
         if val:
             return val
@@ -47,10 +47,10 @@ def get_description(row):
 
 def get_piece_dimensions(row):
     """Return (length, width, height) as separate values from sheet.
-    Checks Piece first, then IPK Length/Width/Height."""
-    length = (row.get("Piece Length(ft)") or row.get("IPK Length(ft)") or "").strip()
-    width = (row.get("Piece Width(ft)") or row.get("IPK Width(ft)") or "").strip()
-    height = (row.get("Piece Height(ft)") or row.get("IPK Height(ft)") or "").strip()
+    Checks Piece first, then IPK, then Item Length/Width/Height."""
+    length = (row.get("Piece Length(ft)") or row.get("IPK Length(ft)") or row.get("Item Length(ft)") or "").strip()
+    width = (row.get("Piece Width(ft)") or row.get("IPK Width(ft)") or row.get("Item Width(ft)") or "").strip()
+    height = (row.get("Piece Height(ft)") or row.get("IPK Height(ft)") or row.get("Item Height(ft)") or "").strip()
     return length, width, height
 
 

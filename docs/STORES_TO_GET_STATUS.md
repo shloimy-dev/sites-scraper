@@ -16,12 +16,12 @@
 | **sands** | ✅ 19 | ❌ | sands.com | Need scraper (sands.com may be wrong domain) |
 | **audster** | ❌ | ❌ | audster.com | **Need sheet** (Brands sheet link missing) |
 | **crayola** | ❌ | ✅ exists | crayola.com | **Need sheet** (Brands: steiff.com ref) |
-| **kent** | ❌ | ❌ | kent.bike | **Need sheet** (Brands has link) |
+| **kent** | ✅ 27 | ✅ | kent.bike | ✅ Sheet + scraper |
 | **kidztech** | ❌ | ❌ | kidztech.com | **Need sheet** (Brands: Yes, no link) |
 | **marvins_magic** | ❌ | ❌ | marvinsmagic.com | **Need sheet** (Brands: Yes, no link) |
 | **quercetti** | ❌ | ❌ | quercettistore.com | **Need sheet** |
 | **rubiks** | ❌ | ❌ | spinmasterspecialty.com | **Need sheet** (Brands: Yes, no link) |
-| **step2** | ❌ | ❌ | step2.com | **Need sheet** |
+| **step2** | ✅ 214 | ✅ | step2.com | ✅ Public CSV + scraper |
 
 ---
 
@@ -84,11 +84,11 @@
 - **Brands:** References steiff.com; no item sheet link.
 - **Action:** Get item sheet from user; then run scraper.
 
-### kent (59 items)
+### kent (59 items) — ✅ OBTAINED
 - **Base URL:** https://kent.bike
 - **Sheet link:** https://docs.google.com/spreadsheets/d/1p9Vx569XOxoTDWUqShl3m5eSRmwIKTru/edit
-- **Note:** Sheet returns "Sorry, unable to open" — **private**, needs to be shared.
-- **Action:** Request sheet access from user; create scraper once sheet is available.
+- **Note:** Export works with `format=csv` (no gid). 27 products with UPC in sheet.
+- **Scraper:** `scrape_kent.py` (sheet-only)
 
 ### kidztech (19 items)
 - **Base URL:** https://www.kidztech.com
@@ -109,23 +109,27 @@
 - **Brands:** "Yes" but no sheet link.
 - **Action:** Get item sheet from user.
 
-### step2 (24 items)
+### step2 (24 items) — ✅ OBTAINED
 - **Base URL:** https://www.step2.com
-- **Action:** Get item sheet from user.
+- **Note:** Public CSV at https://www.step2.com/pages/awin-product-csv (214 products, product_id as ID).
+- **Scraper:** `scrape_step2.py`
 
 ---
 
 ## Completed (2025-03)
 
-- **daron**: Fixed scraper (BigCommerce /brands/Daron.html), sheet fallback for all 89 (site catalog has 34, naming differs)
+- **daron**: Fixed scraper (BigCommerce /brands/Daron.html), sheet fallback for all 89
 - **thinkfun**: Sheet fallback + catalog match; 57 products
 - **gi_go**: Scraper created (uses gigotoys.com, same products as gigo)
 - **goplay, moore, sands**: Sheet-only scrapers (44, 35, 20 products)
+- **kent**: Sheet obtained (export without gid); 27 products
+- **step2**: Public CSV from step2.com/pages/awin-product-csv; 214 products
 
-## Next Steps
+## Remaining 6 — Need Sheets from User
 
-1. **Download sheets** for kent (private; request access).
-2. **Request sheets** for audster, crayola, kidztech, marvins_magic, quercetti, rubiks, step2.
+**audster, crayola, kidztech, marvins_magic, quercetti, rubiks** — No public sheet links in Brands CSV. These require:
+- Item sheet with UPC and product names (Google Sheet shared as "Anyone with link can view", or CSV export)
+- Crayola/Rubik's: affiliate feeds exist (CJ, Icecat) but need signup; internal item sheet preferred
 
 ---
 
