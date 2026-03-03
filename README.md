@@ -234,9 +234,57 @@ python3 -m playwright install chromium
 
 ---
 
-## Status and Next Steps
+## Full Summary by Store
 
-- Many stores already have scrapers and data
-- Some stores need fixes (missing images, descriptions, or dimensions)
-- Some stores need sheets before scrapers can run
-- See `docs/STORES_TO_GET_STATUS.md` and `docs/DATA_COVERAGE_SUMMARY.md` for per-store status
+Run `python scripts/audit_stores.py` to regenerate. Status: **FULL** = images, descriptions, and dimensions complete; **GAP** = missing one or more.
+
+| Store | Sheet | Products | Images | Descriptions | Dimensions | Status |
+|-------|-------|----------|--------|--------------|------------|--------|
+| atiko | 28 | 28 | 0 | 19 | 0 | GAP |
+| aurora | 413 | 413 | 413 | 413 | 0 | GAP |
+| bazic | 382 | 382 | 382 | 382 | 0 | GAP |
+| bruder | 72 | 71 | 71 | 71 | 63 | GAP |
+| bz_kinder | 31 | 31 | 30 | 0 | 0 | GAP |
+| casio | 101 | 100 | 0 | 0 | 0 | GAP |
+| cazenove | 219 | 107 | 107 | 107 | 0 | GAP |
+| chazak | 471 | 359 | 359 | 80 | 5 | GAP |
+| colours_craft | 84 | 58 | 58 | 58 | 46 | GAP |
+| crayola | 0 | 0 | 0 | 0 | 0 | — |
+| daron | 89 | 89 | 0 | 0 | 0 | GAP |
+| enday | 445 | 140 | 140 | 140 | 9 | GAP |
+| fisher_price | 0 | 20 | 126 | 20 | 0 | GAP |
+| gi_go | 51 | 51 | 0 | 0 | 0 | GAP |
+| gigo | 51 | 51 | 0 | 0 | 0 | GAP |
+| goplay | 44 | 44 | 0 | 0 | 0 | GAP |
+| kent | 27 | 27 | 27 | 27 | 27 | **FULL** |
+| kinder_blast | 209 | 209 | 209 | 209 | 13 | GAP |
+| kinder_shpiel | 114 | 114 | 114 | 0 | 0 | GAP |
+| kindervelt | 79 | 79 | 79 | 0 | 0 | GAP |
+| lchaim | 365 | 335 | 335 | 335 | 0 | GAP |
+| mead | 314 | 314 | 0 | 0 | 0 | GAP |
+| metal_earth | 61 | 60 | 60 | 60 | 0 | GAP |
+| microkick | 9 | 7 | 7 | 7 | 0 | GAP |
+| moore | 35 | 35 | 0 | 0 | 0 | GAP |
+| ner_mitzvah | 0 | 115 | 117 | 115 | 1 | GAP |
+| new_bounce | 82 | 40 | 44 | 40 | 0 | GAP |
+| new_york_doll | 251 | 167 | 167 | 161 | 3 | GAP |
+| perler | 0 | 62 | 62 | 62 | 3 | GAP |
+| play_build | 63 | 63 | 0 | 35 | 35 | GAP |
+| playkidiz | 266 | 131 | 130 | 129 | 5 | GAP |
+| playmags | 53 | 52 | 18 | 18 | 0 | GAP |
+| puzelworx | 46 | 46 | 40 | 0 | 0 | GAP |
+| razor | 30 | 26 | 26 | 1 | 0 | GAP |
+| rhode_island | 493 | 487 | 487 | 487 | 0 | GAP |
+| samvix | 126 | 58 | 55 | 54 | 0 | GAP |
+| sands | 20 | 20 | 0 | 0 | 0 | GAP |
+| steiff | 160 | 32 | 36 | 0 | 0 | GAP |
+| step2 | 214 | 214 | 214 | 214 | 0 | GAP |
+| thinkfun | 57 | 57 | 26 | 26 | 0 | GAP |
+| tiny_love | 34 | 34 | 34 | 34 | 0 | GAP |
+| vtech | 58 | 58 | 11 | 0 | 0 | GAP |
+| winfun | 58 | 28 | 28 | 28 | 13 | GAP |
+| winning_moves | 60 | 7 | 3 | 7 | 0 | GAP |
+
+**Totals:** 46 stores in config; 1 full (kent); most need images, descriptions, or dimensions.
+
+See `docs/STORES_TO_GET_STATUS.md` and `docs/DATA_COVERAGE_SUMMARY.md` for details.
