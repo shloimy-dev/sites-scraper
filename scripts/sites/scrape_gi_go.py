@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Thinkfun scraper. Strategy: Crawl ThinkFun category page, match by name.
-Reference: ravensburger.us (ThinkFun is a Ravensburger brand)
+Gi-go scraper. gi_go sheet uses gigotoys.com.hk (HK site).
+HK site has different structure than gigotoys.com - uses /article/{id} and /search?type=product.
+Fallback: use gigo (gigotoys.com) scraper output - same products, same UPCs.
 """
 import sys, re, time
 from pathlib import Path
@@ -10,12 +11,22 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from scraper_lib import *
 from playwright.sync_api import sync_playwright
 
-SITE_ID = "thinkfun"
-SHEET = "thinkfun"
-BASE = "https://www.ravensburger.us"
-THINKFUN_URL = f"{BASE}/en-US/products/games/thinkfun/"
+SITE_ID = "gi_go"
+SHEET = "gi_go"
+BASE_HK = "https://www.gigotoys.com.hk"
+BASE_COM = "https://www.gigotoys.com"  # Fallback - same products
 DELAY = 2.0
 WAIT = 4000
+
+# Same category pages as gigo (gigotoys.com) - gi_go products are Gi-go dolls
+CATEGORY_PAGES = [
+    "/C1-1-en.html", "/C1-2-en.html",
+    "/C2-1-en.html", "/C2-2-en.html", "/C2-3-en.html", "/C2-4-en.html",
+    "/C3-1-en.html", "/C3-2-en.html", "/C3-3-en.html", "/C3-4-en.html",
+    "/C3-6-en.html", "/C3-7-en.html", "/C3-8-en.html", "/C3-9-en.html",
+    "/C4-1-en.html", "/C5-1-en.html", "/C5-2-en.html", "/C5-3-en.html", "/C5-4-en.html",
+    "/C6-1-en.html", "/C6-3-en.html", "/C6-4-en.html", "/C7-1-en.html",
+]
 
 
 def normalize(s):
@@ -29,13 +40,13 @@ def name_match(sheet_name, site_title):
         return True
     sw = set(sn.split())
     tw = set(st.split())
-    filler = {"classic", "edition", "game", "the", "of", "a", "deluxe", "card", "board", "puzzle"}
+    filler = {"baby", "set", "the", "of", "and", "my", "lil", "inch", "12", "14", "16"}
     sw_sig = sw - filler
     tw_sig = tw - filler
     if not sw_sig:
         sw_sig = sw
     overlap = sw_sig & tw_sig
-    return len(overlap) >= len(sw_sig) * 0.6 if len(sw_sig) > 2 else len(overlap) >= len(sw_sig)
+    return len(overlap) >= len(sw_sig) * 0.5 if len(sw_sig) > 2 else len(overlap) >= len(sw_sig)
 
 
 def main():
@@ -44,11 +55,13 @@ def main():
         idx = sys.argv.index("--limit")
         if idx + 1 < len(sys.argv):
             rows = rows[: int(sys.argv[idx + 1])]
-    results = []
     ext_dir = EXTRACTED_DIR
     ext_dir.mkdir(parents=True, exist_ok=True)
     img_dir = IMAGES_DIR / SITE_ID
     img_dir.mkdir(parents=True, exist_ok=True)
+
+    # Use gigotoys.com (same as gigo) - HK site has different structure, same products
+    BASE = BASE_COM
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -56,15 +69,20 @@ def main():
         page = ctx.new_page()
         page.set_default_timeout(20000)
 
-        print("Crawling ThinkFun category...")
-        page.goto(THINKFUN_URL, wait_until="domcontentloaded")
-        page.wait_for_timeout(WAIT)
-
+        print(f"Crawling {BASE} category pages for product links...")
         product_urls = set()
-        links = page.evaluate("""() => [...document.querySelectorAll('a[href*="/products/"]')]
-            .map(a => a.href).filter(h => h.includes('thinkfun') && !h.includes('shopping-basket'))""")
-        for href in links:
-            product_urls.add(href.split("?")[0])
+        for cat in CATEGORY_PAGES:
+            try:
+                page.goto(BASE + cat, wait_until="domcontentloaded")
+                page.wait_for_timeout(WAIT)
+                links = page.evaluate("""() => [...document.querySelectorAll('a[href*="/products/"]')]
+                    .map(a => a.href).filter(h => h.includes('/products/') && h.endsWith('.html'))""")
+                for href in links:
+                    product_urls.add(href.split("?")[0])
+            except Exception as e:
+                print(f"  Skip {cat}: {e}")
+            time.sleep(DELAY)
+
         product_urls = sorted(product_urls)
         print(f"Found {len(product_urls)} product pages")
 
@@ -85,7 +103,10 @@ def main():
                         "image_url": og.get("image", ""),
                     }
                 data["product_url"] = url
-                if data.get("title") and "shopping basket" not in data.get("title", "").lower():
+                img = data.get("image_url", "")
+                if img and img.startswith("/"):
+                    data["image_url"] = BASE.rstrip("/") + img
+                if data.get("title") and "gigotoys" not in (data.get("title", "") or "").lower():
                     catalog.append(data)
                     print(f"  {data['title'][:50]}")
             except Exception as e:
@@ -93,6 +114,7 @@ def main():
             time.sleep(DELAY)
 
         print(f"\nMatching {len(rows)} sheet rows to {len(catalog)} catalog products...")
+        results = []
         for i, row in enumerate(rows):
             upc = get_upc(row)
             name = get_name(row)
@@ -120,7 +142,6 @@ def main():
                     download_image(entry["image_url"], img_dir / f"{upc}{img_ext(entry['image_url'])}")
                 print(f"  [{i+1}] MATCH '{name[:30]}' -> '{best['title'][:40]}'")
             else:
-                # Sheet fallback
                 pl, pw, ph = get_piece_dimensions(row)
                 entry = {
                     "upc": upc,
@@ -140,10 +161,7 @@ def main():
         ctx.close()
         browser.close()
 
-    out_path = ext_dir / f"{SITE_ID}.csv"
-    write_csv(results, out_path)
-    if not results:
-        out_path.write_text("upc,title,description,image_url,product_url\n")
+    write_csv(results, ext_dir / f"{SITE_ID}.csv")
     total = len([r for r in rows if get_upc(r)])
     print(f"\nDone: {len(results)}/{total} products saved")
 

@@ -1,8 +1,15 @@
 # daron
 
 - **URL:** https://modeltoycars.com
-- **Homepage title:** Attention Required! | Cloudflare
-- **Homepage og:image:** 
+- **Platform:** BigCommerce (NOT Shopify)
+- **Homepage title:** Your #1 Source for Diecast Cars (when not blocked)
+
+## Scraper strategy (2025-03)
+
+- **Brand page:** `/brands/Daron.html` — lists all Daron products (search URLs trigger Cloudflare)
+- **Product URLs:** `https://modeltoycars.com/product-slug/` (no `/products/` prefix)
+- **Matching:** Fuzzy name match against catalog, then click-through to product page
+- **Limitation:** Product pages may return Cloudflare when accessed from automated browser; try running from a different network or with longer delays
 
 ## Recommended strategy: `direct_p` (score 5)
 
