@@ -83,6 +83,7 @@ def main():
     ext_dir.mkdir(parents=True, exist_ok=True)
     img_dir = IMAGES_DIR / SITE_ID
     img_dir.mkdir(parents=True, exist_ok=True)
+    extracted_path = ext_dir / f"{SITE_ID}.csv"
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -101,6 +102,7 @@ def main():
                 data = scrape_product(page, upc, name)
                 if data:
                     results.append(data)
+                    write_csv(results, extracted_path)
                     if data.get("image_url"):
                         download_image(data["image_url"], img_dir / f"{upc}{img_ext(data['image_url'])}")
                     print(f"  OK: {data['title'][:60]}")
@@ -113,7 +115,7 @@ def main():
         ctx.close()
         browser.close()
 
-    write_csv(results, ext_dir / f"{SITE_ID}.csv")
+    write_csv(results, extracted_path)
     print(f"\nDone: {len(results)}/{total} products saved")
 
 

@@ -108,6 +108,12 @@ def _extract(page, upc):
         return None
     data["upc"] = upc
     data["product_url"] = page.url
+    dl, dw, dh = extract_dims_from_jsonld(jld) if jld else ("", "", "")
+    if not (dl or dw or dh):
+        dl, dw, dh = parse_dims_from_desc(data.get("description", ""))
+    if not (dl or dw or dh):
+        dl, dw, dh = extract_dims_from_html(html)
+    data["piece_length"], data["piece_width"], data["piece_height"] = dl, dw, dh
     return data
 
 
@@ -122,6 +128,7 @@ def main():
     ext_dir.mkdir(parents=True, exist_ok=True)
     img_dir = IMAGES_DIR / SITE_ID
     img_dir.mkdir(parents=True, exist_ok=True)
+    extracted_path = ext_dir / f"{SITE_ID}.csv"
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -139,12 +146,31 @@ def main():
             try:
                 data = scrape_product(page, upc, name)
                 if data:
+                    pl, pw, ph = get_piece_dimensions(row)
+                    if pl or pw or ph:
+                        data["piece_length"], data["piece_width"], data["piece_height"] = pl, pw, ph
+                    data["description"] = data.get("description", "") or get_description(row)
+                    data["image_url"] = data.get("image_url") or get_picture(row)
                     results.append(data)
+                    write_csv(results, extracted_path)
                     if data.get("image_url"):
                         download_image(data["image_url"], img_dir / f"{upc}{img_ext(data['image_url'])}")
                     print(f"  OK: {data['title'][:60]}")
                 else:
-                    print(f"  SKIP: no product found")
+                    pl, pw, ph = get_piece_dimensions(row)
+                    entry = {
+                        "upc": upc,
+                        "title": name or "",
+                        "description": get_description(row),
+                        "image_url": get_picture(row),
+                        "product_url": "",
+                        "piece_length": pl,
+                        "piece_width": pw,
+                        "piece_height": ph,
+                    }
+                    results.append(entry)
+                    write_csv(results, extracted_path)
+                    print(f"  SHEET: {name[:50]} (no site match)")
             except Exception as e:
                 print(f"  ERROR: {e}")
             time.sleep(DELAY)
@@ -152,7 +178,7 @@ def main():
         ctx.close()
         browser.close()
 
-    write_csv(results, ext_dir / f"{SITE_ID}.csv")
+    write_csv(results, extracted_path)
     print(f"\nDone: {len(results)}/{total} products saved")
 
 

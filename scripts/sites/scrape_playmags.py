@@ -120,6 +120,7 @@ def main():
     ext_dir.mkdir(parents=True, exist_ok=True)
     img_dir = IMAGES_DIR / SITE_ID
     img_dir.mkdir(parents=True, exist_ok=True)
+    extracted_path = ext_dir / f"{SITE_ID}.csv"
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -142,6 +143,7 @@ def main():
                     pl, pw, ph = get_piece_dimensions(row)
                     data["piece_length"], data["piece_width"], data["piece_height"] = pl, pw, ph
                     results.append(data)
+                    write_csv(results, extracted_path)
                     if data.get("image_url"):
                         download_image(data["image_url"], img_dir / f"{upc}{img_ext(data['image_url'])}")
                     print(f"  OK: {data['title'][:60]}")
@@ -159,6 +161,7 @@ def main():
                         "piece_height": ph,
                     }
                     results.append(entry)
+                    write_csv(results, extracted_path)
                     if entry.get("image_url"):
                         download_image(entry["image_url"], img_dir / f"{upc}{img_ext(entry['image_url'])}")
                     print(f"  SHEET: {name[:50]} (no site match)")
@@ -169,7 +172,7 @@ def main():
         ctx.close()
         browser.close()
 
-    write_csv(results, ext_dir / f"{SITE_ID}.csv")
+    write_csv(results, extracted_path)
     print(f"\nDone: {len(results)}/{total} products saved")
 
 

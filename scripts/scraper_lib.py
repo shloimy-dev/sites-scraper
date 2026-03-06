@@ -32,10 +32,15 @@ def get_name(row):
     return ""
 
 
+def get_number(row):
+    """Get product/sku number from sheet (Number column)."""
+    return (row.get("Number") or "").strip()
+
+
 def get_picture(row):
-    """Get image URL from sheet (Picture column)."""
+    """Get image URL from sheet (Picture column). Ignore comma-separated multi-URL values."""
     val = (row.get("Picture") or "").strip()
-    if val and val.startswith("http"):
+    if val and val.startswith("http") and "," not in val:
         return val
     return ""
 
@@ -61,6 +66,84 @@ def get_dimensions(row):
     if parts:
         return " x ".join(parts) + " ft"
     return ""
+
+
+def parse_dims_from_desc(desc):
+    """Parse L x W x H from description/text. Returns (length, width, height) as strings."""
+    if not desc:
+        return "", "", ""
+    # e.g. "7.75\" x 3.2\" x 1\"", "7.75 x 3.2 x 1", "Measure: 7.75 x 3.2 x 1 in"
+    m = re.search(r"(\d+\.?\d*)\s*[\"']?\s*[x×]\s*(\d+\.?\d*)\s*[\"']?\s*[x×]\s*(\d+\.?\d*)", desc, re.I)
+    if m:
+        return m.group(1), m.group(2), m.group(3)
+    m = re.search(r"(\d+\.?\d*)\s*[\"']?\s*[x×]\s*(\d+\.?\d*)", desc, re.I)
+    if m:
+        return m.group(1), m.group(2), ""
+    return "", "", ""
+
+
+def extract_dims_from_jsonld(jld):
+    """Return (length, width, height) from JSON-LD Product if present."""
+    if not jld or not isinstance(jld, dict):
+        return "", "", ""
+
+    def _num(val):
+        if val is None:
+            return ""
+        if isinstance(val, dict):
+            val = val.get("value") or val.get("valueAsString")
+        if val is None:
+            return ""
+        s = str(val).strip()
+        if s and s.replace(".", "").replace(",", "").replace("-", "").isdigit():
+            return s
+        return ""
+
+    length = _num(jld.get("depth"))
+    width = _num(jld.get("width"))
+    height = _num(jld.get("height"))
+    if length or width or height:
+        return length, width, height
+    for p in (jld.get("additionalProperty") or []):
+        if not isinstance(p, dict):
+            continue
+        name = (p.get("name") or "").lower()
+        val = _num(p.get("value"))
+        if name == "depth" and not length:
+            length = val
+        elif name == "width" and not width:
+            width = val
+        elif name == "height" and not height:
+            height = val
+    return length, width, height
+
+
+def extract_dims_from_html(html):
+    """Try to find dimensions in page HTML (e.g. 'Dimensions: 10 x 8 x 2'). Returns (length, width, height)."""
+    if not html:
+        return "", "", ""
+    # Melissa & Doug style: "Product: 11.0 x 8.2 x 0.2 inches" (product dimensions we want)
+    m = re.search(
+        r"Product:\s*(\d+\.?\d*)\s*[x×]\s*(\d+\.?\d*)\s*[x×]\s*(\d+\.?\d*)\s*inches?",
+        html, re.I,
+    )
+    if m:
+        return m.group(1), m.group(2), m.group(3)
+    # "Dimensions:", "Product dimensions:", "Size:", "Package dimensions:"
+    m = re.search(
+        r"(?:Dimensions?|Size|Package\s+dimensions?)\s*:?\s*([^.<]+)",
+        html, re.I,
+    )
+    if m:
+        return parse_dims_from_desc(m.group(1))
+    # Standalone "L x W x H" in a table or line
+    m = re.search(
+        r"(\d+\.?\d*)\s*[\"']?\s*[x×]\s*(\d+\.?\d*)\s*[\"']?\s*[x×]\s*(\d+\.?\d*)\s*(?:in|inch|\"|cm)?",
+        html, re.I,
+    )
+    if m:
+        return m.group(1), m.group(2), m.group(3)
+    return "", "", ""
 
 
 def extract_jsonld_product(html):
@@ -175,13 +258,15 @@ def img_ext(url):
     return ".jpg"
 
 
+CSV_FIELDS = ["upc", "title", "description", "image_url", "product_url", "piece_length", "piece_width", "piece_height"]
+
+
 def write_csv(rows, path):
+    """Write results to CSV. Call after each row to preserve progress on crash."""
     if not rows:
         return
-    fields = ["upc", "title", "description", "image_url", "product_url", "piece_length", "piece_width", "piece_height"]
     with open(path, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=fields)
+        w = csv.DictWriter(f, fieldnames=CSV_FIELDS)
         w.writeheader()
         for r in rows:
-            row = {k: r.get(k, "") for k in fields}
-            w.writerow(row)
+            w.writerow({k: r.get(k, "") for k in CSV_FIELDS})

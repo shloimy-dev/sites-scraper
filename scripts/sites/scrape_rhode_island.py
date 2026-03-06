@@ -43,6 +43,38 @@ def make_full_url(url):
     return url
 
 
+def extract_from_product_page(page, product_url):
+    """Visit product_url and return description, dimensions, and optionally image from the detail page."""
+    if not product_url or not product_url.startswith(BASE):
+        return "", "", "", ""
+    try:
+        page.goto(product_url, wait_until="domcontentloaded")
+        page.wait_for_timeout(4000)
+        html = page.content()
+    except Exception:
+        return "", "", "", ""
+
+    jld = extract_jsonld_product(html)
+    if jld:
+        data = product_from_jsonld(jld)
+    else:
+        og = extract_og(html)
+        data = {
+            "title": og.get("title", "") or extract_title(html),
+            "description": og.get("description", "") or extract_meta_desc(html),
+            "image_url": og.get("image", "") or extract_product_image_fallback(html),
+        }
+
+    desc = (data.get("description") or "").strip()
+    dl, dw, dh = extract_dims_from_jsonld(jld) if jld else ("", "", "")
+    if not (dl or dw or dh):
+        dl, dw, dh = parse_dims_from_desc(desc)
+    if not (dl or dw or dh):
+        dl, dw, dh = extract_dims_from_html(html)
+    img = data.get("image_url") or ""
+    return desc, dl, dw, dh, img
+
+
 def main():
     rows = load_sheet(SHEET)
 
@@ -53,6 +85,7 @@ def main():
 
     results = []
     matched = 0
+    extracted_path = ext_dir / f"{SITE_ID}.csv"
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -77,7 +110,20 @@ def main():
 
                 data = page.evaluate(EXTRACT_SEARCH_JS)
                 if not data or not data.get("title"):
-                    print(f"  [{i+1}/{len(rows)}] MISS  '{name[:40]}'")
+                    pl, pw, ph = get_piece_dimensions(row)
+                    entry = {
+                        "upc": upc,
+                        "title": name or "",
+                        "description": get_description(row),
+                        "image_url": get_picture(row),
+                        "product_url": "",
+                        "piece_length": pl,
+                        "piece_width": pw,
+                        "piece_height": ph,
+                    }
+                    results.append(entry)
+                    write_csv(results, extracted_path)
+                    print(f"  [{i+1}/{len(rows)}] MISS  '{name[:40]}' (sheet fallback)")
                     time.sleep(0.5)
                     continue
 
@@ -85,15 +131,35 @@ def main():
                 product_url = make_full_url(data.get("href", ""))
                 image_url = make_full_url(data.get("imgSrc", ""))
 
+                # Visit product page for full description and dimensions
+                if product_url:
+                    detail_desc, pl_d, pw_d, ph_d, detail_img = extract_from_product_page(page, product_url)
+                    if detail_desc:
+                        description = detail_desc
+                    else:
+                        description = f"Item: {data.get('itemCode', '')}"
+                    if detail_img:
+                        image_url = detail_img
+                    pl_page, pw_page, ph_page = pl_d, pw_d, ph_d
+                else:
+                    description = f"Item: {data.get('itemCode', '')}"
+                    pl_page, pw_page, ph_page = "", "", ""
+
                 matched += 1
+                pl, pw, ph = get_piece_dimensions(row)
+                # Prefer sheet dimensions, then product page
                 entry = {
                     "title": title,
-                    "description": f"Item: {data.get('itemCode', '')}",
+                    "description": description,
                     "image_url": image_url,
                     "product_url": product_url,
                     "upc": upc,
+                    "piece_length": pl or pl_page,
+                    "piece_width": pw or pw_page,
+                    "piece_height": ph or ph_page,
                 }
                 results.append(entry)
+                write_csv(results, extracted_path)
                 if image_url:
                     download_image(image_url, img_dir / f"{upc}{img_ext(image_url)}")
                 print(f"  [{i+1}/{len(rows)}] MATCH '{name[:30]}' -> '{title[:40]}'")
@@ -106,7 +172,7 @@ def main():
         ctx.close()
         browser.close()
 
-    write_csv(results, ext_dir / f"{SITE_ID}.csv")
+    write_csv(results, extracted_path)
     print(f"\nDone: {matched}/{len(rows)} products matched")
 
 

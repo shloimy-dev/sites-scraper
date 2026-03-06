@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 """
-Mead scraper. Strategy: Search mead.com (Five Star notebooks); fallback: use sheet data.
+Mead scraper. Strategy: Try scraping mead.com via search → product page; fallback to sheet data.
 """
 import sys, time
 from pathlib import Path
+from urllib.parse import quote_plus
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from scraper_lib import *
+from playwright.sync_api import sync_playwright
 
 SITE_ID = "mead"
 SHEET = "mead"
@@ -63,13 +65,30 @@ def scrape_via_search(page, upc, name, base_url):
         if data.get("title"):
             data["upc"] = upc
             data["product_url"] = page.url
+            dl, dw, dh = extract_dims_from_jsonld(jld) if jld else ("", "", "")
+            if not (dl or dw or dh):
+                dl, dw, dh = parse_dims_from_desc(data.get("description", ""))
+            if not (dl or dw or dh):
+                dl, dw, dh = extract_dims_from_html(html)
+            data["piece_length"], data["piece_width"], data["piece_height"] = dl, dw, dh
             return data
     return None
 
 
-def scrape_product(row, upc, name):
-    # mead.com has Cloudflare - skip search, use sheet data
-    # Sheet fallback: use name, description, picture from sheet
+def scrape_product(page, row, upc, name):
+    """Try website first; fall back to sheet data if site is blocked or no match."""
+    try:
+        data = scrape_via_search(page, upc, name, BASE)
+        if data:
+            pl, pw, ph = get_piece_dimensions(row)
+            if pl or pw or ph:
+                data["piece_length"], data["piece_width"], data["piece_height"] = pl, pw, ph
+            data["description"] = data.get("description", "") or get_description(row)
+            data["image_url"] = data.get("image_url") or get_picture(row)
+            return data
+    except Exception:
+        pass
+    # Sheet fallback when site is blocked or no product found
     desc = get_description(row)
     pic = get_picture(row)
     pl, pw, ph = get_piece_dimensions(row)
@@ -99,31 +118,42 @@ def main():
     ext_dir.mkdir(parents=True, exist_ok=True)
     img_dir = IMAGES_DIR / SITE_ID
     img_dir.mkdir(parents=True, exist_ok=True)
+    extracted_path = ext_dir / f"{SITE_ID}.csv"
 
     total = len(rows)
-    for i, row in enumerate(rows):
-        upc = get_upc(row) or (row.get("Number") or "").strip()
-        name = get_name(row)
-        if not name:
-            continue
-        if not upc:
-            upc = f"mead_{i}"
-        print(f"[{i+1}/{total}] UPC={upc} {name[:40]}")
-        try:
-            data = scrape_product(row, upc, name)
-            if data:
-                results.append(data)
-                img_url = data.get("image_url")
-                if img_url and img_url.startswith("http"):
-                    download_image(img_url, img_dir / f"{upc}{img_ext(img_url)}")
-                print(f"  OK: {data['title'][:60]}")
-            else:
-                print(f"  SKIP: no product found")
-        except Exception as e:
-            print(f"  ERROR: {e}")
-        time.sleep(0.1)
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        ctx = browser.new_context(ignore_https_errors=True)
+        page = ctx.new_page()
+        page.set_default_timeout(20000)
 
-    write_csv(results, ext_dir / f"{SITE_ID}.csv")
+        for i, row in enumerate(rows):
+            upc = get_upc(row) or (row.get("Number") or "").strip()
+            name = get_name(row)
+            if not name:
+                continue
+            if not upc:
+                upc = f"mead_{i}"
+            print(f"[{i+1}/{total}] UPC={upc} {name[:40]}")
+            try:
+                data = scrape_product(page, row, upc, name)
+                if data:
+                    results.append(data)
+                    write_csv(results, extracted_path)
+                    img_url = data.get("image_url")
+                    if img_url and img_url.startswith("http"):
+                        download_image(img_url, img_dir / f"{upc}{img_ext(img_url)}")
+                    print(f"  OK: {data['title'][:60]}")
+                else:
+                    print(f"  SKIP: no product found")
+            except Exception as e:
+                print(f"  ERROR: {e}")
+            time.sleep(DELAY)
+
+        ctx.close()
+        browser.close()
+
+    write_csv(results, extracted_path)
     print(f"\nDone: {len(results)}/{total} products saved")
 
 

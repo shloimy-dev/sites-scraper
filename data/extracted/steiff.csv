@@ -1,33 +1,827 @@
 upc,title,description,image_url,product_url,piece_length,piece_width,piece_height
-4001505066153,Bharat the White Tiger,,https://www.steiff.com/img/600/600/resize/catalog/product/b/h/bharat-der-weisse-tiger-066153-9.jpg,https://www.steiff.com/en-us/bharat-the-white-tiger-066153,,,
-4001505073946,Lita Lamb,,https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-lita-lamm-073946-7.jpg,https://www.steiff.com/en-us/lita-lamb-073946,,,
-4001505012891,Charly Dangling Teddy Bear,,https://www.steiff.com/img/600/600/resize/catalog/product/c/h/charly-schlenker-teddybaer-012891-22.jpg,https://www.steiff.com/en-us/charly-dangling-teddy-bear-012891,,,
-4001505012815,Charly Dangling Teddy Bear,,https://www.steiff.com/img/600/600/resize/catalog/product/c/h/charly-schlenker-teddybaer-012891-22.jpg,https://www.steiff.com/en-us/charly-dangling-teddy-bear-012891,,,
-4001505063855,Tuggy Tortoise,,https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-tuggy-schildkroete-063855-12.jpg,https://www.steiff.com/en-us/tuggy-tortoise-063855,,,
-4001505069086,Cozy Christmas Hedgy Hedgehog,,https://www.steiff.com/img/600/600/resize/catalog/product/c/o/cosy-christmas-hedgy-igel-059001.jpg,https://www.steiff.com/en-us/cozy-christmas-hedgy-hedgehog-059001,,,
-4001505115134,Arco Polar Bear,,https://www.steiff.com/img/600/600/resize/catalog/product/a/r/arco-eisbaer-115110-6.jpg,https://www.steiff.com/en-us/arco-polar-bear-115110,,,
-4001505012914,Charly Dangling Teddy Bear,,https://www.steiff.com/img/600/600/resize/catalog/product/c/h/charly-schlenker-teddybaer-012891-22.jpg,https://www.steiff.com/en-us/charly-dangling-teddy-bear-012891,,,
-4001505075742,Bharat the White Tiger,,https://www.steiff.com/img/600/600/resize/catalog/product/b/h/bharat-der-weisse-tiger-066153-9.jpg,https://www.steiff.com/en-us/bharat-the-white-tiger-066153,,,
-4001505073427,Lita Lamb,,https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-lita-lamm-073946-7.jpg,https://www.steiff.com/en-us/lita-lamb-073946,,,
-4001505113529,My First Steiff Teddy Bear Beige,,https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-my-first-steiff-teddybaer-242120-1.jpg,https://www.steiff.com/en-us/my-first-steiff-teddy-bear-beige-242120,,,
-4001505012808,Charly Dangling Teddy Bear,,https://www.steiff.com/img/600/600/resize/catalog/product/c/h/charly-schlenker-teddybaer-012891-22.jpg,https://www.steiff.com/en-us/charly-dangling-teddy-bear-012891,,,
-4001505045172,Phil Squirrel,,https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-phil-eichhoernchen-045172-9.jpg,https://www.steiff.com/en-us/phil-squirrel-045172,,,
-4001505060427,Bodo Monkey,,https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-bodo-affe-060427.jpg,https://www.steiff.com/en-us/bodo-monkey-060427,,,
-4001505060441,Bodo Monkey,,https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-bodo-affe-060427.jpg,https://www.steiff.com/en-us/bodo-monkey-060427,,,
-4001505062636,Lasse Polar Bear,,https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-lasse-eisbaer-062636-5.jpg,https://www.steiff.com/en-us/lasse-polar-bear-062636,,,
-4001505063114,Robby Seal,,https://www.steiff.com/img/600/600/resize/catalog/product/r/o/robby-seehund-063114-9.jpg,https://www.steiff.com/en-us/robby-seal-063114,,,
-4001505064074,Elna Baby Elephant,,https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-elna-elefant-064074-1.jpg,https://www.steiff.com/en-us/elna-baby-elephant-064074,,,
-4001505067051,Cassie Cat,,https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-cassie-katze-099182-2.jpg,https://www.steiff.com/en-us/cassie-cat-099182,,,
-4001505067099,Lita Lamb,,https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-lita-lamm-073946-7.jpg,https://www.steiff.com/en-us/lita-lamb-073946,,,
-4001505067525,Ozzie Orca Whale,,https://www.steiff.com/img/600/600/resize/catalog/product/o/z/ozzie-orca-mit-quietsche-067525-1.jpg,https://www.steiff.com/en-us/ozzie-orca-whale-067525,,,
-4001505067631,Baby Gina Giraffe,,https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-gina-giraffe-068201-3.jpg,https://www.steiff.com/en-us/baby-gina-giraffe-068201,,,
-4001505067655,Unica Unicorn,,https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-unica-einhorn-067662-21.jpg,https://www.steiff.com/en-us/unica-unicorn-067662,,,
-4001505067679,Unica Unicorn,,https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-unica-einhorn-067662-21.jpg,https://www.steiff.com/en-us/unica-unicorn-067662,,,
-4001505067945,Slo Tortoise,,https://www.steiff.com/img/600/600/resize/catalog/product/s/l/slo-schildkroete-068485-6.jpg,https://www.steiff.com/en-us/slo-tortoise-068485,,,
-4001505068201,Baby Gina Giraffe,,https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-gina-giraffe-068201-3.jpg,https://www.steiff.com/en-us/baby-gina-giraffe-068201,,,
-4001505069109,Zora Zebra,,https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-zora-zebra-069109-4.jpg,https://www.steiff.com/en-us/zora-zebra-069109,,,
-4001505075537,Benji Red Panda,,https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-benji-roter-panda-075537-3.jpg,https://www.steiff.com/en-us/benji-red-panda-075537,,,
-4001505075902,Palle King Penguin,,https://www.steiff.com/img/600/600/resize/catalog/product/p/a/palle-koenigspinguin-075902-18.jpg,https://www.steiff.com/en-us/palle-king-penguin-075902,,,
-4001505242717,My First Steiff Ellie Elephant Musical Pull Toy,,https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-my-first-steiff-ellie-elefant-spieluhr-242731-9.jpg,https://www.steiff.com/en-us/my-first-steiff-ellie-elephant-musical-pull-toy-242731,,,
-4001505068478,Slo Tortoise,,https://www.steiff.com/img/600/600/resize/catalog/product/s/l/slo-schildkroete-068485-6.jpg,https://www.steiff.com/en-us/slo-tortoise-068485,,,
-4001505115110,Arco Polar Bear,,https://www.steiff.com/img/600/600/resize/catalog/product/a/r/arco-eisbaer-115110-6.jpg,https://www.steiff.com/en-us/arco-polar-bear-115110,,,
+9781101934708,NATE/MISSING BIRTHDAY SNAKE,,,,,,
+4001505000331,"12 "" Classic Teddy bear Linda, pale pink",,,,,,
+4001505063916,"16 "" Soft Cuddly Friends Aila seal, ice blue",,,,,,
+4001505066153,"17 "" Bharat, white tiger",,,,,,
+4001505073748,"12 "" Soft Cuddly Friends Dinkie donkey, grey",,,,,,
+4001505073946,Lita Lamb,"These are my attributes
+Item number: 073946
+
+Even Little Bo Peep could not have imagined a more precious baby sheep than our Lita. Instead of wool, this extra-cuddly little lamb has a coat that’s softer than silk - inviting hugs, kisses, and petting. Children will love her darling design, her fetching face, and her pleasing personality. Parents will appreciate her proven safety, easy care, and durable construction. With her many charms, Lita makes both kids and adults happy. So bring her home today. From our ""Friends Under $50"" collection of toys designed to put the joy of owning a genuine Steiff animal within reach of every child. Featuring the famous ""Button in Ear"" trademark, symbol of the company that invented soft toys 140 years ago. Lita comes in 2 sizes: medium, 12"" (Lita Lamb EAN 073427) and small 8"" (pictured)  
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Tunisia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-lita-lamm-073946-7.jpg,https://www.steiff.com/en-us/lita-lamb-073946,8,,
+4001505084072,"16 "" Nero Panther",,,,,,
+4001505087837,"11 "" Bronko Brontosaurus",,,,,,
+4001505242359,My First Steiff Ellie Elephant Musical Pull Toy,"These are my attributes
+Item number: 242731
+
+The “My First Steiff” Ellie elephant as a music box is an amazing experience for all baby’s senses. Ellie radiates warmth with her cheerful smile and loving gaze, while her big ears and soft fur provide a comforting tactile experience. And when you wind the music box, the soft sound of “Schlafe, mein Prinzchen” (a German lullaby) soothes your little darling to sleep. Featuring “My First Steiff” embroidery in the ear.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+with removable music box
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-my-first-steiff-ellie-elefant-spieluhr-242731-9.jpg,https://www.steiff.com/en-us/my-first-steiff-ellie-elephant-musical-pull-toy-242731,11,,
+4001505500725,"37 "" Studio Elephant, grey",,,,,,
+4001505012891,Charly Dangling Teddy Bear,"These are my attributes
+Item number: 012891
+
+Who’s ready for fun? Charly is always the first to raise his hand! Made of the softest plush and without harmful dyes or materials, Charly Teddy is the perfect adventure partner for your children and their friends. Wears the world-famous ""Button in Ear"" - a symbol of the highest standards in quality and safety. Also available in 6-in and 12-in sizes, available in beige.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Tunisia",https://www.steiff.com/img/600/600/resize/catalog/product/c/h/charly-schlenker-teddybaer-012891-22.jpg,https://www.steiff.com/en-us/charly-dangling-teddy-bear-012891,12,,
+4001505060298,"12 "" Soft Cuddly Friends Bingo monkey, beige",,,,,,
+4001505076947,"18 "" Andor Golden Retriever , light brown tip",,,,,,
+4001505080463,"8 "" Hoppie Rabbit, Lt grey",,,,,,
+4001505084102,"7 "" Billy tiger, striped",,,,,,
+4001505099366,"12 "" Mimmi Dangling cat, black/white",,,,,,
+4001505122163,"11 "" Jaycee Border Collie, black/white",,,,,,
+4001505280016,"9 "" Steiff's Little Friend Sissi Piglet, pale pink",,,,,,
+4001505012815,Charly Dangling Teddy Bear,"These are my attributes
+Item number: 012891
+
+Who’s ready for fun? Charly is always the first to raise his hand! Made of the softest plush and without harmful dyes or materials, Charly Teddy is the perfect adventure partner for your children and their friends. Wears the world-famous ""Button in Ear"" - a symbol of the highest standards in quality and safety. Also available in 6-in and 12-in sizes, available in beige.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Tunisia",https://www.steiff.com/img/600/600/resize/catalog/product/c/h/charly-schlenker-teddybaer-012891-22.jpg,https://www.steiff.com/en-us/charly-dangling-teddy-bear-012891,12,,
+4001505023033,"12 "" Teddies for tomorrow Tom Teddy bear, cappuccino",,,,,,
+4001505063855,"11 "" SCF Tuggy Tortoise",,,,,,
+4001505065699,"10 "" Soft Cuddly Friends Liam lion,",,,,,,
+4001505069086,Cozy Christmas Hedgy Hedgehog,"These are my attributes
+Item number: 059001
+
+Cozy Christmas Hedgy Hedgehog is ready to sweeten the season—complete with a soft, textured coat and an oversized candy cane cradled in his paws. Measuring 7 inches tall, his rounded shape and cheerful face add a playful touch to holiday shelves, stockings, or snuggle time. Whether you’re surprising a little one or adding to your own festive décor, Hedgy is a heartwarming reminder that the smallest friends often bring the biggest smiles. Crafted from soft plush and finished with the iconic Steiff “Button in Ear“.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/c/o/cosy-christmas-hedgy-igel-059001.jpg,https://www.steiff.com/en-us/cozy-christmas-hedgy-hedgehog-059001,5,,
+4001505070433,"14 "" Rieke dangling fawn, brown",,,,,,
+4001505080050,"13 "" Dormili rabbit, brown",,,,,,
+4001505111679,"16 "" Fynn Teddy bear, beige",,,,,,
+4001505115134,Arco Polar Bear,"These are my attributes
+Item number: 115110
+
+Whether it’s nap-time, bed-time, or anytime, Arco polar bear is the perfect companion for every child, 24 hours a day. He’s made of cuddly soft plush. His safety eyes make him suitable for even young children. He’ll be the centerpiece of your child’s plush toy collection - the ""go-to"" playmate that will be enjoyed again and again. Featuring the world famous ""Button in Ear"" trademark, symbol of highest quality. From the company that invented the Teddy bear in 1902.  
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Tunisia",https://www.steiff.com/img/600/600/resize/catalog/product/a/r/arco-eisbaer-115110-6.jpg,https://www.steiff.com/en-us/arco-polar-bear-115110,12,,
+4001505242144,My First Steiff Ellie Elephant Musical Pull Toy,"These are my attributes
+Item number: 242731
+
+The “My First Steiff” Ellie elephant as a music box is an amazing experience for all baby’s senses. Ellie radiates warmth with her cheerful smile and loving gaze, while her big ears and soft fur provide a comforting tactile experience. And when you wind the music box, the soft sound of “Schlafe, mein Prinzchen” (a German lullaby) soothes your little darling to sleep. Featuring “My First Steiff” embroidery in the ear.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+with removable music box
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-my-first-steiff-ellie-elefant-spieluhr-242731-9.jpg,https://www.steiff.com/en-us/my-first-steiff-ellie-elephant-musical-pull-toy-242731,11,,
+4001505242335,My First Steiff Ellie Elephant Musical Pull Toy,"These are my attributes
+Item number: 242731
+
+The “My First Steiff” Ellie elephant as a music box is an amazing experience for all baby’s senses. Ellie radiates warmth with her cheerful smile and loving gaze, while her big ears and soft fur provide a comforting tactile experience. And when you wind the music box, the soft sound of “Schlafe, mein Prinzchen” (a German lullaby) soothes your little darling to sleep. Featuring “My First Steiff” embroidery in the ear.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+with removable music box
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-my-first-steiff-ellie-elefant-spieluhr-242731-9.jpg,https://www.steiff.com/en-us/my-first-steiff-ellie-elephant-musical-pull-toy-242731,11,,
+4001505280337,"9 "" Steiff's Little Friend Issy Donkey, grey/beige",,,,,,
+4001505063770,Ockto Octopus,"These are my attributes
+Item number: 063770
+
+With her irresistible grin, Ockto octopus is sure to make you smile. She’s handmade of silky-smooth turquoise blue fabric and has a sunny expression that’s simply irresistible. Each of her tentacles has an elastic band sewn inside, allowing them to spring back when pulled and released. Her head is stuffed with bean bags to help it hold its shape. For all the fun of a day at the beach, bring this cleverly designed and impeccably crafted plush toy home for your little one today.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-ockto-oktopus-063770-6.jpg,https://www.steiff.com/en-us/ockto-octopus-063770,11,,
+4001505063978,"11"" Soft Cuddly Friends Piko pig, pink",,,,,,
+4001505065675,"8 "" SCF Lionel Lion",,,,,,
+4001505079627,"25 "" Bernhard Saint",,,,,,
+4001505111556,"11 "" Lilly Dangling Bear",,,,,,
+4001505242120,My First Steiff Teddy Bear Beige,"These are my attributes
+Item number: 242120
+
+Steiff invented the Teddy Bear in 1902, and this My First Teddy Bear has that storied history and proven experience as part of the classic design. Ultra-soft fabrics are gentle on a baby’s delicate skin, and the safety testing at Steiff meets rigorous standards in the U.S. and Europe. My First Bear is certified free of harmful substances by an independent testing organization, and the plush’s facial features are all embroidered. Our talented artisans handmake each of these genuine Steiff plush bears. To finish the iconic and cuddly design, the phrase ""My First Steiff"" is artfully embroidered on the paw pad. Our signature stainless steel ""Button in Ear"" is a testament to the premium quality of this My First Bear Teddy bear (which can be passed down to future generations). Inspire a long-standing family tradition with this plush gift for babies. The cream Teddy bear also comes in pink and blue, the soft pastels chosen to complement nursery décor.  
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-my-first-steiff-teddybaer-242120-1.jpg,https://www.steiff.com/en-us/my-first-steiff-teddy-bear-beige-242120,11,,
+4001505280122,"10 "" Little friend Koko monkey, dar",,,,,,
+4001505015045,"14 "" Starly dangling unicorn, white",,,,,,
+4001505063886,"8 "" Soft Cuddly Friends Aro howler, white",,,,,,
+4001505073922,"8 "" Dinkey Donkey",,,,,,
+4001505076916,"10 "" Lupi Dalmation",,,,,,
+4001505099250,"12 "" Princess Cat",,,,,,
+4001505122149,"10 "" Dusty dangling pony, blond",,,,,,
+4001505242342,My First Steiff Ellie Elephant Musical Pull Toy,"These are my attributes
+Item number: 242731
+
+The “My First Steiff” Ellie elephant as a music box is an amazing experience for all baby’s senses. Ellie radiates warmth with her cheerful smile and loving gaze, while her big ears and soft fur provide a comforting tactile experience. And when you wind the music box, the soft sound of “Schlafe, mein Prinzchen” (a German lullaby) soothes your little darling to sleep. Featuring “My First Steiff” embroidery in the ear.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+with removable music box
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-my-first-steiff-ellie-elefant-spieluhr-242731-9.jpg,https://www.steiff.com/en-us/my-first-steiff-ellie-elephant-musical-pull-toy-242731,11,,
+4001505012914,Charly Dangling Teddy Bear,"These are my attributes
+Item number: 012914
+
+With a mischievous grin on his face, Charly Teddy is sure to make your children smile! This 12-inch Teddy bear is made of the cuddliest woven fur that is free from harmful dyes or materials, yet durable enough for endless hours of play. He’s even stuffed with some bean bags for additional weight. A genuine Steiff Teddy bear, it has the world-famous ""Button in Ear"" - a symbol of quality and safety. Also available in 6-in and 9-in sizes, available in beige. Machine Washable.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Tunisia",https://www.steiff.com/img/600/600/resize/catalog/product/c/h/charly-schlenker-teddybaer-012914-9.jpg,https://www.steiff.com/en-us/charly-dangling-teddy-bear-012914,9,,
+4001505022098,"11 "" Teddyb.Einstein 28 beige",,,,,,
+4001505060304,"12 "" Soft Cuddly Friends Brownie monkey, ligh",,,,,,
+4001505064890,"33 "" Trampili elephant, grey",,,,,,
+4001505075742,"43 "" Tuhin, the white tiger, white",,,,,,
+4001505076985,Moritz Dachshund,"These are my attributes
+Item number: 076985
+
+Moritz is a cheeky dachshund and is full of energy. This cute pup measures 12 inches and is made of cuddly soft woven fur. Moritz is stuffed with a bean bag to make him sit properly and increase your child’s tactile experience.  
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Tunisia",https://www.steiff.com/img/600/600/resize/catalog/product/m/o/moritz-rauhaardackel-076985-6.jpg,https://www.steiff.com/en-us/moritz-dachshund-076985,11,,
+4001505080487,"16 "" Hoppie Rabbit, Lt grey",,,,,,
+4001505099175,Berno Goldendoodle Dog,"These are my attributes
+Item number: 067075
+
+The Berno Goldendoodle Dog plush from Steiff is bound to become a child’s round-the-clock companion for play time, nap time and everything in between. This whimsical little pup is an adorable mix of a golden retriever and a poodle. The sweet details bring this breed to life, including a cuddly coat, glistening black eyes, and adorably floppy ears. Even his stitched mouth looks like a smile, showing just how happy he is to become a constant companion for a loving kiddo. Because it’s fully machine washable, this stuffed Goldendoodle can be played with inside or outside without worrying about cleanup afterward. This darling little dog measures 14 inches and has a super-soft feel that is perfect for hugs and cuddles, and the safety eyes are completely kid-friendly. The finishing touch is a signature stainless-steel Steiff ""Button in Ear"" tag that identifies the exceptional quality of this Goldendoodle stuffed animal.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-berno-goldendoodle-067075-28.jpg,https://www.steiff.com/en-us/berno-goldendoodle-dog-067075,10,,
+4001505099663,"7 "" Lucy Cat, spotted brown",,,,,,
+4001505280030,"9 "" Steiff's Little Friend Linda lamb, wool white",,,,,,
+4001505022388,"11 "" Edgar Teddy Bear, beige",,,,,,
+4001505073427,Lita Lamb,"These are my attributes
+Item number: 073946
+
+Even Little Bo Peep could not have imagined a more precious baby sheep than our Lita. Instead of wool, this extra-cuddly little lamb has a coat that’s softer than silk - inviting hugs, kisses, and petting. Children will love her darling design, her fetching face, and her pleasing personality. Parents will appreciate her proven safety, easy care, and durable construction. With her many charms, Lita makes both kids and adults happy. So bring her home today. From our ""Friends Under $50"" collection of toys designed to put the joy of owning a genuine Steiff animal within reach of every child. Featuring the famous ""Button in Ear"" trademark, symbol of the company that invented soft toys 140 years ago. Lita comes in 2 sizes: medium, 12"" (Lita Lamb EAN 073427) and small 8"" (pictured)  
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Tunisia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-lita-lamm-073946-7.jpg,https://www.steiff.com/en-us/lita-lamb-073946,8,,
+4001505079528,"18 "" Senni Bernese Dog",,,,,,
+4001505085352,"31 "" Mocky Hippo",,,,,,
+4001505099182,Cassie Cat,"These are my attributes
+Item number: 099182
+
+Cassie Cat from Steiff is the purr-fect pal you’ve been waiting for. Her sweet and soft plush coat is so huggable and cozy. Talented Steiff artists have brought this sweet strawberry blonde cat to life with adorable details, including a pale plush snout and ears, inquisitive eyes, a pink nose, and padded paws. Cassie even has airbrushed details for more realistic-looking fur. We’ve also included little bean bangs in the paws to give her greater stability, which is ideal for positioning her during playtime or displaying her as part of a collection of toys. Cassie Cat is 10 inches is size and features kid-friendly safety eyes. She features the famous Steiff stainless-steel ""Button in Ear"" tag that signifies exceptional quality and craftsmanship. Most importantly, she makes a wonderful round-the-clock companion for any little one.  
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-cassie-katze-099182-2.jpg,https://www.steiff.com/en-us/cassie-cat-099182,9,,
+4001505111464,"11 "" Lotte Teddy bear in suitcase, white",,,,,,
+4001505113529,My First Steiff Teddy Bear Beige,"These are my attributes
+Item number: 242120
+
+Steiff invented the Teddy Bear in 1902, and this My First Teddy Bear has that storied history and proven experience as part of the classic design. Ultra-soft fabrics are gentle on a baby’s delicate skin, and the safety testing at Steiff meets rigorous standards in the U.S. and Europe. My First Bear is certified free of harmful substances by an independent testing organization, and the plush’s facial features are all embroidered. Our talented artisans handmake each of these genuine Steiff plush bears. To finish the iconic and cuddly design, the phrase ""My First Steiff"" is artfully embroidered on the paw pad. Our signature stainless steel ""Button in Ear"" is a testament to the premium quality of this My First Bear Teddy bear (which can be passed down to future generations). Inspire a long-standing family tradition with this plush gift for babies. The cream Teddy bear also comes in pink and blue, the soft pastels chosen to complement nursery décor.  
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-my-first-steiff-teddybaer-242120-1.jpg,https://www.steiff.com/en-us/my-first-steiff-teddy-bear-beige-242120,11,,
+4001505241536,Bearzy Teddy Bear,"These are my attributes
+Item number: 241536
+
+Thanks to the bean bag in his tail, our 11"" beige Bearzy Teddy Bear can sit beautifully next to his best friends. His eyes and nose are lovingly embroidered. The inside of his ears, arms and the paws are made of short-haired plush for baby’s soft skin. The fur is made of longer ultra soft plush. The arrangement of the different surfaces invites baby to feel and touch. Bearzy also comes in 3 other colors: Lilac, White, and Gray.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-bearzy-teddybaer-241536-7.jpg,https://www.steiff.com/en-us/bearzy-teddy-bear-241536,8,,
+4001505242113,"8 "" Wild Sweeties Tamme seal music",,,,,,
+4001505022463,"16 "" Elmar Teddy Bear, golden brown",,,,,,
+4001505063831,"11"" Soft Cuddly Friends Tory blue whale Blue",,,,,,
+4001505064135,"18 "" Leo lion, blond",,,,,,
+4001505065682,"12 "" SCF Lionel Lion",,,,,,
+4001505080623,"12 "" Tilda Rabbit, Pink",,,,,,
+4001505083594,"11 "" Peppi Puppy",,,,,,
+4001505099229,Mimmi Cat,"These are my attributes
+Item number: 099229
+
+Mimmi Cat measures 9 inches in length and is made of the softest plush. Her white snout and paws provide a visual contrast to her orange coat, while airbrushing on her mouth and eyes make her come alive.  The inner ears and nose are set off in pink. She appears relaxed - her front legs are slightly bent and her back legs are to the side. However, her dark green eyes reveal how eager she is to join in the fun.  
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Tunisia",https://www.steiff.com/img/600/600/resize/catalog/product/m/i/mimmi-katze-099229-1.jpg,https://www.steiff.com/en-us/mimmi-cat-099229,11,,
+4001505112485,"3 "" Pendant Jocko monkey head, brown/beige",,,,,,
+4001505113543,"11 "" My Bearly",,,,,,
+4001505242137,My First Steiff Ellie Elephant Musical Pull Toy,"These are my attributes
+Item number: 242731
+
+The “My First Steiff” Ellie elephant as a music box is an amazing experience for all baby’s senses. Ellie radiates warmth with her cheerful smile and loving gaze, while her big ears and soft fur provide a comforting tactile experience. And when you wind the music box, the soft sound of “Schlafe, mein Prinzchen” (a German lullaby) soothes your little darling to sleep. Featuring “My First Steiff” embroidery in the ear.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+with removable music box
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-my-first-steiff-ellie-elefant-spieluhr-242731-9.jpg,https://www.steiff.com/en-us/my-first-steiff-ellie-elephant-musical-pull-toy-242731,11,,
+4001505012808,Charly Dangling Teddy Bear,"These are my attributes
+Item number: 012891
+
+Who’s ready for fun? Charly is always the first to raise his hand! Made of the softest plush and without harmful dyes or materials, Charly Teddy is the perfect adventure partner for your children and their friends. Wears the world-famous ""Button in Ear"" - a symbol of the highest standards in quality and safety. Also available in 6-in and 12-in sizes, available in beige.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Tunisia",https://www.steiff.com/img/600/600/resize/catalog/product/c/h/charly-schlenker-teddybaer-012891-22.jpg,https://www.steiff.com/en-us/charly-dangling-teddy-bear-012891,12,,
+4001505024535,"12"" Disney Tigger, orange/beige",,,,,,
+4001505024542,Disney’s Baloo,"These are my attributes
+Item number: 024542
+
+Fun-loving, easy-going, and good-natured, Baloo is the bear who steals the show in Walt Disney’s version of ""The Jungle Book."" Skillfully designed in partnership with Disney, and manufactured in accordance with high Steiff quality standards, our Baloo is a must-have plush playmate for all ages. Each piece is individually handmade from ultra-soft materials, features bean bag stuffing in its limbs and bottom, and is rigorously safety-tested. With his round belly, impish grin, and smiling eyes, this is the definitive version of Baloo as Walt Disney imagined him. It’s a superior quality toy that every adult will be proud to give on any occasion, and every child will be delighted to own. Machine washable.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-disney-originals-balu-024542-5.jpg,https://www.steiff.com/en-us/disney-s-baloo-024542,10,,
+4001505024559,Disney’s Dumbo,"These are my attributes
+Item number: 024559
+
+A classic 1940 film by Walt Disney, Dumbo is the story of a baby elephant who learned he could fly and captured the imagination of children everywhere. This premium Dumbo plush was designed in partnership with Disney, so it will be cherished by collectors and kids too. The circus-animal style of the clown hat and neck ruffle have the same charm from the movie. And this wouldn’t be Dumbo the Elephant without floppy, oversized ears. The signature ""Button in Ear"" shows that the plush playmate meets traditional construction and design quality standards at Steiff. Bean bag stuffing in the limbs and bottom make it easy to sit the Dumbo elephant plush on a shelf or anywhere a kid wants to play. Each Disney Dumbo is individually handmade and machine washable for outstanding quality and easy care. Super-soft materials are perfect for cuddling, and extensive safety testing gives parents peace of mind when gifting this stuffed animal Dumbo to children.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-disney-originals-dumbo-024559-4.jpg,https://www.steiff.com/en-us/disney-s-dumbo-024559,10,,
+4001505024610,"9"" Disney Orginal, Lady and the Tramp",,,,,,
+4001505024627,Disney’s Baby Thumper,"These are my attributes
+Item number: 024627
+
+The all-star cast in the ""Soft Cuddly Friends"" collection of ""Disney Originals"" just keeps growing and growing. We’re pleased to announce that Bambi’s best friend Thumper has joined the line-up of famous Disney characters in this affordably priced line created especially for kids. Baby Thumper is sewn from the softest plush imaginable, and features bean bag stuffing that makes him even more cuddly. Measuring 8 inches tall, he’s the perfect size for little hands and big hugs. Officially licensed by Disney, each Thumper is individually handmade to the highest standards of quality and safety. He’s an adorable new plush pal that every kid will fall in love with.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-disney-originals-klopfer-024627-9.jpg,https://www.steiff.com/en-us/disney-s-baby-thumper-024627,10,,
+4001505024665,"Disney’s ""The Lion King"" Simba","These are my attributes
+Item number: 024665
+
+He’s not yet the king of the Pride Rock, but he’s certainly the prince! Young Simba from the animated classic ""The Lion King"" joins the Steiff x Disney assortment of characters in the ""Friends"" collection of affordably priced premium plush toys. He’s made of super-soft fabric, is weighted with bean bags, and has a friendly face with embroidered features. Young Simba ""Just Can’t Wait to Be King,"" so don’t wait a moment -- order him today!
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-disney-originals-simba-024665-12.jpg,https://www.steiff.com/en-us/disney-s-the-lion-king-simba-024665,10,,
+4001505024696,Disney Angel and Stitch Plush Gift Set,"These are my attributes
+Item number: 708107
+
+Meet Disney’s Angel and Stitch – two lovable characters who prove that even the most unlikely friends can become family. This adorable gift set brings the inseparable pair to life in soft pastel plush, with Stitch showing off his signature grin and Angel glowing in gentle pink tones with her playful antennae. Inspired by the heartwarming spirit of Lilo and Stitch, this duo represents love, loyalty, and friendship at its best. Beautifully boxed and ready to gift, this set makes a thoughtful and fun surprise for Disney fans of all ages.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Tunisia",https://www.steiff.com/img/600/600/resize/catalog/product/g/e/geschenkset-disney-originals-angel-und-stitch-708107.jpg,https://www.steiff.com/en-us/disney-angel-and-stitch-plush-gift-set-708107,8,,
+4001505045172,Phil Squirrel,"These are my attributes
+Item number: 045172
+
+Does anyone have an acorn to spare for this cuddly little fellow? He’s always hungry for treats -- and for hugs! Our Phil squirrel is sweet and snuggly. He’s weighted with bean bags to make him nice to hold. And at eight inches tall, Phil is a perfect playmate for even smaller children.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-phil-eichhoernchen-045172-9.jpg,https://www.steiff.com/en-us/phil-squirrel-045172,8,,
+4001505056246,"7"" Cheesy Mouse",,,,,,
+4001505056291,"13"" Miguel Baby Dangling Sloth, cream",,,,,,
+4001505057182,Hummi Humbolt penguin,,,,,,
+4001505060427,"12"" Bodo Monkey Brown",,,,,,
+4001505060441,"16"" Bodo Monkey, brown",,,,,,
+4001505062438,"Soft Cuddly Friends Nala Penguin 13""",,,,,,
+4001505062636,"11"" Lasse Polar Bear",,,,,,
+4001505063114,"9"" Robby Seal, grey/white",,,,,,
+4001505063992,"12"" Jill Flamingo",,,,,,
+4001505064043,"Trampili Elephant Grey 17""",,,,,,
+4001505064074,"11"" Elna Elephant",,,,,,
+4001505064982,"12"" Ella Elephant, grey",,,,,,
+4001505065170,"Leo Lion 25"" Plush",,,,,,
+4001505065194,"Denny Dolphin 13""",,,,,,
+4001505065651,"11"" Leo Baby Dangling Lion, blonde",,,,,,
+4001505067051,Cassie Cat,"These are my attributes
+Item number: 099182
+
+Cassie Cat from Steiff is the purr-fect pal you’ve been waiting for. Her sweet and soft plush coat is so huggable and cozy. Talented Steiff artists have brought this sweet strawberry blonde cat to life with adorable details, including a pale plush snout and ears, inquisitive eyes, a pink nose, and padded paws. Cassie even has airbrushed details for more realistic-looking fur. We’ve also included little bean bangs in the paws to give her greater stability, which is ideal for positioning her during playtime or displaying her as part of a collection of toys. Cassie Cat is 10 inches is size and features kid-friendly safety eyes. She features the famous Steiff stainless-steel ""Button in Ear"" tag that signifies exceptional quality and craftsmanship. Most importantly, she makes a wonderful round-the-clock companion for any little one.  
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-cassie-katze-099182-2.jpg,https://www.steiff.com/en-us/cassie-cat-099182,9,,
+4001505067075,Berno Goldendoodle Dog,"These are my attributes
+Item number: 067075
+
+The Berno Goldendoodle Dog plush from Steiff is bound to become a child’s round-the-clock companion for play time, nap time and everything in between. This whimsical little pup is an adorable mix of a golden retriever and a poodle. The sweet details bring this breed to life, including a cuddly coat, glistening black eyes, and adorably floppy ears. Even his stitched mouth looks like a smile, showing just how happy he is to become a constant companion for a loving kiddo. Because it’s fully machine washable, this stuffed Goldendoodle can be played with inside or outside without worrying about cleanup afterward. This darling little dog measures 14 inches and has a super-soft feel that is perfect for hugs and cuddles, and the safety eyes are completely kid-friendly. The finishing touch is a signature stainless-steel Steiff ""Button in Ear"" tag that identifies the exceptional quality of this Goldendoodle stuffed animal.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-berno-goldendoodle-067075-28.jpg,https://www.steiff.com/en-us/berno-goldendoodle-dog-067075,10,,
+4001505067082,"11"" Snuffy Dog",,,,,,
+4001505067099,Lita Lamb,"These are my attributes
+Item number: 073946
+
+Even Little Bo Peep could not have imagined a more precious baby sheep than our Lita. Instead of wool, this extra-cuddly little lamb has a coat that’s softer than silk - inviting hugs, kisses, and petting. Children will love her darling design, her fetching face, and her pleasing personality. Parents will appreciate her proven safety, easy care, and durable construction. With her many charms, Lita makes both kids and adults happy. So bring her home today. From our ""Friends Under $50"" collection of toys designed to put the joy of owning a genuine Steiff animal within reach of every child. Featuring the famous ""Button in Ear"" trademark, symbol of the company that invented soft toys 140 years ago. Lita comes in 2 sizes: medium, 12"" (Lita Lamb EAN 073427) and small 8"" (pictured)  
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Tunisia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-lita-lamm-073946-7.jpg,https://www.steiff.com/en-us/lita-lamb-073946,8,,
+4001505067105,"Soft Cuddly Friends Samu Dragon 11""",,,,,,
+4001505067129,"14"" Thaisen T-Rex, blue",,,,,,
+4001505067136,"18"" Thaisen T-Rex, grey",,,,,,
+4001505067181,"22"" XL Jimmy Teddy Bear",,,,,,
+4001505067198,Rocky Plush Dragon,"These are my attributes
+Item number: 067198
+
+Our cheeky Rocky dragon measures 13 inches and is made of cuddly soft plush. This green dragon is super cute with his red wings and red spikes on his back. This little dragon will whisk you away to an enchanted world full of magic and fantasy!  
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Tunisia",https://www.steiff.com/img/600/600/resize/catalog/product/r/o/rocky-drache-067198-12.jpg,https://www.steiff.com/en-us/rocky-plush-dragon-067198,6,,
+4001505067426,Heavenly Hugs Molly Dangling Horse,,,,,,
+4001505067433,"Hevenly Hugs 19"" Henny Dog",,,,,,
+4001505067440,"14"" Boecky Lamb",,,,,,
+4001505067471,"11"" Bommel dangling rabbit",,,,,,
+4001505067525,"15"" Ozzie orca with squeaker",,,,,,
+4001505067587,"12"" Nils Koala",,,,,,
+4001505067600,"Soft Cuddly Friends Toni Tiger 12""",,,,,,
+4001505067631,"10"" Gina Giraffe",,,,,,
+4001505067655,Unica Unicorn,"These are my attributes
+Item number: 067655
+
+Our Unica unicorn is a fantasy animal that makes fun a reality for all ages! Our newly redesigned version of this favorite animal is handmade from superior quality white plush fabric. It features a short pile fur for her body, and a longer, fuzzy pile for her tail and mane. She has an elaborate metallic gold horn, and her body has been embellished with a golden embroidered star. Unica is available in a variety of sizes and poses, so you’re certain to find the perfect gift to make your child’s dreams of owning a unicorn come true!
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-unica-schlenker-einhorn-067655-15.jpg,https://www.steiff.com/en-us/unica-unicorn-067655,8,,
+4001505067679,Unica Unicorn,"These are my attributes
+Item number: 067655
+
+Our Unica unicorn is a fantasy animal that makes fun a reality for all ages! Our newly redesigned version of this favorite animal is handmade from superior quality white plush fabric. It features a short pile fur for her body, and a longer, fuzzy pile for her tail and mane. She has an elaborate metallic gold horn, and her body has been embellished with a golden embroidered star. Unica is available in a variety of sizes and poses, so you’re certain to find the perfect gift to make your child’s dreams of owning a unicorn come true!
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-unica-schlenker-einhorn-067655-15.jpg,https://www.steiff.com/en-us/unica-unicorn-067655,8,,
+4001505067853,"Cobb Cow 9.5""",,,,,,
+4001505067891,"13"" Bernie husky",,,,,,
+4001505067945,"Slo Tortoise 13""",,,,,,
+4001505068201,"Baby Gina Giraffe 9""",,,,,,
+4001505069109,"12"" Zora Zebra, white/black",,,,,,
+4001505070068,"Urs Brown Bear 35""",,,,,,
+4001505075490,"Steiff Gilda Goose 10""",,,,,,
+4001505075537,"11"" Benji Red Panda",,,,,,
+4001505075650,"11"" Ming Panda",,,,,,
+4001505075902,Palle King Penguin,"These are my attributes
+Item number: 075902
+
+Most King Penguins live in Antarctica, but our XL version of this magnificent creature will feel right at home in your house. Standing 20 inches tall, he’s beautifully handcrafted from the finest black, white, and grey plush. Skilled and highly detailed airbrushing add amazingly realistic touches to this majestic plush animal. He’ll not only be a welcome addition to your child’s plush menagerie of today, but an heirloom-quality keepsake your family will cherish for years to come.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Tunisia",https://www.steiff.com/img/600/600/resize/catalog/product/p/a/palle-koenigspinguin-075902-18.jpg,https://www.steiff.com/en-us/palle-king-penguin-075902,11,,
+4001505076886,Lenny Labradoe brown,,,,,,
+4001505076893,Lenny Labrador blond,,,,,,
+400150567457,Issy Donkey grey tipped,,,,,,
+4001505080470,"Steiff Hoppie Rabbit Medium 11""",,,,,,
+4001505080913,"Soft Cuddly Friends Hoppie Rabbit 19""",,,,,,
+4001505083617,"15"" Peppi Puppy, cream/brown",,,,,,
+4001505085116,"16"" Heavenly Hugs Trampili elephant",,,,,,
+4001505087806,"11"" Soft Cuddly Friends Dixi triceratops, pe",,,,,,
+4001505087813,Spott Stegosaurus Dinosaur,"These are my attributes
+Item number: 087813
+
+Steiff is bringing the Stegosaurus back to life in a brand-new way. Spott Stegosaurus’s delightful design, fabulous fabrics, contemporary colors, quality construction, and proven safety make him a must-have addition to any child’s dinosaur collection or plush menagerie. From our ""Friends Under $50"" collection of toys designed to put the joy of owning a genuine Steiff animal within reach of every child. Featuring the famous ""Button in Ear"" trademark, symbol of the company that invented soft toys 140 years ago.  
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-spott-stegosaurus-087813-5.jpg,https://www.steiff.com/en-us/spott-stegosaurus-dinosaur-087813,6,,
+4001505095375,Gin Snake,,,,,,
+4001505111327,"11"" Fynn Teddy Bear, beige",,,,,,
+4001505111372,"8"" Fynn Teddy Bear, beige",,,,,,
+4001505111389,"31"" Fynn Teddy Bear, beige",,,,,,
+4001505111471,"11"" Fynn Teddy Bear",,,,,,
+4001505113789,"11"" Fynn Teddy bear, grey",,,,,,
+4001505241543,"11"" Bearzy Teddy Bear, grey",,,,,,
+4001505242601,"8"" Floppy Linda Lamb",,,,,,
+4001505242694,"8"" Floppy Hoppel Rabbit",,,,,,
+4001505242717,My First Steiff Ellie Elephant Musical Pull Toy,"These are my attributes
+Item number: 242731
+
+The “My First Steiff” Ellie elephant as a music box is an amazing experience for all baby’s senses. Ellie radiates warmth with her cheerful smile and loving gaze, while her big ears and soft fur provide a comforting tactile experience. And when you wind the music box, the soft sound of “Schlafe, mein Prinzchen” (a German lullaby) soothes your little darling to sleep. Featuring “My First Steiff” embroidery in the ear.
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+with removable music box
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Cambodia",https://www.steiff.com/img/600/600/resize/catalog/product/s/o/soft-cuddly-friends-my-first-steiff-ellie-elefant-spieluhr-242731-9.jpg,https://www.steiff.com/en-us/my-first-steiff-ellie-elephant-musical-pull-toy-242731,11,,
+4001505061691,"Parddy snowleopard 55 cream spotted 21""",,,,,,
+4001505067518,"Parddy leopard 14"" spotted beige/brown",,,,,,
+4001505708008,"Teddy b. Bearzy 11"" beige",,,,,,
+4001505081071,"Tilda Rabbit 8"" Yellow",,,,,,
+4001505081088,Tilda Rabbit Lillac,,,,,,
+4001505074417,"Pedro Racoon 9"" brown/white",,,,,,
+4001505056383,"Sanny sloth 14"" dark grey",,,,,,
+4001505083792,"Oskar Dalmatian 11"" Sitting",,,,,,
+4001505112676,"Robby Teddy bear 16"" cream",,,,,,
+4001505114045,"Ben Teddy bear beige 22""",,,,,,
+4001505087868,"Spott dinosaur 11"" Ice blue",,,,,,
+4001505063671,"Norbert Rinoceros Grey 10""",,,,,,
+4001505062018,Elani Baby Orangutan Light Brown,,,,,,
+4001505068478,"Slo Tortoise 28"" Plush",,,,,,
+4001505115110,Arco Polar Bear,"These are my attributes
+Item number: 115110
+
+Whether it’s nap-time, bed-time, or anytime, Arco polar bear is the perfect companion for every child, 24 hours a day. He’s made of cuddly soft plush. His safety eyes make him suitable for even young children. He’ll be the centerpiece of your child’s plush toy collection - the ""go-to"" playmate that will be enjoyed again and again. Featuring the world famous ""Button in Ear"" trademark, symbol of highest quality. From the company that invented the Teddy bear in 1902.  
+
+Steiff stands for highest safety & quality
+What makes me special?
+Health safety
+Unrivalled quality since 1880
+Top-quality materials
+How do you take care of me?
+Further product information and notes
+Manufacturer's notes:
+Margarete Steiff GmbH
+Richard-Steiff-Straße 4
+89537 Giengen/Brenz
+Deutschland
+info@steiff.com
+Country of Origin: Tunisia",https://www.steiff.com/img/600/600/resize/catalog/product/a/r/arco-eisbaer-115110-6.jpg,https://www.steiff.com/en-us/arco-polar-bear-115110,12,,

@@ -7,6 +7,7 @@ sites:
   bazic:          { sheet: bazic,          base_url: https://www.bazic.com }
   bruder:         { sheet: bruder,         base_url: https://brudertoyshop.com }
   chazak:         { sheet: chazak,         base_url: https://www.chazakkinder.com }
+  chazak_kinder:  { sheet: "Chazak Kinder", base_url: https://www.chazakkinder.com }
   colours_craft:  { sheet: colours_craft,  base_url: https://colourscrafts.com }
   enday:          { sheet: enday,          base_url: https://enday.com }
   gi_go:          { sheet: gi_go,          base_url: https://www.gigotoys.com.hk }
@@ -48,8 +49,17 @@ sites:
   thinkfun:       { sheet: thinkfun,       base_url: https://www.ravensburger.us }
   tiny_love:      { sheet: tiny_love,      base_url: https://tinylove.com }
   quercetti:      { sheet: quercetti,      base_url: https://www.quercettistore.com }
+  quercetti_biz:  { sheet: "Quercetti Biz", base_url: https://www.quercettistore.com }
   audster:        { sheet: audster,        base_url: https://audster.com }
+  audster_biz:    { sheet: "Audster biz", base_url: https://audster.com }
   bz_kinder:      { sheet: bz_kinder,      base_url: https://bzkinder.com }
   step2:          { sheet: step2,          base_url: https://www.step2.com }
   marvins_magic:  { sheet: marvins_magic,  base_url: https://www.marvinsmagic.com }
   kidztech:       { sheet: kidztech,       base_url: https://www.kidztech.com }
+  melissa:        { sheet: melissa,        base_url: https://www.melissaanddoug.com }
+  rina_dina:      { sheet: rina_dina,      base_url: https://rinadina.com }
+  play_doh_biz:   { sheet: "Play-Doh Biz", base_url: https://shop.hasbro.com/en-us/play-doh }
+  razor_biz:      { sheet: "Razor Biz", base_url: https://razor.com }
+  akito:          { sheet: Akito, base_url: https://mostlymusic.com }
+  tiny_love_biz:  { sheet: "Tiny Love Biz", base_url: https://tinylove.com }
+  winning_moves_biz: { sheet: "WINNING MOVES Biz", base_url: https://www.winning-moves.com }
