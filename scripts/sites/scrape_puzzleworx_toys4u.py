@@ -157,15 +157,24 @@ def extract_product(page, url):
     # UPC from page text
     upc = extract_upc(html)
 
-    # Description: og:description or #Description section
+    # Description: product-specific from productView-description-tabContent (BigCommerce).
+    # Avoid og:description - toys4u uses same generic store text for all products.
     desc = ""
-    m = re.search(r'<meta[^>]*property=["\']og:description["\'][^>]*content=["\']([^"\']+)["\']', html, re.I)
+    m = re.search(
+        r'productView-description-tabContent[^>]*>(.*?)</div>\s*</div>\s*</div>',
+        html, re.S | re.I | re.DOTALL
+    )
     if m:
-        desc = m.group(1).strip()
+        desc = re.sub(r"<[^>]+>", " ", m.group(1))
+        desc = re.sub(r"\s+", " ", desc).strip()[:800]
     if not desc:
         m = re.search(r"Description</[^>]*>.*?<p[^>]*>(.*?)</p>", html, re.S | re.I | re.DOTALL)
         if m:
             desc = re.sub(r"<[^>]+>", " ", m.group(1)).strip()[:500]
+    if not desc:
+        m = re.search(r'<meta[^>]*property=["\']og:description["\'][^>]*content=["\']([^"\']+)["\']', html, re.I)
+        if m:
+            desc = m.group(1).strip()[:500]
 
     # Image: og:image or first product image
     img = ""
