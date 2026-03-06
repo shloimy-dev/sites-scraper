@@ -122,9 +122,9 @@ def extract_dims_from_html(html):
     """Try to find dimensions in page HTML (e.g. 'Dimensions: 10 x 8 x 2'). Returns (length, width, height)."""
     if not html:
         return "", "", ""
-    # Melissa & Doug style: "Product: 11.0 x 8.2 x 0.2 inches" (product dimensions we want)
+    # Melissa & Doug style: "Product: 11.0 x 8.2 x 0.2 inches" or "Product: 6.5 x 4.95 x 0.8" (no inches suffix)
     m = re.search(
-        r"Product:\s*(\d+\.?\d*)\s*[x×]\s*(\d+\.?\d*)\s*[x×]\s*(\d+\.?\d*)\s*inches?",
+        r"Product:\s*(\d+\.?\d*)\s*[x×]\s*(\d+\.?\d*)\s*[x×]\s*(\d+\.?\d*)\s*(?:inches?)?",
         html, re.I,
     )
     if m:
