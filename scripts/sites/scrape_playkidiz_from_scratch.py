@@ -73,21 +73,19 @@ def upc_from_sheet_by_title(sheet_rows, site_title):
     return best_upc
 
 
-def product_number_for_image(row, product_url, sheet_rows, index):
-    """Return product number (UPC) for image filename: page UPC, else sheet match, else URL slug."""
+def product_number_for_image(row, product_url, sheet_rows, index, used_product_nums):
+    """Return unique product number (UPC) for image filename: page UPC, else sheet match, else index.
+    Ensures 1 image per product, each named by product number."""
     upc = (row.get("upc") or "").strip()
-    if upc:
-        return upc
-    if sheet_rows and row.get("title"):
+    if not upc and sheet_rows and row.get("title"):
         upc = upc_from_sheet_by_title(sheet_rows, row["title"])
         if upc:
             row["upc"] = upc
-            return upc
-    # Fallback: URL slug (e.g. "100-gel-pens")
-    slug = (product_url or "").rstrip("/").split("/")[-1].split("?")[0]
-    if slug and len(slug) > 2:
-        return re.sub(r"[^\w\-]", "", slug)
-    return f"playkidiz_{index + 1}"
+    candidate = upc if upc else f"playkidiz_{index + 1:03d}"
+    if candidate in used_product_nums:
+        candidate = f"playkidiz_{index + 1:03d}"
+    used_product_nums.add(candidate)
+    return candidate
 
 # WooCommerce product listing
 PRODUCT_LINK_SELECTORS = [
@@ -223,12 +221,13 @@ def main():
                 print(f"Limited to first {len(product_urls)} products")
 
         results = []
+        used_product_nums = set()
         for i, url in enumerate(product_urls):
             try:
                 print(f"[{i+1}/{len(product_urls)}] {url.split('/')[-2]}")
                 row = extract_product(page, url)
                 if row:
-                    product_num = product_number_for_image(row, url, sheet_rows, i)
+                    product_num = product_number_for_image(row, url, sheet_rows, i, used_product_nums)
                     if row.get("upc"):
                         pass  # already set from page or sheet
                     elif product_num and product_num.isdigit():
@@ -247,6 +246,18 @@ def main():
 
         ctx.close()
         browser.close()
+
+    # Cleanup: keep only 1 image per product (named by product number), remove extras
+    valid_stems = used_product_nums
+    removed = 0
+    for f in list(img_dir.iterdir()):
+        if f.is_file() and f.suffix.lower() in (".jpg", ".jpeg", ".png", ".webp", ".gif"):
+            stem = f.stem
+            if stem not in valid_stems:
+                f.unlink()
+                removed += 1
+    if removed:
+        print(f"Cleaned up {removed} extra images (kept 1 per product)")
 
     print(f"\nDone: {len(results)} products -> {out_path}")
 
