@@ -12,7 +12,7 @@ Combined data from `data/extracted/`, `data/ready/extracted/`, `data/images/`, a
 | **Products extracted** | 4,249 |
 | **Images** | 3,517 |
 | **Descriptions** | 2,987 |
-| **Dimensions** | 684 |
+| **Dimensions** | 945 |
 
 ---
 
@@ -75,6 +75,8 @@ Each extracted CSV now has **piece_length**, **piece_width**, **piece_height** a
 | piece_height | Sheet "Piece Height(ft)" or "IPK Height(ft)" |
 
 Run `python3 scripts/backfill_dimensions.py` to merge sheet dimensions and parse from descriptions.
+
+Run `python3 scripts/dimensions/run_all.py` to extract dimensions from product pages (49 per-site scripts). See `docs/DIMENSIONS_SUMMARY.md`.
 
 ---
 

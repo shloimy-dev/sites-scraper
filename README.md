@@ -148,6 +148,24 @@ python scripts/backfill_dimensions.py
 
 This merges dimensions from sheets (Piece/IPK/Item Length/Width/Height) and parses dimensions from description text where possible.
 
+### 7. Dimension Extraction (Per-Site)
+
+Each store has a dedicated dimension extraction script that visits product pages and extracts `piece_length`, `piece_width`, `piece_height`:
+
+```bash
+# Run all dimension scripts
+python3 scripts/dimensions/run_all.py
+
+# Run single store
+python3 scripts/dimensions/extract_dims_step2.py
+python3 scripts/dimensions/extract_dims_melissa.py --limit 50
+
+# Limit rows per store (for testing)
+python3 scripts/dimensions/run_all.py --limit 10
+```
+
+See `docs/DIMENSIONS_SUMMARY.md` for full status.
+
 ---
 
 ## Project Structure
@@ -171,6 +189,10 @@ scripts/
   deep_analyze.py            # Test URL strategies, write docs/sites/<id>.md
   deep_investigate.py        # Probe Shopify, WordPress, sitemaps
   backfill_dimensions.py     # Add piece_length/width/height to existing CSVs
+  dimensions/               # Per-site dimension extraction
+    dim_base.py              # Shared utilities (load, extract, save)
+    extract_dims_<site>.py   # One script per store (49 scripts)
+    run_all.py               # Run all dimension scripts
   consolidate_duplicate_sites.py  # One-time merge of duplicate site data into canonical CSVs/folders
   download_sheets.py         # Fetch sheets from known Google Sheet URLs
   run_scrapers.py            # Run multiple scrapers
@@ -234,6 +256,8 @@ python3 -m playwright install chromium
 | Run a scraper | `python scripts/sites/scrape_<site_id>.py` |
 | Test with limit | `python scripts/sites/scrape_<site_id>.py --limit 5` |
 | Backfill dimensions | `python scripts/backfill_dimensions.py` |
+| Run all dimension scripts | `python3 scripts/dimensions/run_all.py` |
+| Extract dimensions for one store | `python3 scripts/dimensions/extract_dims_<site>.py` |
 
 ---
 
@@ -247,7 +271,7 @@ Run `python scripts/audit_stores.py` to regenerate. Status: **FULL** = images, d
 | audster | 0 | 31 | 5 | 5 | 1 | GAP |
 | aurora | 413 | 413 | 413 | 413 | 0 | GAP |
 | bazic | 382 | 382 | 382 | 382 | 0 | GAP |
-| bruder | 72 | 71 | 71 | 71 | 63 | GAP |
+| bruder | 72 | 71 | 71 | 71 | 71 | **FULL** |
 | bz_kinder | 31 | 31 | 30 | 0 | 0 | GAP |
 | casio | 101 | 100 | 0 | 0 | 0 | GAP |
 | cazenove | 219 | 107 | 107 | 107 | 0 | GAP |
@@ -266,19 +290,19 @@ Run `python scripts/audit_stores.py` to regenerate. Status: **FULL** = images, d
 | kindervelt | 79 | 79 | 79 | 0 | 0 | GAP |
 | lchaim | 365 | 335 | 335 | 335 | 0 | GAP |
 | mead | 314 | 314 | 0 | 0 | 0 | GAP |
-| melissa | 898 | 898 | 743 | 712 | 236 | GAP |
+| melissa | 898 | 898 | 743 | 712 | 343 | GAP |
 | metal_earth | 61 | 60 | 60 | 60 | 0 | GAP |
 | microkick | 9 | 7 | 7 | 7 | 0 | GAP |
 | moore | 35 | 35 | 0 | 0 | 0 | GAP |
 | ner_mitzvah | 0 | 115 | 117 | 115 | 1 | GAP |
-| new_bounce | 82 | 40 | 44 | 40 | 0 | GAP |
+| new_bounce | 82 | 40 | 44 | 40 | 40 | **FULL** |
 | new_york_doll | 251 | 167 | 167 | 161 | 3 | GAP |
 | perler | 0 | 62 | 62 | 62 | 3 | GAP |
 | play_build | 63 | 7 | 63 | 1 | 7 | GAP |
 | play_doh_biz | 0 | 3 | 0 | 0 | 0 | GAP |
-| playkidiz | 266 | 265 | 265 | 264 | 11 | GAP |
+| playkidiz | 266 | 265 | 265 | 264 | 12 | GAP |
 | playkidiz.amazon | 0 | 265 | 265 | 264 | 11 | GAP |
-| playmags | 53 | 52 | 18 | 18 | 0 | GAP |
+| playmags | 53 | 52 | 18 | 18 | 2 | GAP |
 | puzelworx | 46 | 46 | 40 | 0 | 0 | GAP |
 | puzelworx.amazon | 0 | 46 | 0 | 0 | 0 | GAP |
 | quercetti | 0 | 34 | 23 | 23 | 0 | GAP |
@@ -288,13 +312,11 @@ Run `python scripts/audit_stores.py` to regenerate. Status: **FULL** = images, d
 | samvix | 126 | 58 | 55 | 54 | 0 | GAP |
 | sands | 20 | 20 | 0 | 0 | 0 | GAP |
 | steiff | 160 | 160 | 55 | 37 | 37 | GAP |
-| step2 | 214 | 214 | 214 | 214 | 0 | GAP |
+| step2 | 214 | 214 | 214 | 214 | 188 | GAP |
 | thinkfun | 57 | 57 | 26 | 26 | 0 | GAP |
 | tiny_love | 34 | 34 | 37 | 34 | 0 | GAP |
 | vtech | 58 | 58 | 11 | 0 | 0 | GAP |
 | winfun | 58 | 58 | 76 | 28 | 13 | GAP |
 | winning_moves | 60 | 60 | 5 | 7 | 0 | GAP |
 
-**Totals:** 50 stores in config; 1 full (kent); most need images, descriptions, or dimensions. One canonical site per domain (no duplicate keys).
-
-See `docs/STORES_TO_GET_STATUS.md` and `docs/DATA_COVERAGE_SUMMARY.md` for details.
+**Totals:** 50 stores in config; **3 FULL** (bruder, kent, new_bounce); **945 products with dimensions** across 21 stores; 49 dimension extraction scripts. See `docs/DIMENSIONS_SUMMARY.md`, `docs/STORES_TO_GET_STATUS.md`, and `docs/DATA_COVERAGE_SUMMARY.md` for details.
