@@ -154,6 +154,19 @@ def main():
             html = fetch_html(url, session)
             time.sleep(DELAY)
             pl, pw, ph = extract_dims_from_page(html, desc)
+        # 2. Aurora: dimensions often in body_html, not in short description. Try product JSON.
+        if not (pl or pw or ph) and url:
+            try:
+                json_url = url.rstrip("/") + ".json"
+                r = session.get(json_url, timeout=20, headers={"User-Agent": USER_AGENT})
+                if r.status_code == 200:
+                    data = r.json()
+                    body = (data.get("product", {}).get("body_html") or "").strip()
+                    if body:
+                        pl, pw, ph = parse_dims_from_desc(body)
+                time.sleep(0.5)
+            except Exception:
+                pass
         if pl or pw or ph:
             row["piece_length"] = pl or row.get("piece_length", "")
             row["piece_width"] = pw or row.get("piece_width", "")
