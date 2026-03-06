@@ -15,7 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from scraper_lib import *
 from playwright.sync_api import sync_playwright
 
-SITE_ID = "razor_biz"
+SITE_ID = "razor"  # consolidated from razor_biz (same domain)
 SHEET = "Razor Biz"
 BASE = "https://razor.com"
 DELAY = 2.0

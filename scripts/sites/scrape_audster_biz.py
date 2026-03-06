@@ -14,7 +14,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from scraper_lib import *
 from playwright.sync_api import sync_playwright
 
-SITE_ID = "audster_biz"
+SITE_ID = "audster"  # consolidated from audster_biz (same domain)
 SHEET = "Audster biz"
 BASE = "https://audster.com"
 DELAY = 2.0
