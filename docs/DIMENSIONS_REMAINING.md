@@ -27,13 +27,33 @@
 
 ---
 
+## Resolving product_url (script + scrapers)
+
+**`scripts/resolve_product_urls.py`** — For Shopify sites, fetches `products.json` and matches sheet rows (UPC, name) to product URLs. Resolves: chazak, quercetti, melissa, and other Shopify stores.
+
+```bash
+python3 scripts/resolve_product_urls.py
+```
+
+**Scrapers** — Run scrapers to populate `product_url` when they find matches:
+- **mead** — `scrape_mead.py` (search by name/UPC)
+- **daron** — `scrape_daron.py` (catalog match by name)
+- **gi_go, gigo** — `scrape_gi_go.py` (crawl categories, match by name)
+- **puzelworx** — `scrape_puzelworx.py` (search by name)
+- **play_doh_biz** — `scrape_play_doh_biz.py` (direct URL or all-products match)
+- **rina_dina** — `scrape_rina_dina.py` (search by UPC/name)
+
+**vtech** — products.json returns empty; use `scrape_vtech.py` (Playwright).
+
+---
+
 ## Stores with blocking issues
 
 | Store | Issue |
 |-------|-------|
 | **lchaim** | All `product_url` point to generic `https://lchaimstore.com/Shop` — no per-product URLs |
 | **metal_earth** | 403 Forbidden (Cloudflare) on automated requests |
-| **bazic, bz_kinder, casio, daron, gi_go, gigo, goplay, kinder_shpiel, kindervelt, mead, moore, play_doh_biz, puzelworx, rina_dina, sands, vtech** | No `product_url` in extracted CSV — need to run scrapers first to get URLs |
+| **bz_kinder, casio, goplay, moore, sands, kinder_shpiel, kindervelt** | Sheet-only; site returns empty or wrong domain |
 
 ---
 
