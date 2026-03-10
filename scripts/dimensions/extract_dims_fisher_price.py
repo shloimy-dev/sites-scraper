@@ -20,7 +20,7 @@ from dimensions.dim_base import (
 
 SITE_ID = "fisher_price"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-DELAY = 1.5
+DELAY = 0.5
 MAX_INCHES = 120  # Reject image sizes like 180x180
 
 

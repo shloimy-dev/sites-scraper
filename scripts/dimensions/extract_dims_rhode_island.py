@@ -21,7 +21,7 @@ from dimensions.dim_base import (
 )
 
 SITE_ID = "rhode_island"
-DELAY_SEC = 1.5
+DELAY_SEC = 0.5
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; rv:91.0) Gecko/20100101 Firefox/91.0"
 # Reject dimensions > MAX_INCHES (filters out image sizes like 180x180)
 MAX_INCHES = 120

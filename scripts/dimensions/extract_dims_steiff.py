@@ -40,7 +40,7 @@ def extract_steiff_dims(html, description):
     return "", "", ""
 
 SITE_ID = "steiff"
-DELAY = 1.5
+DELAY = 0.5
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; rv:91.0) Gecko/20100101 Firefox/91.0"
 
 

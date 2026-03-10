@@ -20,7 +20,7 @@ from dimensions.dim_base import (
 
 SITE_ID = "thinkfun"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-DELAY = 1.5
+DELAY = 0.5
 
 
 def fetch_html(url, session):

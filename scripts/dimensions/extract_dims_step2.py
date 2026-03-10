@@ -45,7 +45,7 @@ def extract_dims_step2_specs(html):
 
 SITE_ID = "step2"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-DELAY_MIN, DELAY_MAX = 1.0, 2.0
+DELAY_MIN, DELAY_MAX = 0.5, 1.0
 
 
 def fetch_html(url):

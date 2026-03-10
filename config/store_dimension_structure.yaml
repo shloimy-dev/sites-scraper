@@ -1,0 +1,242 @@
+# Product page structure: where dimensions live per store.
+# Used by scrape_dims_store and dimension extractors.
+#
+# dimension_source:
+#   jsonld       - JSON-LD Product depth/width/height (Shopify standard)
+#   html         - HTML pattern (see html_pattern)
+#   description  - Parse from description text (L x W x H)
+#   product_json - Shopify .json API body_html (when not in short desc)
+#   custom       - Site-specific regex/logic (see custom_pattern)
+#
+# html_pattern (when source=html):
+#   razor        - "Assembled Product Dimensions: 58″ x 16.14″ x 41.02″"
+#   cazenove     - "Width: 11.0 inches, Height: 7.7 inches, Depth: 0.8 inches"
+#   woocommerce  - <tr class="...--dimensions"><td>2 × 2 × 2 in</td>
+#   melissa_doug - "Product: 11.0 x 8.2 x 0.2 inches"
+#   step2        - "Assembled Dimensions: 14.75\" H x 30.5\" W x 123\" D"
+#   steiff       - "Size: 17 in" or "measures 17 inches long"
+#   puzzleworx   - "Puzzle size: 27 x 19.25 inch"
+#   generic      - "Dimensions:", "Size:", "Package dimensions:" + L x W x H
+#
+# pre_click: selector/action before scraping (e.g. expand accordion)
+
+stores:
+  atiko:
+    dimension_source: jsonld
+    notes: "Shopify; JSON-LD or generic HTML"
+
+  audster:
+    dimension_source: jsonld
+    notes: "Shopify"
+
+  aurora:
+    dimension_source: product_json
+    fallback: [jsonld, description]
+    notes: "Dimensions often in body_html, not short description. Try .json body_html."
+
+  bazic:
+    dimension_source: description
+    fallback: [jsonld, html]
+    notes: "Many dims in description (e.g. 7.75\" x 3.2\" x 1\")"
+
+  bruder:
+    dimension_source: jsonld
+    notes: "Shopify"
+
+  chazak:
+    dimension_source: jsonld
+    notes: "Shopify"
+
+  colours_craft:
+    dimension_source: jsonld
+    notes: "Shopify"
+
+  cazenove:
+    dimension_source: html
+    html_pattern: cazenove
+    notes: "Width/Height/Depth in inches in product-details"
+
+  daron:
+    dimension_source: jsonld
+    fallback: [html]
+    notes: "BigCommerce; JSON-LD or generic"
+
+  enday:
+    dimension_source: jsonld
+    notes: "Shopify"
+
+  gigo:
+    dimension_source: jsonld
+    fallback: [html]
+    notes: "Custom site; JSON-LD or generic"
+
+  kinder_blast:
+    dimension_source: jsonld
+    notes: "Shopify"
+
+  kinder_shpiel:
+    dimension_source: jsonld
+    fallback: [html]
+    notes: "Steiff.com; products may not be on site"
+
+  kindervelt:
+    dimension_source: jsonld
+    fallback: [description]
+    notes: "Sheet fallback when blocked"
+
+  melissa:
+    dimension_source: html
+    html_pattern: melissa_doug
+    pre_click: "Expand 'Dimensions & Assembly' accordion"
+    notes: "Product: L x W x H inches inside collapsed accordion. Must expand first."
+
+  microkick:
+    dimension_source: jsonld
+    notes: "Shopify"
+
+  ner_mitzvah:
+    dimension_source: jsonld
+    fallback: [description]
+    notes: "API/extracted"
+
+  new_bounce:
+    dimension_source: jsonld
+    notes: "Shopify"
+
+  new_york_doll:
+    dimension_source: jsonld
+    notes: "Shopify"
+
+  perler:
+    dimension_source: jsonld
+    notes: "Shopify"
+
+  play_build:
+    dimension_source: jsonld
+    notes: "Shopify"
+
+  play_doh_biz:
+    dimension_source: jsonld
+    fallback: [html]
+    notes: "Hasbro shop; JSON-LD"
+
+  playkidiz:
+    dimension_source: html
+    html_pattern: woocommerce
+    fallback: [jsonld]
+    notes: "WooCommerce dimensions table"
+
+  playmags:
+    dimension_source: html
+    html_pattern: woocommerce
+    notes: "WooCommerce"
+
+  puzelworx:
+    dimension_source: html
+    html_pattern: puzzleworx
+    notes: "Puzzle size: 27 x 19.25 inch or Dimensions/Size"
+
+  quercetti:
+    dimension_source: jsonld
+    notes: "Shopify"
+
+  razor:
+    dimension_source: html
+    html_pattern: razor
+    notes: "Assembled Product Dimensions: L″ x W″ x H″"
+
+  rhode_island:
+    dimension_source: jsonld
+    fallback: [html]
+    notes: "Custom; JSON-LD or generic"
+
+  rina_dina:
+    dimension_source: description
+    fallback: [html]
+    notes: "Product Description section (e.g. 14\" x 11\", 20 pages)"
+
+  samvix:
+    dimension_source: html
+    html_pattern: woocommerce
+    notes: "WooCommerce"
+
+  steiff:
+    dimension_source: custom
+    custom_pattern: "Size: N in | measures N inches long | N\""
+    notes: "Plush toys; often only one dimension (Size: 17 in)"
+
+  step2:
+    dimension_source: html
+    html_pattern: step2
+    notes: "Assembled Dimensions: H x W x D (depth=length)"
+
+  thinkfun:
+    dimension_source: jsonld
+    fallback: [html]
+    notes: "Ravensburger; JSON-LD"
+
+  tiny_love:
+    dimension_source: description
+    fallback: [jsonld, html]
+    notes: "Try description first"
+
+  vtech:
+    dimension_source: jsonld
+    notes: "Shopify"
+
+  winfun:
+    dimension_source: jsonld
+    fallback: [html]
+    notes: "Custom; JSON-LD or generic"
+
+  winning_moves:
+    dimension_source: jsonld
+    fallback: [html]
+    notes: "ASP-style; JSON-LD or generic"
+
+  # Stores with no dimensions on site or blocked
+  bz_kinder:
+    dimension_source: none
+    notes: "Site returns empty"
+
+  casio:
+    dimension_source: none
+    notes: "Access Denied"
+
+  fisher_price:
+    dimension_source: none
+    notes: "No dimensions on site"
+
+  gi_go:
+    dimension_source: none
+    notes: "Wrong domain"
+
+  goplay:
+    dimension_source: none
+    notes: "Password-protected"
+
+  kent:
+    dimension_source: jsonld
+    fallback: [description]
+    notes: "Sheet fallback when blocked"
+
+  lchaim:
+    dimension_source: description
+    notes: "No per-product URL; API data"
+
+  mead:
+    dimension_source: jsonld
+    fallback: [html]
+    notes: "Sheet fallback when blocked"
+
+  metal_earth:
+    dimension_source: none
+    notes: "403 Cloudflare"
+
+  moore:
+    dimension_source: none
+    notes: "Maintenance mode"
+
+  sands:
+    dimension_source: none
+    notes: "Access Denied"

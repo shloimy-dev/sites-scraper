@@ -17,7 +17,7 @@ from playwright.sync_api import sync_playwright
 from sites.scrape_melissa import expand_dimensions_section
 
 SITE_ID = "melissa"
-DELAY = 2.0
+DELAY = 1.0
 WAIT = 4000
 
 
