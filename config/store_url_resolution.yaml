@@ -1,0 +1,335 @@
+# Per-store: how to resolve product_url from product data (UPC, name).
+# Used by resolve_product_urls_dynamic.py and scrape_dims_store.py
+#
+# Methods:
+#   shopify_json  - Fetch /products.json, match by barcode then name
+#   search        - Playwright: go to search_url, click first product link
+#   crawl         - Playwright: crawl catalog_url, build index, match by name
+#   sheet_url     - Product URL already in sheet (e.g. step2 deep_link)
+#   skip          - Blocked or no dimensions on site
+
+stores:
+  atiko:
+    base_url: https://mostlymusic.com
+    sheet: Akito
+    method: search
+    search_url: "{{base}}/search?q={{query}}"
+    product_link: "/products/"
+    query_from: [upc, name]
+
+  audster:
+    base_url: https://audster.com
+    sheet: "Audster biz"
+    method: shopify_json
+
+  aurora:
+    base_url: https://auroragift.com
+    sheet: aurora
+    method: shopify_json
+
+  bazic:
+    base_url: https://www.bazic.com
+    sheet: bazic
+    method: shopify_json
+
+  bruder:
+    base_url: https://brudertoyshop.com
+    sheet: bruder
+    method: search
+    search_url: "{{base}}/search?type=product&q={{query}}"
+    product_link: "/products/"
+
+  bz_kinder:
+    base_url: https://bzkinder.com
+    sheet: bz_kinder
+    method: skip
+    reason: "Site returns empty or wrong domain"
+
+  casio:
+    base_url: https://www.casio.com
+    sheet: casio
+    method: skip
+    reason: "Access Denied"
+
+  cazenove:
+    base_url: https://cazenovejudaica.com/us
+    sheet: cazenove
+    method: crawl
+    crawl_urls:
+      - "{{base}}/tableware"
+      - "{{base}}/toys"
+    product_link: ".html"
+    match_by: name
+
+  chazak:
+    base_url: https://www.chazakkinder.com
+    sheet: chazak
+    method: shopify_json
+
+  colours_craft:
+    base_url: https://colourscrafts.com
+    sheet: colours_craft
+    method: shopify_json
+
+  daron:
+    base_url: https://modeltoycars.com
+    sheet: daron
+    method: crawl
+    crawl_url: "{{base}}/brands/Daron.html"
+    product_link: "/"
+    match_by: name
+
+  enday:
+    base_url: https://enday.com
+    sheet: enday
+    method: shopify_json
+
+  fisher_price:
+    base_url: https://shop.mattel.com
+    sheet: fisher_price
+    method: skip
+    reason: "No dimensions on site"
+
+  gi_go:
+    base_url: https://www.gigotoys.com
+    sheet: gi_go
+    method: search
+    search_url: "{{base}}/search?q={{query}}"
+    product_link: "/products/"
+    note: "Config uses gigotoys.com; sheet may reference .com.hk"
+
+  gigo:
+    base_url: https://www.gigotoys.com
+    sheet: gigo
+    method: crawl
+    crawl_urls:
+      - "{{base}}/C1-1-en.html"
+      - "{{base}}/C2-2-en.html"
+    product_link: "/products/"
+    match_by: name
+
+  goplay:
+    base_url: https://www.goplay.shopping
+    sheet: goplay
+    method: skip
+    reason: "Password-protected"
+
+  kent:
+    base_url: https://kent.bike
+    sheet: kent
+    method: search
+    search_url: "{{base}}/search?q={{query}}"
+    product_link: "/products/"
+
+  kinder_blast:
+    base_url: https://kinderblast.com
+    sheet: kinder_blast
+    method: shopify_json
+
+  kinder_shpiel:
+    base_url: https://www.steiff.com/en-us
+    sheet: kinder_shpiel
+    method: search
+    search_url: "{{base}}/search?q={{query}}"
+    product_link: "/products/"
+    note: "Products may not be on steiff.com"
+
+  kindervelt:
+    base_url: https://kindervelt.com
+    sheet: kindervelt
+    method: search
+    search_url: "{{base}}/search?q={{query}}"
+    product_link: "/products/"
+
+  lchaim:
+    base_url: https://lchaimstore.com
+    sheet: lchaim
+    method: skip
+    reason: "API returns data but no per-product URLs"
+
+  mead:
+    base_url: https://www.mead.com
+    sheet: mead
+    method: search
+    search_url: "{{base}}/search?q={{query}}"
+    product_link: "/products/"
+
+  melissa:
+    base_url: https://www.melissaanddoug.com
+    sheet: melissa
+    method: shopify_json
+
+  metal_earth:
+    base_url: https://www.metalearth.com
+    sheet: metal_earth
+    method: skip
+    reason: "403 Cloudflare"
+
+  microkick:
+    base_url: https://microkickboard.com
+    sheet: microkick
+    method: search
+    search_url: "{{base}}/search?type=product&q={{query}}"
+    product_link: "/products/"
+
+  moore:
+    base_url: https://www.mooreoffice.com
+    sheet: moore
+    method: skip
+    reason: "Maintenance mode"
+
+  ner_mitzvah:
+    base_url: https://www.nermitzvah.com
+    sheet: ner_mitzvah
+    method: shopify_json
+
+  new_bounce:
+    base_url: https://newbouncesport.com
+    sheet: new_bounce
+    method: shopify_json
+
+  new_york_doll:
+    base_url: https://www.thenewyorkdollcollection.com
+    sheet: new_york_doll
+    method: search
+    search_url: "{{base}}/search?q={{query}}"
+    product_link: "/products/"
+
+  perler:
+    base_url: https://perler.com
+    sheet: perler
+    method: shopify_json
+
+  play_build:
+    base_url: https://www.playbuild.com
+    sheet: play_build
+    method: search
+    search_url: "{{base}}/search?q={{query}}"
+    product_link: "/products/"
+
+  play_doh_biz:
+    base_url: https://shop.hasbro.com/en-us/play-doh
+    sheet: "Play-Doh Biz"
+    method: crawl
+    crawl_url: "{{base}}"
+    product_link: "/product/"
+    match_by: name
+
+  playkidiz:
+    base_url: https://playkidiz.com
+    sheet: playkidiz
+    method: search
+    search_url: "{{base}}/?s={{query}}"
+    product_link: "/product/"
+    note: "WooCommerce; ?s= for search"
+
+  playmags:
+    base_url: https://www.playmags.co.uk
+    sheet: playmags
+    method: search
+    search_url: "{{base}}/?s={{query}}"
+    product_link: "/product/"
+    note: "Use .co.uk not .com (403)"
+
+  puzelworx:
+    base_url: https://toys4u.com
+    sheet: puzelworx
+    method: search
+    search_url: "{{base}}/search.php?section=product&search_query={{query}}"
+    product_link: "/categories/"
+    product_suffix: ".html"
+    match_by: name
+
+  quercetti:
+    base_url: https://www.quercettistore.com
+    sheet: quercetti
+    method: shopify_json
+
+  razor:
+    base_url: https://razor.com
+    sheet: razor
+    method: search
+    search_url: "{{base}}/?s={{query}}"
+    product_link: "/product/"
+    query_from: name
+
+  rhode_island:
+    base_url: https://www.rinovelty.com
+    sheet: rhode_island
+    method: search
+    search_url: "{{base}}/search?term={{query}}"
+    product_link: "/"
+    match_by: name
+
+  rina_dina:
+    base_url: https://rinadina.com
+    sheet: rina_dina
+    method: search
+    search_url: "{{base}}/search?q={{query}}"
+    product_link: "/"
+    note: "Products at /slug/ not /products/"
+
+  samvix:
+    base_url: https://www.samvix.com
+    sheet: samvix
+    method: search
+    search_url: "{{base}}/?s={{query}}"
+    product_link: "/products/"
+    query_from: name
+
+  sands:
+    base_url: https://www.sands.com
+    sheet: sands
+    method: skip
+    reason: "Access Denied"
+
+  steiff:
+    base_url: https://www.steiff.com/en-us
+    sheet: steiff
+    method: crawl
+    crawl_urls:
+      - "{{base}}/stuffed-animals-baby-gifts/all-stuffed-animals/teddy-bears"
+    product_link: "/products/"
+    match_by: name
+
+  step2:
+    base_url: https://www.step2.com
+    sheet: step2
+    method: sheet_url
+    sheet_url_column: deep_link
+
+  thinkfun:
+    base_url: https://www.ravensburger.us
+    sheet: thinkfun
+    method: crawl
+    crawl_url: "{{base}}/en-US/products/games/thinkfun/"
+    product_link: "/products/"
+    match_by: name
+
+  tiny_love:
+    base_url: https://tinylove.com
+    sheet: tiny_love
+    method: shopify_json
+
+  vtech:
+    base_url: https://www.vtechkids.com
+    sheet: vtech
+    method: search
+    search_url: "{{base}}/search?q={{query}}"
+    product_link: "/products/"
+
+  winfun:
+    base_url: https://www.winfun.com
+    sheet: winfun
+    method: search
+    search_url: "{{base}}/search?q={{query}}"
+    product_link: "/product/"
+    note: "Winfun.com or thelittleluxury.com"
+
+  winning_moves:
+    base_url: https://www.winning-moves.com
+    sheet: winning_moves
+    method: crawl
+    crawl_url: "{{base}}"
+    product_link: "/product/"
+    match_by: name
