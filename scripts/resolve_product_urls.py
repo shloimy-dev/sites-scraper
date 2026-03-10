@@ -196,6 +196,7 @@ def main():
         ("perler", "https://perler.com", "perler"),
         ("quercetti", "https://www.quercettistore.com", "quercetti"),
         ("bazic", "https://www.bazic.com", "bazic"),
+        ("aurora", "https://auroragift.com", "aurora"),
     ]
 
     total = 0
